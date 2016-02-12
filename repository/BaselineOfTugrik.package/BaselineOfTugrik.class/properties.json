@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfTugrik",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfTugrik",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
