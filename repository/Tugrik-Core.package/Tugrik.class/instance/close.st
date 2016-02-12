@@ -1,3 +1,3 @@
 operations
 close
-	stream close
+	session logout

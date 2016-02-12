@@ -6,8 +6,8 @@
 		"Default" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"host",
-		"port",
+		"sessionDescription",
+		"session",
 		"stream",
 		"requestID" ],
 	"name" : "Tugrik",

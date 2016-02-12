@@ -3,7 +3,7 @@ getMore: idInteger collection: aString chunkSize: countInteger
 	(GetMoreOperation
 		collection: aString 
 		id: idInteger 
-		stream: stream 
+		session: session
 		cursorId: idInteger 
 		returnCount: countInteger)
 			write

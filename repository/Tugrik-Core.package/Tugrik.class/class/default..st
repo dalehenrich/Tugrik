@@ -1,5 +1,5 @@
 accessing
-default: aTugric
+default: aTugrik
 	"Ability to set an own default"
 	
-	Default := aTugric
+	Default := aTugrik

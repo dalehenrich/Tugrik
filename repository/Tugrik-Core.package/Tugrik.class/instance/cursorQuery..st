@@ -2,6 +2,6 @@ private-communicating
 cursorQuery: aQuery
 	(QueryOperation 
 		id: self nextRequestID
-		stream: stream
+		session: session
 		query: aQuery)
 			write

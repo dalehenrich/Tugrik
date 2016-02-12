@@ -1,3 +1,3 @@
 operations
 open
-	stream := GratuitousIncompatibilities socketStreamHost: host port: port.
+	session := sessionDescription login

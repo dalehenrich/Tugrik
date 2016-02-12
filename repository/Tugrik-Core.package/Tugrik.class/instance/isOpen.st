@@ -1,3 +1,3 @@
 testing
 isOpen 
-	^stream notNil and: [ stream isConnected ]
+	^session notNil and: [ session isConnected ]

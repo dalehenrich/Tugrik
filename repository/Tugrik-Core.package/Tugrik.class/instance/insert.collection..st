@@ -3,6 +3,6 @@ insert: aCollection collection: aString
 	(InsertOperation
 		collection: aString
 		id: self nextRequestID
-		stream: stream 
+		session: session
 		objects: aCollection)
 			write

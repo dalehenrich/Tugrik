@@ -2,8 +2,10 @@ printing
 printOn: aStream
 
 	aStream 
-		nextPutAll: 'Mongo (';
-		nextPutAll: host asString;
+		nextPutAll: 'Tugrik (';
+		nextPutAll: sessionDescription gemstoneVersion;
+		nextPutAll:'-';
+		nextPutAll: sessionDescription stoneHost;
 		nextPut: $:;
-		nextPutAll: port asString;
+		nextPutAll: sessionDescription stoneName;
 		nextPut: $)
