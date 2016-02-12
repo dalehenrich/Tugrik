@@ -1,0 +1,42 @@
+TDScriptLeafNode{#name:'deploy',#contents:'[ :topez :objIn :tokens :command :commandNode | 
+  | opts args |
+  \"for help: ./deploy -h\"
+  command
+    getOptsMixedLongShort:
+      {#(\'help\' $h #\'none\').
+      #(\'setup\' nil #\'none\').
+      #(\'packages\' nil #\'none\')}
+    optionsAndArguments: [ :options :operands | 
+      opts := options.
+      args := operands ].
+  opts
+    at: \'help\'
+    ifAbsent: [ 
+      | url mrTool filetree |
+      url := \'http://smalltalkhub.com/mc/estebanlm/Voyage/main\'.
+filetree := \'filetree:///export/foos1/users/dhenrich/dev/_home/shared/repos/Voyage/repository\'.
+      mrTool := topez toolInstanceFor: \'mr\'.
+      opts at: \'setup\' ifPresent: [ :ignored | mrTool mrcreate: url; mrcreate: filetree ].
+      opts
+        at: \'packages\'
+        ifPresent: [ :ignored | 
+          | repo |
+          repo := mrTool resolveRepositoryReference: url.
+          mrTool
+            mrBrowseRepositoryPackges: repo
+            label: \'Voyage SmalltalkHub packages\' ] ]
+    ifPresent: [ :ignored | 
+      TDManPage
+        viewManPage:
+          \'NAME
+  deploy - deploy script utility template
+SYNOPSIS
+  deploy [-h|--help] [--setup] [--packages]
+DESCRIPTION
+EXAMPLES
+  ./deploy -h
+
+  ./deploy --setup
+  ./deploy --packages; edit
+\'
+        topez: topez ] ]',#creationTime:DateAndTime['2016-02-10T19:43:10.04228210449219-08:00'],#modificationTime:DateAndTime['2016-02-10T20:01:16.09459209442139-08:00']}
