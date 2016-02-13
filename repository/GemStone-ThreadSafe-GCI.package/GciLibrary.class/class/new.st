@@ -1,4 +1,0 @@
-overrides
-new
-
-	^self current.

@@ -1,3 +1,0 @@
-Wrapper
-gciErrSTypeClass
-  ^ self subclassResponsibility
