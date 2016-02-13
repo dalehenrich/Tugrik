@@ -1,5 +1,0 @@
-singleton
-hasCurrent
-
-	^Current notNil.
-	

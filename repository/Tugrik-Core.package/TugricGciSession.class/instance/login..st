@@ -1,8 +1,13 @@
-initialize
+initialize-release
 login: aSessionDescription
-	| loginFlags haltOnErrNum aGciTs32xErrSType |
-	self sessionDescription: aSessionDescription.
-	loginFlags := 0.
-	haltOnErrNum := 0.
-	aGciTs32xErrSType := GciTs32xErrSType new.
-	self login: loginFlags haltOnErrNum: haltOnErrNum gciErr: aGciTs32xErrSType
+	| result |
+	super login: aSessionDescription.
+	result := self gciLibrary
+		apiGciSetNet: sessionDescription stoneNRS
+			a: sessionDescription osUserId
+			a: sessionDescription osPassword
+			a: sessionDescription gemNRS;
+		apiGciLogin: sessionDescription userId a: sessionDescription password.
+	result
+		ifTrue: [ gciSessionNumber := self gciLibrary apiGciGetSessionId ]
+		ifFalse: [ self halt: 'handle failed login' ]
