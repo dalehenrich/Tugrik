@@ -13,4 +13,11 @@
 		"newGCI" : "dkh 2/12/2016 17:19",
 		"startUp:" : "dkh 2/12/2016 17:19" },
 	"instance" : {
-		"apiGciTsLogin:a:a:a:a:a:a:a:a:" : "dkh 2/12/2016 17:29" } }
+		"apiGciTsGemTrace:a:a:" : "dkh 2/12/2016 20:17",
+		"apiGciTsGetFreeOops:a:a:a:" : "dkh 2/12/2016 20:16",
+		"apiGciTsLogin:a:a:a:a:a:a:a:a:" : "dkh 2/12/2016 20:20",
+		"apiGciTsLogout:a:" : "dkh 2/12/2016 20:18",
+		"apiGciTsResolveSymbol:a:a:a:" : "dkh 2/12/2016 20:18",
+		"apiGciTsResolveSymbolObj:a:a:a:" : "dkh 2/12/2016 20:19",
+		"apiGciTsSaveObjs:a:a:a:" : "dkh 2/12/2016 20:19",
+		"apiGciTsSessionIsRemote:a:a:" : "dkh 2/12/2016 20:20" } }

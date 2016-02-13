@@ -26,5 +26,5 @@ apiGciTsLogin: stoneNameNrs a: hostUserId a: hostPassword a: gemServiceNrs a: ge
    netldi  process .
  */
 "
-	<apicall: bool 'GciTsLogin' (char* char* char* char* char* char* uint int void*) >
+	<apicall: GciTsSession 'GciTsLogin' (char* char* char* char* char* char* uint int GciTs32xErrSType*) >
 	^self externalCallFailed
