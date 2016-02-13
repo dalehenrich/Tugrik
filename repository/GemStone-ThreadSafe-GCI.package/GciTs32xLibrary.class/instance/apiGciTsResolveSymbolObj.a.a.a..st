@@ -4,7 +4,7 @@ apiGciTsResolveSymbolObj: sess a: str a: symbolList a: err
                 OopType str, OopType symbolList, GciErrSType *err);
   // result OOP_ILLEGAL if an error was returned in *err
 "
-	<apicall: OopType64 'GciTsResolveSymbolObj' (GciTsSession char* OopType64 GciTs32xErrSType*) >
+	<apicall: GsOopType 'GciTsResolveSymbolObj' (GciTsSession char* GsOopType GciTs32xErrSType*) >
 	^self externalCallFailed
 	
 

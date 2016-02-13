@@ -1,3 +1,0 @@
-converting
-asOopTypeWith: anOopTypeClass
-    ^ self

@@ -1,4 +1,0 @@
-Accessors
-category
-
-	^category.

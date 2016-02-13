@@ -1,5 +1,0 @@
-Accessors
-address
-
-	^address asInteger.
-	

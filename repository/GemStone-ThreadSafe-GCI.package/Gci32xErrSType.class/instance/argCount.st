@@ -1,5 +1,0 @@
-Accessors
-argCount
-
-	^args size.
-	

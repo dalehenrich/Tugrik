@@ -1,5 +1,0 @@
-Accessors
-args
-
-	^args.
-	

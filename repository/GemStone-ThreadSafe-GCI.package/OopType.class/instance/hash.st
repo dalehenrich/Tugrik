@@ -1,5 +1,0 @@
-comparison
-hash
-
-	^handle hash.
-	

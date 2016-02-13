@@ -1,5 +1,0 @@
-Accessors
-fatal
-
-	^fatal.
-	

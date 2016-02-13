@@ -1,4 +1,0 @@
-Accessors
-context
-
-	^context.

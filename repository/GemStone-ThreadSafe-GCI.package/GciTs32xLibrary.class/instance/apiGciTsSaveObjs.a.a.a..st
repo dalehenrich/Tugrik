@@ -5,7 +5,7 @@ apiGciTsSaveObjs: sess a: buf a: count a: err
     // since GciTs does not support user actions, this always adds the objects
     // to the PureExportSet .
 "
-	<apicall: bool 'GciTsSaveObjs' (GciTsSession OopType64* int GciTs32xErrSType* ) >
+	<apicall: bool 'GciTsSaveObjs' (GciTsSession GsOopType* int GciTs32xErrSType* ) >
 	^self externalCallFailed
 	
 
