@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"bindToGciLibrary" : "dkh 2/13/2016 12:28",
+		"bindToGciLibrary" : "dkh 2/13/2016 13:29",
 		"gciError:" : "dkh 2/13/2016 10:01",
 		"gciSession" : "dkh 2/13/2016 09:54",
 		"gciSession:" : "dkh 2/13/2016 09:54",
 		"isSessionValid" : "dkh 2/13/2016 10:00",
 		"login:" : "dkh 2/13/2016 09:59",
-		"login:haltOnErrNum:gciErr:" : "dkh 2/13/2016 10:00" } }
+		"login:haltOnErrNum:gciErr:" : "dkh 2/13/2016 13:38" } }

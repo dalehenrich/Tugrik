@@ -20,5 +20,5 @@ apiGciTsVersion: buf a: bufSize
    in the 'Version Management' category.
 */
 "
-	<apicall: int 'GciTsVersion' (char* size_t) >
+	<apicall: ulong 'GciTsVersion' (void* ulonglong  ) >
 	^self externalCallFailed
