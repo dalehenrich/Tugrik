@@ -7,8 +7,8 @@
 	"instance" : {
 		"apiGciTsGemTrace:a:a:" : "dkh 2/13/2016 11:58",
 		"apiGciTsGetFreeOops:a:a:a:" : "dkh 2/13/2016 15:23",
-		"apiGciTsLogin:a:a:a:a:a:a:a:a:a:" : "dkh 2/13/2016 14:17",
-		"apiGciTsLogout:a:" : "dkh 2/13/2016 11:58",
+		"apiGciTsLogin:a:a:a:a:a:a:a:a:a:" : "dkh 2/13/2016 15:51",
+		"apiGciTsLogout:a:" : "dkh 2/13/2016 15:52",
 		"apiGciTsResolveSymbol:a:a:a:" : "dkh 2/13/2016 15:24",
 		"apiGciTsResolveSymbolObj:a:a:a:" : "dkh 2/13/2016 15:24",
 		"apiGciTsSaveObjs:a:a:a:" : "dkh 2/13/2016 15:24",
