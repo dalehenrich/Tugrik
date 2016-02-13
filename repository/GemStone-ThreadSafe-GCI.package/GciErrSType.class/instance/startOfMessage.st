@@ -1,4 +1,0 @@
-Private
-startOfMessage
-
-	self subclassResponsibility.

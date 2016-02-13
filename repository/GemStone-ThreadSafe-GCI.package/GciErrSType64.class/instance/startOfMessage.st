@@ -1,4 +1,0 @@
-private
-startOfMessage
-
-	^106.

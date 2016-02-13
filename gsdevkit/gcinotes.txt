@@ -3,6 +3,13 @@
 
 EXTERN_GCI_DEC(char*) GciTsEncrypt(const char* password, char *outBuf, size_t outBuffSize);
 EXTERN_GCI_DEC(GciSession) GciTsLogin(
+    const char *StoneNameNrs,
+    const char *HostUserId, 
+    const char *HostPassword, BoolType hostPwIsEncrypted,
+    const char *GemServiceNrs,
+    const char *gemstoneUsername, const char *gemstonePassword,
+    unsigned int loginFlags /* per GCI_LOGIN* in gci.ht */ ,
+    int haltOnErrNum, GciErrSType *err);
 EXTERN_GCI_DEC(BoolType) GciTsLogout(GciSession sess, GciErrSType *err);
 EXTERN_GCI_DEC(int) GciTsSessionIsRemote(GciSession sess);
 EXTERN_GCI_DEC(int) GciTsGemTrace(GciSession sess, int enable, GciErrSType *err);

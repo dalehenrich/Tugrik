@@ -1,3 +1,0 @@
-private
-argsOffset
-  ^ 17
