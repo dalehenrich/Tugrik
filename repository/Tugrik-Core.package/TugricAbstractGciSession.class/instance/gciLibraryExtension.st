@@ -1,9 +1,9 @@
 accessing
 gciLibraryExtension
-  (Smalltalk at: #'GciLibrary') isOnLinux
+  self isOnLinux
     ifTrue: [ ^ '.so' ].
-  (Smalltalk at: #'GciLibrary') isOnMacintosh
+  self isOnMacintosh
     ifTrue: [ ^ '.dylib' ].
-  (Smalltalk at: #'GciLibrary') isOnWindows
+  self isOnWindows
     ifTrue: [ ^ '.dll' ].
   self error: 'Unknown OS platform'

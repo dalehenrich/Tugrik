@@ -4,7 +4,7 @@ bindToGciLibrary
 	libraryClass := Gci32xLibrary withAllSubclasses
 		detect: [ :each | each isClassForVersion: sessionDescription gemstoneVersion ].
 	libName := sessionDescription gciLibraryName.
-	ext := sessionDescription gciLibraryExtension.
+	ext := self gciLibraryExtension.
 	(libName endsWith: ext)
 		ifFalse: [ libName := libName , ext ].
 	library := libraryClass libraryNamed: libName.

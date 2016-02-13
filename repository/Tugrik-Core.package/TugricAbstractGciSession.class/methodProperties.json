@@ -4,8 +4,12 @@
 	"instance" : {
 		"gciLibrary" : "dkh 2/13/2016 10:03",
 		"gciLibrary:" : "dkh 2/13/2016 08:03",
+		"gciLibraryExtension" : "dkh 2/13/2016 15:30",
 		"gciLibraryVersion" : "dkh 2/13/2016 09:22",
 		"gciLibraryVersion:" : "dkh 2/13/2016 09:22",
+		"isOnLinux" : "dkh 2/13/2016 15:29",
+		"isOnMacintosh" : "dkh 2/13/2016 15:29",
+		"isOnWindows" : "dkh 2/13/2016 15:30",
 		"isSessionValid" : "dkh 2/13/2016 09:55",
 		"login:" : "dkh 2/13/2016 09:57",
 		"logout" : "dkh 2/13/2016 10:28",
