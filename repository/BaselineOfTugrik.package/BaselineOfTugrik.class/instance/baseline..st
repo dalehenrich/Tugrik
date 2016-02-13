@@ -5,6 +5,11 @@ baseline: spec
 		for: #pharo
 		do: [ 
 			spec
+				configuration: 'FFI'
+					with: [ 
+							spec
+								versionString: #stable;
+								repository: 'http://www.squeaksource.com/MetacelloRepository' ];
 				configuration: 'MongoTalk'
 					with: [ 
 							spec
@@ -12,7 +17,8 @@ baseline: spec
 								repository: 'http://www.smalltalkhub.com/mc/MongoTalkTeam/mongotalk/main' ];
 				yourself.
 			spec
-				package: 'Tugrik-Core';
+				package: 'GemStone-ThreadSafe-GCI' with: [ spec requires: #('FFI') ];
+				package: 'Tugrik-Core' with: [ spec requires: 'GemStone-ThreadSafe-GCI' ];
 				package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'MongoTalk' ];
 				yourself.
 			spec
