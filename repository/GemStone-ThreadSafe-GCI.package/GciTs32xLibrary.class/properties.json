@@ -1,0 +1,16 @@
+{
+	"category" : "GemStone-ThreadSafe-GCI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"nbEndAddress",
+		"nbEndAssociation",
+		"mutex" ],
+	"name" : "GciTs32xLibrary",
+	"pools" : [
+		 ],
+	"super" : "ExternalLibrary",
+	"type" : "normal" }

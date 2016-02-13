@@ -19,7 +19,8 @@
 		"osPassword",
 		"osPasswordIsEncrypted",
 		"gemstoneVersion",
-		"gciLibraryName" ],
+		"gciLibraryName",
+		"gciTsLibraryName" ],
 	"name" : "GciSessionDescription",
 	"pools" : [
 		 ],

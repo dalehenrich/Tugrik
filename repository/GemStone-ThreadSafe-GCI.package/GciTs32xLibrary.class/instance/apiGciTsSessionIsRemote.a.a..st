@@ -1,4 +1,4 @@
-API - thread safe
+API
 apiGciTsSessionIsRemote: sess a: enable a:err
 "EXTERN_GCI_DEC(int) GciTsGemTrace(GciSession sess, int enable, GciErrSType *err);
   // For use in debugging the implementation.

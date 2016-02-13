@@ -1,4 +1,4 @@
-API - thread safe
+API
 apiGciTsSaveObjs: sess a: buf a: count a: err
 "EXTERN_GCI_DEC(BoolType) GciTsSaveObjs(GciSession sess, OopType *buf, int count, GciErrSType *err);
     // result TRUE if buf completely processed, FALSE if error returned in *err

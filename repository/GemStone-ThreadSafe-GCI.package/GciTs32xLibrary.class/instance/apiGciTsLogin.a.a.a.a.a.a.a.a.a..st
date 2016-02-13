@@ -1,4 +1,4 @@
-API - thread safe
+API
 apiGciTsLogin: stoneNameNrs a: hostUserId a: hostPassword a: hostPwIsEncrypted a: gemServiceNrs a: gemstoneUsername a: gemstonePassword a: loginFlags a: haltOnErrNum a: err
 "EXTERN_GCI_DEC(GciSession) GciTsLogin(
     const char *StoneNameNrs,
@@ -26,5 +26,5 @@ apiGciTsLogin: stoneNameNrs a: hostUserId a: hostPassword a: hostPwIsEncrypted a
    netldi  process .
  */
 "
-	<apicall: void* 'GciTsLogin' (char* char* char* bool char* char* char* uint int void*) >
+	<apicall: void 'GciTsLogin' (char* char* char* bool char* char* char* uint int void*) >
 	^self externalCallFailed
