@@ -1,0 +1,18 @@
+{
+	"category" : "GemStone-ThreadSafe-GCI",
+	"classinstvars" : [
+		"err_CompilerError",
+		"err_Error",
+		"err_Halt",
+		"err_Hardbreak" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JGF 4/13/2007 13:44",
+	"instvars" : [
+		"exceptionObj",
+		"exceptionObjClassName" ],
+	"name" : "GciErrSType64",
+	"pools" : [
+		 ],
+	"super" : "GciErrSType",
+	"type" : "normal" }
