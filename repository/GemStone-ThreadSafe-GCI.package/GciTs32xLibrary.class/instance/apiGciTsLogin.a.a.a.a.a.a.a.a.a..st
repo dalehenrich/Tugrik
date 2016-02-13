@@ -26,5 +26,5 @@ apiGciTsLogin: stoneNameNrs a: hostUserId a: hostPassword a: hostPwIsEncrypted a
    netldi  process .
  */
 "
-	<apicall: void* 'GciTsLogin' (char* char* char* bool char* char* char* ulonglong ulonglong void*) >
+	<apicall: void* 'GciTsLogin' (char* char* char* bool char* char* char* ulonglong ulonglong GciTs32xErrSType*) >
 	^self externalCallFailed
