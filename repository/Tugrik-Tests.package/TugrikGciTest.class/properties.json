@@ -1,0 +1,14 @@
+{
+	"category" : "Tugrik-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TugrikGciTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

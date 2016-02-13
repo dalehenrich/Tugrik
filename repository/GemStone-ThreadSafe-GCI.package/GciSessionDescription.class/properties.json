@@ -1,0 +1,27 @@
+{
+	"category" : "GemStone-ThreadSafe-GCI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"stoneHost",
+		"stoneName",
+		"gemHost",
+		"netLDI",
+		"netLDIPort",
+		"gemTask",
+		"userId",
+		"password",
+		"osUserId",
+		"osPassword",
+		"osPasswordIsEncrypted",
+		"gemstoneVersion",
+		"gciLibraryName" ],
+	"name" : "GciSessionDescription",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

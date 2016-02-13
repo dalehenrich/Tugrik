@@ -1,5 +1,5 @@
 API
-apiGciTsLogin: stoneNameNrs a: hostUserId a: hostPassword a: gemServiceNrs a: gemstoneUsername a: gemstonePassword a: loginFlags a: haltOnErrNum a: err
+apiGciTsLogin: stoneNameNrs a: hostUserId a: hostPassword a: hostPwIsEncrypted a: gemServiceNrs a: gemstoneUsername a: gemstonePassword a: loginFlags a: haltOnErrNum a: err
 "EXTERN_GCI_DEC(GciSession) GciTsLogin(
     const char *StoneNameNrs,
     const char *HostUserId, 
@@ -26,5 +26,5 @@ apiGciTsLogin: stoneNameNrs a: hostUserId a: hostPassword a: gemServiceNrs a: ge
    netldi  process .
  */
 "
-	<apicall: GciTsSession 'GciTsLogin' (char* char* char* char* char* char* uint int GciTs32xErrSType*) >
+	<apicall: GciTsSession 'GciTsLogin' (char* char* char* bool char* char* char* uint int GciTs32xErrSType*) >
 	^self externalCallFailed

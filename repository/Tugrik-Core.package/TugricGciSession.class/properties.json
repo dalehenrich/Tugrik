@@ -1,0 +1,16 @@
+{
+	"category" : "Tugrik-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"gciSession",
+		"sessionDescription",
+		"gciLibrary" ],
+	"name" : "TugricGciSession",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

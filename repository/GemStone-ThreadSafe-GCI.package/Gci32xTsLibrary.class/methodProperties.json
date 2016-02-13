@@ -3,7 +3,7 @@
 		"current" : "dkh 2/12/2016 17:19",
 		"hasCurrent" : "dkh 2/12/2016 17:19",
 		"initialize" : "dkh 2/12/2016 17:19",
-		"isClassForVersion:" : "dkh 2/12/2016 17:19",
+		"isClassForVersion:" : "dkh 2/13/2016 07:26",
 		"isOnLinux" : "dkh 2/12/2016 17:19",
 		"isOnMacintosh" : "dkh 2/12/2016 17:19",
 		"isOnWindows" : "dkh 2/12/2016 17:19",
@@ -15,7 +15,7 @@
 	"instance" : {
 		"apiGciTsGemTrace:a:a:" : "dkh 2/12/2016 20:17",
 		"apiGciTsGetFreeOops:a:a:a:" : "dkh 2/12/2016 20:16",
-		"apiGciTsLogin:a:a:a:a:a:a:a:a:" : "dkh 2/12/2016 20:20",
+		"apiGciTsLogin:a:a:a:a:a:a:a:a:a:" : "dkh 2/13/2016 08:35",
 		"apiGciTsLogout:a:" : "dkh 2/12/2016 20:18",
 		"apiGciTsResolveSymbol:a:a:a:" : "dkh 2/12/2016 20:18",
 		"apiGciTsResolveSymbolObj:a:a:a:" : "dkh 2/12/2016 20:19",
