@@ -11,9 +11,12 @@
 		"executeStringNB:sourceClass:contextObject:symbolList:flags:environmentId:" : "dkh 2/13/2016 18:45",
 		"fetchObjImpl" : "dkh 2/14/2016 06:34",
 		"fetchObjImpl:" : "dkh 2/14/2016 06:39",
+		"gciErr:" : "dkh 2/14/2016 09:16",
+		"gciError" : "dkh 2/14/2016 09:19",
 		"gciSessionNumber" : "dkh 2/13/2016 09:57",
 		"gciSessionNumber:" : "dkh 2/13/2016 09:57",
 		"isSessionValid" : "dkh 2/13/2016 10:00",
 		"login:" : "dkh 2/13/2016 10:25",
 		"logout" : "dkh 2/13/2016 10:20",
-		"nbEnd_" : "dkh 2/13/2016 19:55" } }
+		"nbEnd_" : "dkh 2/13/2016 19:55",
+		"pollForSignal" : "dkh 2/14/2016 08:43" } }

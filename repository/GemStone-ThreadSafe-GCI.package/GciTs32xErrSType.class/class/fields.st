@@ -1,5 +1,7 @@
 field definition
 fields
+   "self defineFields"
+   "self new"
 	"class GciErrSType {
 public:
   OopType       category;                      /* error dictionary       */
@@ -13,4 +15,15 @@ public:
   char          message[GCI_ERR_STR_SIZE + 1]; /* null-term. str of err text */
   char          reason[GCI_ERR_reasonSize + 1];
 "
-	^#(nil #GsOopType nil #GsOopType nil #GsOopType nil #GsOopType* nil 'int' nil 'int' nil 'uchar' nil 'char*' nil 'char*')
+	^#(
+		(category #GsOopType)
+		(context #GsOopType) 
+		(exceptionObj #GsOopType) 
+		(args #GsOopType 11) 
+		(number 'long') 
+		(argCount 'long') 
+		(fatal 'uchar') 
+		(message 'char' 1025) 
+      (reason 'char' 1025)
+      (padding 'char' 80)
+		)

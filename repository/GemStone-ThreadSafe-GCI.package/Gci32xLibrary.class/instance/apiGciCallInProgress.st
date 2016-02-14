@@ -21,5 +21,5 @@ apiGciCallInProgress
   EXTERN_GCI_DEC(BoolType)
 GciCallInProgress(void);
 "
-	<apicall: bool 'GciCallInProgress' () >
+	<apicall: bool 'GciCallInProgress' (void) >
 	^self externalCallFailed
