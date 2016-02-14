@@ -1,8 +1,5 @@
 overrides
 fields
-"
-	(GsOopType defineFields)
-"
 
-	^#(asGsOopType 'ulonglong').
+	^#(nil 'ulonglong').
 	

@@ -13,4 +13,4 @@ public:
   char          message[GCI_ERR_STR_SIZE + 1]; /* null-term. str of err text */
   char          reason[GCI_ERR_reasonSize + 1];
 "
-	^#(#GsOopType #GsOopType #GsOopType #GsOopType* int int uchar char* char*)
+	^#(nil #GsOopType nil #GsOopType nil #GsOopType nil #GsOopType* nil 'int' nil 'int' nil 'uchar' nil 'char*' nil 'char*')
