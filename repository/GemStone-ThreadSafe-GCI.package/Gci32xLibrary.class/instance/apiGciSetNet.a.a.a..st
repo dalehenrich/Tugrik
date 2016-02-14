@@ -1,4 +1,4 @@
-API - not thread safe
+API
 apiGciSetNet: stoneName a: hostUserID a: hostPassword a: gemService
 "/* =============================================================================
  * GciSetNet function

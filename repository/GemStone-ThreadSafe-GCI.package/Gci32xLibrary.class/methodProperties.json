@@ -2,17 +2,25 @@
 	"class" : {
 		"isClassForVersion:" : "dkh 2/13/2016 07:26",
 		"libraryNamed:" : "dkh 2/12/2016 17:19",
-		"new" : "dkh 2/13/2016 09:12" },
+		"new" : "dkh 2/13/2016 09:12",
+		"nullPtr" : "dkh 2/13/2016 18:19" },
 	"instance" : {
 		"apiGciCallInProgress" : "dkh 2/13/2016 10:13",
+		"apiGciExecuteStrFromContextDbg_:a:a:a:a:a:a:" : "dkh 2/13/2016 18:29",
 		"apiGciGetSessionId" : "dkh 2/13/2016 10:27",
 		"apiGciHardBreak" : "dkh 2/13/2016 10:15",
 		"apiGciInit" : "dkh 2/13/2016 09:19",
 		"apiGciLogin:a:" : "dkh 2/13/2016 09:33",
 		"apiGciLogout" : "dkh 2/13/2016 10:29",
+		"apiGciNbEnd_:" : "dkh 2/13/2016 20:02",
+		"apiGciNbExecuteStrFromContextDbg_:a:a:a:a:a:a:" : "dkh 2/13/2016 18:41",
 		"apiGciSetNet:a:a:a:" : "dkh 2/13/2016 09:42",
 		"apiGciSetSessionId:" : "dkh 2/13/2016 09:48",
 		"apiGciVersion" : "dkh 2/13/2016 09:20",
 		"critical:" : "dkh 2/13/2016 10:07",
 		"libraryNamed:" : "dkh 2/13/2016 09:15",
-		"mutex" : "dkh 2/13/2016 10:07" } }
+		"mutex" : "dkh 2/13/2016 10:07",
+		"nbEnd_" : "dkh 2/13/2016 20:04",
+		"nullPtr" : "dkh 2/13/2016 18:19",
+		"oopNumberAtAddress:" : "dkh 2/13/2016 19:42",
+		"oopNumberAtAddress:offset:" : "dkh 2/13/2016 19:42" } }

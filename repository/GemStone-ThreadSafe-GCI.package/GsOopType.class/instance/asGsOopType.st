@@ -1,4 +1,4 @@
 accessing
-asOop
+asGsOopType
 	"This method was automatically generated"
 	^handle

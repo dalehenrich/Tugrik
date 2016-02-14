@@ -1,4 +1,4 @@
-API - common
+API
 apiGciVersion
 "/* GciVersion
  * Will return a 0 terminated string that describes the GCI version.

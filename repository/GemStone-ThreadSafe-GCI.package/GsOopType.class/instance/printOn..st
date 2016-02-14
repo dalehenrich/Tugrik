@@ -1,7 +1,7 @@
 printing
 printOn: aStream
 
-	aStream nextPutAll: 'Oop('.
+	aStream nextPutAll: 'GsOopType('.
 	self asInteger printOn: aStream.
 	aStream nextPut: $).
 	

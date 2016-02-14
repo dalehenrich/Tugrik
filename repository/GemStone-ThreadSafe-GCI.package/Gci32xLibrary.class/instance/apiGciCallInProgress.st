@@ -1,4 +1,4 @@
-API - common
+API
 apiGciCallInProgress
 "/* =============================================================================
  * GciCallInProgress function

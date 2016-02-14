@@ -2,8 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testGciLogin" : "dkh 2/13/2016 10:02",
-		"testGciTsExecuteString1" : "dkh 2/13/2016 17:00",
-		"testGciTsLogin" : "dkh 2/13/2016 10:02",
-		"xtestGciTsExecuteAndFetchResultAsUtf8EncodedString1" : "dkh 2/13/2016 17:38",
-		"xtestGciTsExecuteStringError1" : "dkh 2/13/2016 17:38" } }
+		"testGciExecuteString1" : "dkh 2/13/2016 18:15",
+		"testGciExecuteStringNB1" : "dkh 2/13/2016 19:50",
+		"testGciLogin" : "dkh 2/13/2016 10:02" } }

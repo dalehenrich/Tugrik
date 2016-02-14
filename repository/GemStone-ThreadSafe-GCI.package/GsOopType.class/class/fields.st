@@ -1,8 +1,8 @@
 overrides
 fields
 "
-	(OopType64 defineFields)
+	(GsOopType defineFields)
 "
 
-	^#(asOop 'ulonglong').
+	^#(asGsOopType 'ulonglong').
 	

@@ -6,8 +6,6 @@
 		"NullPtr" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"nbEndAddress",
-		"nbEndAssociation",
 		"mutex" ],
 	"name" : "GciTs32xLibrary",
 	"pools" : [

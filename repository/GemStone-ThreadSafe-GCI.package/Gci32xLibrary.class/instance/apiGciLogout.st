@@ -1,4 +1,4 @@
-API - not thread safe
+API
 apiGciLogout
 "/* =============================================================================
  * GciLogout function

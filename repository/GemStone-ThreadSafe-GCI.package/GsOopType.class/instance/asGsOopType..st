@@ -1,4 +1,4 @@
 accessing
-asOop: anObject
+asGsOopType: anObject
 	"This method was automatically generated"
 	handle := anObject

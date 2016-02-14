@@ -1,4 +1,4 @@
-API - not thread safe
+API
 apiGciLogin: userName a: password
 "/* =============================================================================
  * GciLogin function
