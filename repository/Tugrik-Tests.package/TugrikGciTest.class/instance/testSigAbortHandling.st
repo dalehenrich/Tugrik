@@ -21,7 +21,7 @@ testSigAbortHandling
 			count := count + 1 ].
 	session2 pollForSignal
 		ifFalse: [ self fail: 'expected a pending SigAbort error' ].
-	session2 gciError ]
+	true ifTrue: [session2 gciError] ]
 		ensure: [ 
 			session1
 				executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: ' , oldStnSigAbortCrBacklog printString.
