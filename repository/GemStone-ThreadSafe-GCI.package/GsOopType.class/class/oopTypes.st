@@ -1,4 +1,4 @@
 private
 oopTypes
-	OopTypes ifNil: [ OopTypes := Dictionary new ].
+	OopTypes ifNil: [self initializeOopTypes].
 	^ OopTypes

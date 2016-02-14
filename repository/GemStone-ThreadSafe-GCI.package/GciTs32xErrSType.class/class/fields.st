@@ -25,5 +25,5 @@ public:
 		(fatal 'uchar') 
 		(message 'char' 1025) 
       (reason 'char' 1025)
-      (padding 'char' 76)
+      (padding 'char' 100)
 		)
