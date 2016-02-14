@@ -1,5 +1,5 @@
 tests
-testGciExecuteStringNB1
+testGciNBExecuteString1
 	| session resultOopType limit count resultAssoc |
 	session := TugricGciSession login: GciSessionDescription example.
 	resultOopType := nil.
