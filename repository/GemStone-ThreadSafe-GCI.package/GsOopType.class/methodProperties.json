@@ -1,9 +1,17 @@
 {
 	"class" : {
+		"compileAllFields" : "dkh 2/13/2016 16:24",
 		"fields" : "JGF 12/15/2006 15:24",
 		"fromInteger:" : "dkh 2/13/2016 14:55",
-		"initialize" : "dkh 2/13/2016 14:55" },
+		"initialize" : "dkh 2/13/2016 16:24",
+		"initializeOopTypes" : "dkh 2/13/2016 16:30",
+		"oopClassString" : "dkh 2/13/2016 16:29",
+		"oopClassUtf8" : "dkh 2/13/2016 16:31",
+		"oopIllegal" : "dkh 2/13/2016 16:27",
+		"oopNil" : "dkh 2/13/2016 16:27",
+		"oopTypes" : "dkh 2/13/2016 16:20" },
 	"instance" : {
+		"=" : "dkh 2/13/2016 17:12",
 		"asOop" : "JGF 12/15/2006 15:24",
 		"asOop:" : "JGF 12/15/2006 15:24",
 		"printOn:" : "dkh 2/13/2016 14:55" } }

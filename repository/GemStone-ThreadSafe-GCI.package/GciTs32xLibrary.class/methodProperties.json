@@ -5,6 +5,8 @@
 		"new" : "dkh 2/13/2016 11:58",
 		"nullPtr" : "dkh 2/13/2016 13:59" },
 	"instance" : {
+		"apiGciTsExecute:a:a:a:a:a:a:a:" : "dkh 2/13/2016 17:05",
+		"apiGciTsExecuteFetchBytes:a:a:a:a:a:a:a:a:" : "dkh 2/13/2016 16:17",
 		"apiGciTsGemTrace:a:a:" : "dkh 2/13/2016 11:58",
 		"apiGciTsGetFreeOops:a:a:a:" : "dkh 2/13/2016 15:23",
 		"apiGciTsLogin:a:a:a:a:a:a:a:a:a:" : "dkh 2/13/2016 15:51",

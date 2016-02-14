@@ -3,4 +3,6 @@
 		 },
 	"instance" : {
 		"testGciLogin" : "dkh 2/13/2016 10:02",
+		"testGciTsExecuteAndFetchResultAsUtf8EncodedString1" : "dkh 2/13/2016 16:51",
+		"testGciTsExecuteString1" : "dkh 2/13/2016 17:00",
 		"testGciTsLogin" : "dkh 2/13/2016 10:02" } }

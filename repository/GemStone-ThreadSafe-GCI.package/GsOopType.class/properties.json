@@ -3,12 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"OopTypes" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
 	"name" : "GsOopType",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ExternalStructure",
 	"type" : "normal" }
