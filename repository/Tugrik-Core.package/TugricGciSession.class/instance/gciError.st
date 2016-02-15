@@ -6,4 +6,5 @@ gciError
 		ifFalse: [ 
 			"no error present"
 			^ false ].
-	self halt
+	false
+		ifTrue: [ self halt ]

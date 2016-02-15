@@ -1,5 +1,10 @@
 field definition
 fields
 	"self compileFields"
+	"self byteSize"
 
-	^ #(nil 'void*')
+	false
+		ifTrue: [
+			"use for getting methods defined correctly in referencing data structures" 
+			^ #(nil 'void*') ].
+	^ #(nil 'ulonglong')

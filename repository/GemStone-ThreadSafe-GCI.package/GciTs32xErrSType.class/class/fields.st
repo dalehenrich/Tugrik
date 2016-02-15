@@ -1,6 +1,7 @@
 field definition
 fields
    "self defineFields"
+   "self compileFields"
    "self byteSize"
 	"class GciErrSType {
 public:
@@ -19,10 +20,19 @@ public:
 		(category #GsOopType)
 		(context #GsOopType) 
 		(exceptionObj #GsOopType) 
-		(args #GsOopType 11) 
+		(arg1 #GsOopType) 
+		(arg2 #GsOopType) 
+		(arg3 #GsOopType) 
+		(arg4 #GsOopType) 
+		(arg5 #GsOopType) 
+		(arg6 #GsOopType) 
+		(arg7 #GsOopType) 
+		(arg8 #GsOopType) 
+		(arg9 #GsOopType) 
+		(arg10 #GsOopType) 
 		(number 'long') 
 		(argCount 'long') 
-		(fatal 'uchar') 
+		(fatal 'uchar' 3) 
 		(message 'char' 1025) 
       (reason 'char' 1025)
 		)
