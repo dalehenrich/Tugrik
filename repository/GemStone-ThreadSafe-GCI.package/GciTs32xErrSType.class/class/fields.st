@@ -1,7 +1,7 @@
 field definition
 fields
    "self defineFields"
-   "self new"
+   "self byteSize"
 	"class GciErrSType {
 public:
   OopType       category;                      /* error dictionary       */
@@ -25,5 +25,4 @@ public:
 		(fatal 'uchar') 
 		(message 'char' 1025) 
       (reason 'char' 1025)
-      (padding 'char' 100)
 		)

@@ -1,6 +1,5 @@
-overrides
+field definition
 fields
-	"self compileAllFields"
-	"self new"
+	"self compileFields"
 
-	^ #(nil 'ulonglong') 
+	^ #(nil 'void*')
