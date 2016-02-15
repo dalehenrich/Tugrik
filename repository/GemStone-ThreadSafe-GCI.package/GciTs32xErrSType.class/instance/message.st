@@ -1,3 +1,3 @@
 accessing
 message
-	^handle unsignedCharAt: 116
+	^ (handle copyFrom: 116 to: 116 + 1024) asString copyUpTo: Character null

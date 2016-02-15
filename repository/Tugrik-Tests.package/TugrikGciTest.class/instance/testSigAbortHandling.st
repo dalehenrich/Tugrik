@@ -23,7 +23,9 @@ testSigAbortHandling
 		ifFalse: [ self fail: 'expected a pending SigAbort error' ].
 	gciErrSType := session2 gciError.
 	self assert: gciErrSType notNil.
-	gciErrSType inspect ]
+	self assert: gciErrSType number = 6012. "#rtErrSignalFinishTransaction"
+	self assert: gciErrSType message = 'TransactionBacklog occurred (notification 6012), inTransaction=nil'.
+	 ]
 		ensure: [ 
 			session1
 				executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: ' , oldStnSigAbortCrBacklog printString.
