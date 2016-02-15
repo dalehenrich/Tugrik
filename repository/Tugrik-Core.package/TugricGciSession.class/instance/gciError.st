@@ -5,6 +5,5 @@ gciError
 	(self gciErr: aGciTs32xErrSType)
 		ifFalse: [ 
 			"no error present"
-			^ false ].
-	false
-		ifTrue: [ self halt ]
+			^ nil ].
+	^aGciTs32xErrSType

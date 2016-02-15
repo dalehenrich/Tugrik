@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"fields" : "dkh 2/15/2016 10:31",
+		"fields" : "dkh 2/15/2016 10:57",
 		"fromInteger:" : "dkh 2/13/2016 14:55",
 		"initializeOopTypes" : "dkh 2/14/2016 07:33",
 		"oopClassString" : "dkh 2/13/2016 16:29",
@@ -12,7 +12,7 @@
 		"oopTypes" : "dkh 2/14/2016 12:07" },
 	"instance" : {
 		"=" : "dkh 2/14/2016 06:51",
-		"asInteger" : "dkh 2/14/2016 06:28",
+		"asInteger" : "dkh 2/15/2016 11:24",
 		"asLocalObjectFor:" : "dkh 2/14/2016 07:38",
 		"asLocalObjectFor:ifNotConverted:" : "dkh 2/14/2016 07:29",
 		"asLocalObjectFor:sessionId:ifNotConverted:" : "dkh 2/14/2016 07:20",

@@ -4,7 +4,7 @@ testSigAbortHandling
 	session1 := TugricGciSession login: GciSessionDescription example.
 	session2 := TugricGciSession login: GciSessionDescription example.
 	[ 
-	| oopType |
+	| oopType gciErrSType |
 	oldStnSigAbortCrBacklog := (session1 executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog')
 		asLocalObjectFor: session1.
 	oopType := session1
@@ -21,7 +21,9 @@ testSigAbortHandling
 			count := count + 1 ].
 	session2 pollForSignal
 		ifFalse: [ self fail: 'expected a pending SigAbort error' ].
-	true ifTrue: [session2 gciError] ]
+	gciErrSType := session2 gciError.
+	self assert: gciErrSType notNil.
+	gciErrSType inspect ]
 		ensure: [ 
 			session1
 				executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: ' , oldStnSigAbortCrBacklog printString.
