@@ -1,5 +1,5 @@
 gci api - non-blocking
-nbEnd_OnNotReady: notReadyBlock onProgress: progressBlock onReady: readyBlock onError: errorBlock
+nbEnd_OnNotReady: notReadyBlock onReady: readyBlock onError: errorBlock
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
@@ -13,21 +13,16 @@ nbEnd_OnNotReady: notReadyBlock onProgress: progressBlock onReady: readyBlock on
 			result := lib
 				apiGciSetSessionId: gciSessionNumber;
 				apiGciNbEnd_: nbEndAddress asInteger.
-			^ result = 0
+			^ (result = 0 or: [ result = 1 ])
 				ifTrue: [ 
-					"GCI_RESULT_NOT_READY"
-					notReadyBlock value ]
+					"GCI_RESULT_NOT_READY or GCI_RESULT_PROGRESSED"
+					notReadyBlock value: result = 1]
 				ifFalse: [ 
-					result = 1
+					result = 2
 						ifTrue: [ 
-							"GCI_RESULT_PROGRESSED"
-							progressBlock value ]
+							"GCI_RESULT_READY"
+							readyBlock value: (nbEndAddress unsignedLongAt: 1) asGsOopType ]
 						ifFalse: [ 
-							result = 2
-								ifTrue: [ 
-									"GCI_RESULT_READY"
-									(nbEndAddress unsignedLongAt: 1) asGsOopType ]
-								ifFalse: [ 
-									"GCI_RESULT_HAS_ERROR"
-									"call #gciErr to get error information"
-									errorBlock value ] ] ] ]
+							"GCI_RESULT_HAS_ERROR"
+							"call #gciErr to get error information"
+							errorBlock value ] ] ]

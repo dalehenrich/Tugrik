@@ -10,11 +10,8 @@ testGciNBExecuteString1
 	self assert: session callInProgress.
 	[ 
 	session
-		nbEnd_OnNotReady: [ 
-			"keep polling"
-			false ]
-		onProgress: [ 
-			"keep polling"
+		nbEnd_OnNotReady: [ :progress | 
+			"continue pollihg"
 			false ]
 		onReady: [ :gsOopType | 
 			"got our result"
