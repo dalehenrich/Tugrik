@@ -1,7 +1,7 @@
 tests
 testFetchObjImpl
 	| session |
-	session := TugricGciSession login: GciSessionDescription example.
+	session := TugrikGciSession login: GciSessionDescription example.
 	[ 
 	{('Object new' -> 0).
 	('''str''' -> 1).

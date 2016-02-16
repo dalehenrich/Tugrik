@@ -1,7 +1,7 @@
 tests
 testLocalSpecials
 	| session |
-	session := TugricGciSession login: GciSessionDescription example.
+	session := TugrikGciSession login: GciSessionDescription example.
 	[ 
 	{"specials that need to be handled eventually"
 	"specials that need to be handled eventually"

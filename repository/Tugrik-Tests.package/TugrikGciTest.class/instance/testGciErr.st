@@ -3,7 +3,7 @@ testGciErr
 	"execute without error"
 
 	| session gciErrSType |
-	session := TugricGciSession login: GciSessionDescription example.
+	session := TugrikGciSession login: GciSessionDescription example.
 	[ 
 	gciErrSType := session gciError.
 	self assert: gciErrSType isNil ]

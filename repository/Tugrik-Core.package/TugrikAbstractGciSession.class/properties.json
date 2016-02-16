@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"gciSession" ],
-	"name" : "TugricGciTsSession",
+		"sessionDescription",
+		"gciLibrary",
+		"gciLibraryVersion" ],
+	"name" : "TugrikAbstractGciSession",
 	"pools" : [
 		 ],
-	"super" : "TugricAbstractGciSession",
+	"super" : "Object",
 	"type" : "normal" }

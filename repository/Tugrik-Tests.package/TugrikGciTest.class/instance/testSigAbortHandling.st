@@ -1,8 +1,8 @@
 tests
 testSigAbortHandling
 	| session1 session2 oldStnSigAbortCrBacklog count limit |
-	session1 := TugricGciSession login: GciSessionDescription example.
-	session2 := TugricGciSession login: GciSessionDescription example.
+	session1 := TugrikGciSession login: GciSessionDescription example.
+	session2 := TugrikGciSession login: GciSessionDescription example.
 	[ 
 	| oopType gciErrSType |
 	oldStnSigAbortCrBacklog := (session1 executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog')
