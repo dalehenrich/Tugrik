@@ -1,5 +1,5 @@
 {
-	"category" : "GemStone-GCI-Core-Libraries",
+	"category" : "GemStone-GCI-Core-ThreadSafe-Libraries",
 	"classinstvars" : [
 		 ],
 	"classvars" : [

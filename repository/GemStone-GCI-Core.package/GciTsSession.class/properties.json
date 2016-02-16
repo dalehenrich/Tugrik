@@ -1,5 +1,5 @@
 {
-	"category" : "GemStone-GCI-Core-Objects",
+	"category" : "GemStone-GCI-Core-ThreadSafe-Objects",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
