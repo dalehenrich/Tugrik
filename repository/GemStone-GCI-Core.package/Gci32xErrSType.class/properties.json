@@ -7,7 +7,7 @@
 	"commentStamp" : "dkh 2/15/2016 11:05",
 	"instvars" : [
 		 ],
-	"name" : "GciTs32xErrSType",
+	"name" : "Gci32xErrSType",
 	"pools" : [
 		 ],
 	"super" : "ExternalStructure",
