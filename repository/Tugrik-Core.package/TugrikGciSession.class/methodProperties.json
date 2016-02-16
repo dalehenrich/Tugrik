@@ -4,13 +4,14 @@
 	"instance" : {
 		"bindToGciLibrary" : "dkh 2/13/2016 15:31",
 		"createLocalObjectFrom:ifNotConverted:" : "dkh 2/14/2016 07:25",
+		"executeString:" : "dkh 2/16/2016 10:36",
 		"gciAbort" : "dkh 2/16/2016 08:07",
 		"gciBegin" : "dkh 2/16/2016 08:08",
 		"gciCallInProgress" : "dkh 2/16/2016 08:08",
 		"gciCommit" : "dkh 2/16/2016 08:08",
 		"gciErr:" : "dkh 2/14/2016 09:16",
 		"gciExecuteString:" : "dkh 2/16/2016 08:12",
-		"gciExecuteString:sourceClass:contextObject:symbolList:flags:environmentId:" : "dkh 2/16/2016 09:15",
+		"gciExecuteString:sourceClass:contextObject:symbolList:flags:environmentId:" : "dkh 2/16/2016 10:20",
 		"gciExecuteStringNB:" : "dkh 2/16/2016 08:14",
 		"gciExecuteStringNB:sourceClass:contextObject:symbolList:flags:environmentId:" : "dkh 2/16/2016 08:12",
 		"gciFetchObjImpl:" : "dkh 2/16/2016 08:08",
@@ -25,4 +26,4 @@
 		"isSessionValid" : "dkh 2/13/2016 10:00",
 		"login:" : "dkh 2/13/2016 10:25",
 		"logout" : "dkh 2/13/2016 10:20",
-		"pollForNbResult:" : "dkh 2/16/2016 09:33" } }
+		"pollForNbResult:" : "dkh 2/16/2016 09:56" } }

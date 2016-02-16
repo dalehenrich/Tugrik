@@ -1,5 +1,5 @@
 tests
-testFetchObjImpl
+testGciFetchObjImpl
 	| session |
 	session := TugrikGciSession login: GciSessionDescription example.
 	[ 

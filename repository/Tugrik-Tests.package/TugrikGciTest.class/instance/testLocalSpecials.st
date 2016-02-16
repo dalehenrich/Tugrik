@@ -13,8 +13,7 @@ testLocalSpecials
 	('#[ 1 ]' -> #[1])}.	"specials that need to be handled eventually"	"specials that need to be handled eventually"
 	{('1' -> 1)}
 		do: [ :assoc | 
-			| resultOopType local |
-			resultOopType := session gciExecuteString: assoc key.
-			local := resultOopType asLocalObjectFor: session ifNotConverted: [ self fail: 'Expected a special' ].
+			|  local |
+			local := session executeString: assoc key.
 			self assert: local = assoc value ] ]
 		ensure: [ session logout ]

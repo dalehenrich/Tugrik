@@ -13,4 +13,6 @@ gciExecuteString: source sourceClass: sourceClassOopType contextObject: contextO
 					a: symbolListOopType
 					a: flags
 					a: environmentId.
-			^ result asGsOopType: self ]
+			^ result = 20
+				ifTrue: [ nil asGsOopType: self ]
+				ifFalse: [ result asGsOopType: self ]	]

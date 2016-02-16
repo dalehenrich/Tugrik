@@ -11,4 +11,4 @@ asLocalObjectFor: aGciLibrary sessionId: sessionId ifNotConverted: notConvertedB
 				ifTrue: [ ^ self asLocalByteObj ].
 			type = 3
 				ifTrue: [ ^ self asLocalSpecialObj ].
-			notConvertedBlock value: self ]
+			^ notConvertedBlock cull: self ]

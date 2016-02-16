@@ -4,19 +4,18 @@ testSigAbortHandling
 	session1 := TugrikGciSession login: GciSessionDescription example.
 	session2 := TugrikGciSession login: GciSessionDescription example.
 	[ 
-	| oopType gciErrSType |
-	oldStnSigAbortCrBacklog := (session1 gciExecuteString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog')
-		asLocalObjectFor: session1.
-	oopType := session1
-		gciExecuteString:
+	| gciErrSType |
+	oldStnSigAbortCrBacklog := session1 executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog'.
+	session1
+		executeString:
 			'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: 10.
 	System enableSignaledFinishTransactionError'.
-	oopType := session2 gciExecuteString: 'System enableSignaledFinishTransactionError'.
+	session2 executeString: 'System enableSignaledFinishTransactionError'.
 	count := 0.
 	limit := 20.
 	[ count < limit ]
 		whileTrue: [ 
-			session1 gciExecuteString: 'UserGlobals at:#''TUGRIK_TESTING'' put:Object new. System commit'.
+			session1 executeString: 'UserGlobals at:#''TUGRIK_TESTING'' put:Object new. System commit'.
 			(Delay forMilliseconds: 50) wait.
 			count := count + 1 ].
 	session2 gciPollForSignal
@@ -29,12 +28,12 @@ testSigAbortHandling
 		ifTrue: [ 
 			"STN_COMMIT_RECORD_QUEUE_SIZE and STN_SIGNAL_ABORT_CR_BACKLOG before and after?"
 			session2
-				gciExecuteString:
+				executeString:
 					'System abortTransaction.
 		System enableSignaledFinishTransactionError' ] ]
 		ensure: [ 
 			session1
-				gciExecuteString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: ' , oldStnSigAbortCrBacklog printString.
-			session1 gciExecuteString: 'UserGlobals removeKey:#''TUGRIK_TESTING'' ifAbsent:[]. System commit'.
+				executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: ' , oldStnSigAbortCrBacklog printString.
+			session1 executeString: 'UserGlobals removeKey:#''TUGRIK_TESTING'' ifAbsent:[]. System commit'.
 			session1 logout.
 			session2 logout ]

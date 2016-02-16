@@ -1,5 +1,5 @@
 tests
-testGciErr
+testGetGciErrSType
 	"execute without error"
 
 	| session gciErrSType |
