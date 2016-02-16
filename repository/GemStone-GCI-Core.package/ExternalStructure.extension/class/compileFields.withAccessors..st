@@ -1,4 +1,4 @@
-*GemStone-ThreadSafe-GCI
+*GemStone-GCI-Core
 compileFields: specArray withAccessors: aBool 
 	"Define all the fields in the receiver. 
 	Return the newly compiled spec."

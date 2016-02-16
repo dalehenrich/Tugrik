@@ -1,13 +1,13 @@
 {
-	"category" : "GemStone-ThreadSafe-GCI-Objects",
+	"category" : "GemStone-GCI-Core-Objects",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "dkh 2/15/2016 11:05",
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "GciTs32xErrSType",
+	"name" : "GciTsSession",
 	"pools" : [
 		 ],
 	"super" : "ExternalStructure",

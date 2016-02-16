@@ -1,3 +1,3 @@
-*GemStone-ThreadSafe-GCI
+*GemStone-GCI-Core
 asGsOopType
 	^ GsOopType fromInteger: self

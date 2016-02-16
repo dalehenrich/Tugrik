@@ -1,5 +1,5 @@
 {
-	"category" : "GemStone-ThreadSafe-GCI-SessionDescription",
+	"category" : "GemStone-GCI-Core-SessionDescription",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
