@@ -2,14 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
+		"abort" : "dkh 2/15/2016 16:55",
+		"begin" : "dkh 2/15/2016 16:55",
 		"bindToGciLibrary" : "dkh 2/13/2016 15:31",
-		"callInProgress" : "dkh 2/13/2016 19:24",
+		"callInProgress" : "dkh 2/15/2016 16:55",
+		"commit" : "dkh 2/15/2016 16:55",
 		"createLocalObjectFrom:ifNotConverted:" : "dkh 2/14/2016 07:25",
 		"executeString:" : "dkh 2/13/2016 18:30",
 		"executeString:sourceClass:contextObject:symbolList:flags:environmentId:" : "dkh 2/13/2016 18:32",
 		"executeStringNB:" : "dkh 2/13/2016 19:21",
 		"executeStringNB:sourceClass:contextObject:symbolList:flags:environmentId:" : "dkh 2/13/2016 18:45",
-		"fetchObjImpl" : "dkh 2/14/2016 06:34",
 		"fetchObjImpl:" : "dkh 2/14/2016 06:39",
 		"gciErr:" : "dkh 2/14/2016 09:16",
 		"gciError" : "dkh 2/15/2016 11:11",
@@ -18,5 +20,8 @@
 		"isSessionValid" : "dkh 2/13/2016 10:00",
 		"login:" : "dkh 2/13/2016 10:25",
 		"logout" : "dkh 2/13/2016 10:20",
+		"nbAbort" : "dkh 2/15/2016 17:00",
+		"nbBegin" : "dkh 2/15/2016 17:00",
+		"nbCommit" : "dkh 2/15/2016 17:00",
 		"nbEnd_OnNotReady:onReady:onError:" : "dkh 2/15/2016 16:39",
 		"pollForSignal" : "dkh 2/14/2016 08:43" } }

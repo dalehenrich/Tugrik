@@ -1,8 +1,8 @@
 gci api
-callInProgress
+begin
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
 			^ lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciCallInProgress ]
+				apiGciBegin ]
