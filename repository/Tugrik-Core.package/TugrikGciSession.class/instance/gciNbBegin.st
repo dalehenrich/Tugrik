@@ -1,5 +1,5 @@
 gci api - non-blocking
-nbBegin
+gciNbBegin
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 

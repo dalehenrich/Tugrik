@@ -14,7 +14,7 @@ testLocalSpecials
 	{('1' -> 1)}
 		do: [ :assoc | 
 			| resultOopType local |
-			resultOopType := session executeString: assoc key.
+			resultOopType := session gciExecuteString: assoc key.
 			local := resultOopType asLocalObjectFor: session ifNotConverted: [ self fail: 'Expected a special' ].
 			self assert: local = assoc value ] ]
 		ensure: [ session logout ]

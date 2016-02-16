@@ -4,7 +4,7 @@ xtestGciTsExecuteStringError1
 
 	| session resultOopType |
 	session := TugrikGciTsSession login: GciSessionDescription example.
-	[ resultOopType := session executeString: 'GsFile gciLogServer:''Hello Sailor''. 
+	[ resultOopType := session gciExecuteString: 'GsFile gciLogServer:''Hello Sailor''. 
 	System logout.
 	String' ]
 		ensure: [ session logout ].

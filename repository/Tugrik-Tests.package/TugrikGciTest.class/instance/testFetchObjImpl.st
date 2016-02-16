@@ -9,7 +9,7 @@ testFetchObjImpl
 	('1' -> 3)}
 		do: [ :assoc | 
 			| resultOopType objImpl |
-			resultOopType := session executeString: assoc key.
-			objImpl := session fetchObjImpl: resultOopType.
+			resultOopType := session gciExecuteString: assoc key.
+			objImpl := session gciFetchObjImpl: resultOopType.
 			self assert: objImpl = assoc value ] ]
 		ensure: [ session logout ]

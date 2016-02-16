@@ -1,5 +1,5 @@
 gci api - non-blocking
-executeStringNB: source sourceClass: sourceClassOopType contextObject: contextObjectOopType symbolList: symbolListOopType flags: flags environmentId: environmentId
+gciExecuteStringNB: source sourceClass: sourceClassOopType contextObject: contextObjectOopType symbolList: symbolListOopType flags: flags environmentId: environmentId
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 

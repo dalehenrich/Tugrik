@@ -8,15 +8,15 @@ testGciNBExecuteString2
 	count := 0.
 	done1 := done2 := false.
 	[ 
-	session1 executeStringNB: '(Delay forMilliseconds: 600) wait. String'.
-	self assert: session1 callInProgress.
-	session2 executeStringNB: '(Delay forMilliseconds: 800) wait. Utf8'.
-	self assert: session2 callInProgress.
+	session1 gciExecuteStringNB: '(Delay forMilliseconds: 600) wait. String'.
+	self assert: session1 gciCallInProgress.
+	session2 gciExecuteStringNB: '(Delay forMilliseconds: 800) wait. Utf8'.
+	self assert: session2 gciCallInProgress.
 	[ 
 	done1
 		ifFalse: [ 
 			session1
-				nbEnd_OnNotReady: [ :progress |  ]
+				gciNbEnd_OnNotReady: [ :progress |  ]
 				onReady: [ :gsOopType | 
 					resultOopType1 := gsOopType.
 					done1 := true ]
@@ -24,7 +24,7 @@ testGciNBExecuteString2
 	done2
 		ifFalse: [ 
 			session2
-				nbEnd_OnNotReady: [ :progress |  ]
+				gciNbEnd_OnNotReady: [ :progress |  ]
 				onReady: [ :gsOopType | 
 					resultOopType2 := gsOopType.
 					done2 := true ]

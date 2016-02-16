@@ -1,5 +1,5 @@
 gci api
-executeString: source sourceClass: sourceClassOopType contextObject: contextObjectOopType symbolList: symbolListOopType flags: flags environmentId: environmentId
+gciExecuteString: source sourceClass: sourceClassOopType contextObject: contextObjectOopType symbolList: symbolListOopType flags: flags environmentId: environmentId
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 

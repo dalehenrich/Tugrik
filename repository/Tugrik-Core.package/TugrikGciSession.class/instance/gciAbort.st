@@ -1,8 +1,8 @@
 gci api
-commit
+gciAbort
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
 			^ lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciCommit ]
+				apiGciAbort ]

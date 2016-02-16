@@ -1,5 +1,5 @@
 gci api
-executeAndFetchResultAsUtf8EncodedString: utf8EncodedResultString sourceString: sourceString sourceOopType: sourceOopType contextOopType: contextOopType symbolListOopType: symbolListOopType 
+gciExecuteAndFetchResultAsUtf8EncodedString: utf8EncodedResultString sourceString: sourceString sourceOopType: sourceOopType contextOopType: contextOopType symbolListOopType: symbolListOopType 
 	| aGciTs32xErrSType result  |
 	aGciTs32xErrSType := Gci32xErrSType new.
 	result := self gciLibrary

@@ -1,8 +1,8 @@
-gci api
-callInProgress
+gci api - non-blocking
+gciNbCommit
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
 			^ lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciCallInProgress ]
+				apiGciNbCommit ]

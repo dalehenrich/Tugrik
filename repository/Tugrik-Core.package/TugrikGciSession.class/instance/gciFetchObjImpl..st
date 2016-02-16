@@ -1,5 +1,5 @@
 gci api
-fetchObjImpl: aGsOopType
+gciFetchObjImpl: aGsOopType
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 

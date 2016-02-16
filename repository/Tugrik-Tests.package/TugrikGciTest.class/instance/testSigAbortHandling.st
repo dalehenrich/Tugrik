@@ -5,21 +5,21 @@ testSigAbortHandling
 	session2 := TugrikGciSession login: GciSessionDescription example.
 	[ 
 	| oopType gciErrSType |
-	oldStnSigAbortCrBacklog := (session1 executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog')
+	oldStnSigAbortCrBacklog := (session1 gciExecuteString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog')
 		asLocalObjectFor: session1.
 	oopType := session1
-		executeString:
+		gciExecuteString:
 			'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: 10.
 	System enableSignaledFinishTransactionError'.
-	oopType := session2 executeString: 'System enableSignaledFinishTransactionError'.
+	oopType := session2 gciExecuteString: 'System enableSignaledFinishTransactionError'.
 	count := 0.
 	limit := 20.
 	[ count < limit ]
 		whileTrue: [ 
-			session1 executeString: 'UserGlobals at:#''TUGRIK_TESTING'' put:Object new. System commit'.
+			session1 gciExecuteString: 'UserGlobals at:#''TUGRIK_TESTING'' put:Object new. System commit'.
 			(Delay forMilliseconds: 50) wait.
 			count := count + 1 ].
-	session2 pollForSignal
+	session2 gciPollForSignal
 		ifFalse: [ self fail: 'expected a pending SigAbort error' ].
 	gciErrSType := session2 gciError.
 	self assert: gciErrSType notNil.
@@ -29,12 +29,12 @@ testSigAbortHandling
 		ifTrue: [ 
 			"STN_COMMIT_RECORD_QUEUE_SIZE and STN_SIGNAL_ABORT_CR_BACKLOG before and after?"
 			session2
-				executeString:
+				gciExecuteString:
 					'System abortTransaction.
 		System enableSignaledFinishTransactionError' ] ]
 		ensure: [ 
 			session1
-				executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: ' , oldStnSigAbortCrBacklog printString.
-			session1 executeString: 'UserGlobals removeKey:#''TUGRIK_TESTING'' ifAbsent:[]. System commit'.
+				gciExecuteString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog put: ' , oldStnSigAbortCrBacklog printString.
+			session1 gciExecuteString: 'UserGlobals removeKey:#''TUGRIK_TESTING'' ifAbsent:[]. System commit'.
 			session1 logout.
 			session2 logout ]

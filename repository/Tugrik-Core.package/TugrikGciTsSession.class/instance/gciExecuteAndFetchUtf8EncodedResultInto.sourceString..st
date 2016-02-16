@@ -1,7 +1,7 @@
 gci api
-executeAndFetchUtf8EncodedResultInto: utf8EncodedResultString sourceString: sourceString
+gciExecuteAndFetchUtf8EncodedResultInto: utf8EncodedResultString sourceString: sourceString
 	^ self
-		executeAndFetchResultAsUtf8EncodedString: utf8EncodedResultString
+		gciExecuteAndFetchResultAsUtf8EncodedString: utf8EncodedResultString
 		sourceString: sourceString
 		sourceOopType: GsOopType oopClassString
 		contextOopType: GsOopType oopIllegal

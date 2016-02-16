@@ -1,8 +1,8 @@
-gci api - non-blocking
-nbAbort
+gci api
+gciCallInProgress
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
 			^ lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciNbAbort ]
+				apiGciCallInProgress ]

@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testGciTsExecuteString1" : "dkh 2/15/2016 19:55",
+		"testGciTsExecuteString1" : "dkh 2/16/2016 08:11",
 		"testGciTsLogin" : "dkh 2/15/2016 19:55",
-		"xtestGciTsExecuteAndFetchResultAsUtf8EncodedString1" : "dkh 2/15/2016 19:55",
-		"xtestGciTsExecuteStringError1" : "dkh 2/15/2016 19:55" } }
+		"xtestGciTsExecuteAndFetchResultAsUtf8EncodedString1" : "dkh 2/16/2016 08:17",
+		"xtestGciTsExecuteStringError1" : "dkh 2/16/2016 08:11" } }

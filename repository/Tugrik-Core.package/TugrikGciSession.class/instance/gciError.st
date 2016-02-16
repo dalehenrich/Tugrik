@@ -1,4 +1,4 @@
-gci api - signal handling
+gci api - exception handling
 gciError
 	| aGciTs32xErrSType |
 	aGciTs32xErrSType := Gci32xErrSType new.

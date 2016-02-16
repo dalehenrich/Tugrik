@@ -6,11 +6,11 @@ testGciNBExecuteString1
 	limit := 10.
 	count := 0.
 	[ 
-	session executeStringNB: 'String'.
-	self assert: session callInProgress.
+	session gciExecuteStringNB: 'String'.
+	self assert: session gciCallInProgress.
 	[ 
 	session
-		nbEnd_OnNotReady: [ :progress | 
+		gciNbEnd_OnNotReady: [ :progress | 
 			"continue pollihg"
 			false ]
 		onReady: [ :gsOopType | 

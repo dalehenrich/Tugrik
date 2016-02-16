@@ -1,8 +1,8 @@
-gci api
-begin
+gci api - signal handling
+gciPollForSignal
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
 			^ lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciBegin ]
+				apiGciPollForSignal ]

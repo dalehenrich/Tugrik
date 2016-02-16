@@ -1,7 +1,7 @@
 gci api
-executeString: sourceString
+gciExecuteString: sourceString
 	^ self
-		executeString: sourceString
+		gciExecuteString: sourceString
 		sourceOopType: GsOopType oopClassString
 		contextOopType: GsOopType oopIllegal
 		symbolListOopType: GsOopType oopNil

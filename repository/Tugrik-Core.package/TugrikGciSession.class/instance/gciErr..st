@@ -1,4 +1,4 @@
-gci api - signal handling
+gci api - exception handling
 gciErr: aGciTs32xErrSType
 	self checkSession.
 	self gciLibrary

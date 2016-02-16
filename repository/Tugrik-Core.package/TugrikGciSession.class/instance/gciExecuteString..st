@@ -1,7 +1,7 @@
-gci api - non-blocking
-executeStringNB: source
+gci api
+gciExecuteString: source
 	^ self
-		executeStringNB: source
+		gciExecuteString: source
 		sourceClass: GsOopType oopClassString
 		contextObject: GsOopType oopNoContext
 		symbolList: GsOopType oopNil

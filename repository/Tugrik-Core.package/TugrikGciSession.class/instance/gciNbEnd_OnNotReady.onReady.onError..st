@@ -1,5 +1,5 @@
 gci api - non-blocking
-nbEnd_OnNotReady: notReadyBlock onReady: readyBlock onError: errorBlock
+gciNbEnd_OnNotReady: notReadyBlock onReady: readyBlock onError: errorBlock
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
