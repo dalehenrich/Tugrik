@@ -5,6 +5,6 @@ testGciErr
 	| session gciErrSType |
 	session := TugrikGciSession login: GciSessionDescription example.
 	[ 
-	gciErrSType := session gciError.
+	gciErrSType := session getGciErrSType.
 	self assert: gciErrSType isNil ]
 		ensure: [ session logout ]

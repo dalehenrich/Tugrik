@@ -21,7 +21,7 @@ testSigAbortHandling
 			count := count + 1 ].
 	session2 gciPollForSignal
 		ifFalse: [ self fail: 'expected a pending SigAbort error' ].
-	gciErrSType := session2 gciError.
+	gciErrSType := session2 getGciErrSType.
 	self assert: gciErrSType notNil.
 	self assert: gciErrSType number = 6012.	"#rtErrSignalFinishTransaction"
 	self assert: gciErrSType message = 'TransactionBacklog occurred (notification 6012), inTransaction=nil'.

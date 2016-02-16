@@ -13,4 +13,4 @@ gciExecuteString: source sourceClass: sourceClassOopType contextObject: contextO
 					a: symbolListOopType
 					a: flags
 					a: environmentId.
-			^ result asGsOopType ]
+			^ result asGsOopType: self ]

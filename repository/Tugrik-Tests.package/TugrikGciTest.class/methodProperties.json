@@ -3,10 +3,11 @@
 		 },
 	"instance" : {
 		"testFetchObjImpl" : "dkh 2/16/2016 08:12",
-		"testGciErr" : "dkh 2/15/2016 19:55",
+		"testGciErr" : "dkh 2/16/2016 08:26",
+		"testGciExceptions" : "dkh 2/16/2016 09:36",
 		"testGciExecuteString1" : "dkh 2/16/2016 08:10",
 		"testGciLogin" : "dkh 2/15/2016 19:55",
-		"testGciNBExecuteString1" : "dkh 2/16/2016 08:15",
-		"testGciNBExecuteString2" : "dkh 2/16/2016 08:15",
+		"testGciNBExecuteString1" : "dkh 2/16/2016 09:24",
+		"testGciNBExecuteString2" : "dkh 2/16/2016 09:25",
 		"testLocalSpecials" : "dkh 2/16/2016 08:10",
-		"testSigAbortHandling" : "dkh 2/16/2016 08:15" } }
+		"testSigAbortHandling" : "dkh 2/16/2016 08:26" } }

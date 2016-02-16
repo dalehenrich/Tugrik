@@ -20,7 +20,7 @@ testGciNBExecuteString2
 				onReady: [ :gsOopType | 
 					resultOopType1 := gsOopType.
 					done1 := true ]
-				onError: [ self fail: 'Unexpected Error' ] ].
+				onError: [ :gci32xErrSType | self fail: 'Unexpected error: ' , gci32xErrSType printString ] ].
 	done2
 		ifFalse: [ 
 			session2
@@ -28,7 +28,7 @@ testGciNBExecuteString2
 				onReady: [ :gsOopType | 
 					resultOopType2 := gsOopType.
 					done2 := true ]
-				onError: [ self fail: 'Unexpected Error' ] ].
+				onError: [ :gci32xErrSType | self fail: 'Unexpected error: ' , gci32xErrSType printString ] ].
 	done1 and: [ done2 ] ]
 		whileFalse: [ 
 			count > limit

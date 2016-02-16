@@ -1,0 +1,15 @@
+{
+	"category" : "Tugrik-Core-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tugrikGciSession",
+		"gci32xErrSType" ],
+	"name" : "TugrikGsError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

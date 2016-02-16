@@ -11,7 +11,7 @@ gciExecuteString: sourceString sourceOopType: sourceOopType contextOopType: cont
 		a: flags
 		a: environmentId
 		a: aGciTs32xErrSType.
-	resultOopType := result asGsOopType.
+	resultOopType := result asGsOopType: self.
 	resultOopType = GsOopType oopIllegal
 		ifTrue: [ self gciError: aGciTs32xErrSType ].
 	^ resultOopType

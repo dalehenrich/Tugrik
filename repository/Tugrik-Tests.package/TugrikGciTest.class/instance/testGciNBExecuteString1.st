@@ -17,9 +17,9 @@ testGciNBExecuteString1
 			"got our result"
 			resultOopType := gsOopType.
 			true ]
-		onError: [ 
-			"not supposed to happen - call #gciErr"
-			self fail: 'Unexpected error' ] ]
+		onError: [ :gci32xErrSType | 
+			"not supposed to happen"
+			self fail: 'Unexpected error: ' , gci32xErrSType printString ] ]
 		whileFalse: [ 
 			count > limit
 				ifTrue: [ 
