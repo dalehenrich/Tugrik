@@ -1,8 +1,9 @@
 tests
 testSigAbortHandling
-	| session1 session2 oldStnSigAbortCrBacklog count limit |
+	| session1 session2 oldStnSigAbortCrBacklog count limit session2SessionId |
 	session1 := TugrikGciSession login: GciSessionDescription example.
 	session2 := TugrikGciSession login: GciSessionDescription example.
+	session2SessionId := session2 gciSessionNumber.
 	[ 
 	| gciErrSType |
 	oldStnSigAbortCrBacklog := session1 executeString: 'System stoneConfigurationAt: #StnSignalAbortCrBacklog'.
@@ -19,7 +20,10 @@ testSigAbortHandling
 			(Delay forMilliseconds: 50) wait.
 			count := count + 1 ].
 	session2 gciPollForSignal
-		ifFalse: [ self fail: 'expected a pending SigAbort error' ].
+		ifFalse: [ 
+			(session1 executeString: 'System sessionsReferencingOldestCrInTransaction includes: ' , session2SessionId printString)
+				ifTrue: [ self fail: 'expected a pending SigAbort error' ]
+				ifFalse: [ self halt: 'this is not the session you are looking for' ] ].
 	gciErrSType := session2 getGciErrSType.
 	self assert: gciErrSType notNil.
 	self assert: gciErrSType number = 6012.	"#rtErrSignalFinishTransaction"

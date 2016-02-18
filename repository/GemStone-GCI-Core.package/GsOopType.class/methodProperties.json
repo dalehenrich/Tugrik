@@ -13,8 +13,9 @@
 	"instance" : {
 		"=" : "dkh 2/14/2016 06:51",
 		"asInteger" : "dkh 2/15/2016 11:24",
+		"asLocalFloatObj:" : "dkh 2/18/2016 15:09",
 		"asLocalObjectFor:sessionId:ifNotConverted:" : "dkh 2/16/2016 10:37",
-		"asLocalSpecialObj" : "dkh 2/14/2016 07:34",
+		"asLocalSpecialObj" : "dkh 2/18/2016 15:09",
 		"oopMaxSmallInteger" : "dkh 2/14/2016 07:32",
 		"oopNil" : "dkh 2/14/2016 07:32",
 		"printOn:" : "dkh 2/13/2016 18:12" } }

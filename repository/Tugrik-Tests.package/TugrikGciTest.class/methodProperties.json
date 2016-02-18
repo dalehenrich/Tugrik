@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testExceptions" : "dkh 2/16/2016 10:00",
+		"testExceptions" : "dkh 2/18/2016 12:17",
 		"testGciExecuteString1" : "dkh 2/16/2016 08:10",
 		"testGciFetchObjImpl" : "dkh 2/16/2016 09:59",
 		"testGciLogin" : "dkh 2/15/2016 19:55",
 		"testGciNBExecuteString1" : "dkh 2/16/2016 09:24",
 		"testGciNBExecuteString2" : "dkh 2/16/2016 09:25",
 		"testGetGciErrSType" : "dkh 2/16/2016 10:00",
-		"testLocalSpecials" : "dkh 2/16/2016 10:01",
-		"testSigAbortHandling" : "dkh 2/16/2016 10:42" } }
+		"testLocalSpecials" : "dkh 2/18/2016 15:14",
+		"testSigAbortHandling" : "dkh 2/18/2016 14:43" } }

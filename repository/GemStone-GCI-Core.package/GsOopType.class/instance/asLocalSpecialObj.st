@@ -13,7 +13,7 @@ asLocalSpecialObj
 	(number bitAnd: 2r111) = 2r110
 		ifTrue: [ 
 			"SmallDouble"
-			^ self asLocalFloatObj ].
+			^ self asLocalFloatObj: number ].
 	(number bitAnd: 2r111) = 2r100
 		ifFalse: [ 
 			"illegal tag"
