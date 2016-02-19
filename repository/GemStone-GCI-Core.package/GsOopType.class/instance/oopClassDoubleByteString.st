@@ -1,0 +1,3 @@
+accessing
+oopClassDoubleByteString
+	^ self class oopClassDoubleByteString

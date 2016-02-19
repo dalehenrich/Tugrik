@@ -1,0 +1,3 @@
+accessing
+oopClassDoubleByteSymbol
+	^ self class oopClassDoubleByteSymbol

@@ -3,12 +3,8 @@ testLocalSpecials
 	| session |
 	session := TugrikGciSession login: GciSessionDescription example.
 	[ 
-	{"Objects that still need to be converted directly to local client side objects"
-	('1' -> 1).
-	('3/4' -> (3 / 4)).
-	('''hello world''' -> 'hello world').
-	('''élève en Français''' -> 'élève en Français').
-	('#[ 1 ]' -> #[1])}.	"Objects that still need to be converted directly to local client side objects"
+	{"specials that still need to be converted directly to local client side objects"
+	('3/4' -> (3 / 4))}.	
 	{('1' -> 1).
 	('-1' -> -1).
 	('$a' -> $a).

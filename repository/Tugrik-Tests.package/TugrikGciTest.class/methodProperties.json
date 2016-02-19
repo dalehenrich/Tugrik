@@ -9,5 +9,6 @@
 		"testGciNBExecuteString1" : "dkh 2/16/2016 09:24",
 		"testGciNBExecuteString2" : "dkh 2/16/2016 09:25",
 		"testGetGciErrSType" : "dkh 2/16/2016 10:00",
-		"testLocalSpecials" : "dkh 2/18/2016 15:14",
+		"testLocalByteObjects" : "dkh 2/18/2016 15:21",
+		"testLocalSpecials" : "dkh 2/18/2016 15:21",
 		"testSigAbortHandling" : "dkh 2/18/2016 14:43" } }

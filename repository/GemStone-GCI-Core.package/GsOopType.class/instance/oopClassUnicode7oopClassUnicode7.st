@@ -1,0 +1,3 @@
+accessing
+oopClassUnicode7oopClassUnicode7
+	^ self class oopClassString
