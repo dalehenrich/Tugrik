@@ -1,6 +1,6 @@
-private
-initializeOopTypes
-	"self initializeOopTypes"
+initialization
+initialize
+	"self initialize"
 
 	(OopTypes := Dictionary new)
 		at: #oopNil put: (GsOopType fromInteger: 20);

@@ -2,7 +2,7 @@
 	"class" : {
 		"fields" : "dkh 2/15/2016 10:57",
 		"fromInteger:" : "dkh 2/13/2016 14:55",
-		"initializeOopTypes" : "dkh 2/18/2016 16:15",
+		"initialize" : "dkh 2/19/2016 07:20",
 		"oopClassDoubleByteString" : "dkh 2/18/2016 15:42",
 		"oopClassDoubleByteSymbol" : "dkh 2/18/2016 15:42",
 		"oopClassQuadByteString" : "dkh 2/18/2016 15:42",
@@ -16,7 +16,7 @@
 		"oopMaxSmallInteger" : "dkh 2/14/2016 07:05",
 		"oopNil" : "dkh 2/13/2016 16:27",
 		"oopNoContext" : "dkh 2/13/2016 18:30",
-		"oopTypes" : "dkh 2/14/2016 12:07" },
+		"oopTypes" : "dkh 2/19/2016 07:21" },
 	"instance" : {
 		"=" : "dkh 2/14/2016 06:51",
 		"asInteger" : "dkh 2/15/2016 11:24",
