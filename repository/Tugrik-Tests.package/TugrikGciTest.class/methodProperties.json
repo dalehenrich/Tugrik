@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testExceptions" : "dkh 2/18/2016 12:17",
+		"testExceptions" : "dkh 2/19/2016 10:20",
 		"testGciExecuteString1" : "dkh 2/16/2016 08:10",
 		"testGciFetchObjImpl" : "dkh 2/16/2016 09:59",
 		"testGciLogin" : "dkh 2/15/2016 19:55",
@@ -11,4 +11,4 @@
 		"testGetGciErrSType" : "dkh 2/16/2016 10:00",
 		"testLocalByteObjects" : "dkh 2/18/2016 15:21",
 		"testLocalSpecials" : "dkh 2/18/2016 15:21",
-		"testSigAbortHandling" : "dkh 2/18/2016 16:53" } }
+		"testSigAbortHandling" : "dkh 2/19/2016 11:26" } }
