@@ -17,7 +17,11 @@ baseline: spec
 								repository: 'http://www.smalltalkhub.com/mc/MongoTalkTeam/mongotalk/main' ];
 				yourself.
 			spec
-				package: 'GemStone-GCI-Core' with: [ spec requires: #('FFI') ];
+				package: 'GemStone-GCI-Core'
+					with: [ 
+							spec
+								requires: #('FFI');
+								postLoadDoIt: #initGci32xErrSType ];
 				package: 'Tugrik-Core' with: [ spec requires: 'GemStone-GCI-Core' ];
 				package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'MongoTalk' ];
 				package: 'Tugrik-Tests' with: [ spec requires: 'Tugrik-Core' ];
