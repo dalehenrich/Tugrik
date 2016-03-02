@@ -17,8 +17,7 @@ asLocalSpecialObj
 	(number bitAnd: 2r111) = 2r100
 		ifFalse: [ 
 			"illegal tag"
-			self error: 'Unknown object tag: ' , (number bitAnd: 2r111) printString ].	
-  "true,false, nil, Char"
+			self error: 'Unknown object tag: ' , (number bitAnd: 2r111) printString ].	"true,false, nil, Char"
 	classNumber := number >> 3 bitAnd: 2r11111.
 	number := number >> 8.
 	classNumber = 1
@@ -27,4 +26,6 @@ asLocalSpecialObj
 		ifTrue: [ ^ nil ].	"UndefinedObject"
 	classNumber = 3
 		ifTrue: [ ^ Character value: number ].	"Character"
-	self error
+	classNumber = 5
+		ifTrue: [ ^self asLocalFractionObj ].	"SmallFraction"
+	self error: 'Unknown special object: ' , number printString
