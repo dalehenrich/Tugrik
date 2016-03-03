@@ -1,4 +1,4 @@
-converting
+*Tugrik-Core
 asLocalObjectFor: aTugricGciSession ifNotConverted: notConvertedBlock
 	"we can create local objects for specials and byte objects"
 

@@ -1,3 +1,3 @@
 *Tugrik-Core
-asGsOopType: aTugrikGciSession
+gciResultToGsOopType: aTugrikGciSession
 	^ GsOopType fromInteger: self

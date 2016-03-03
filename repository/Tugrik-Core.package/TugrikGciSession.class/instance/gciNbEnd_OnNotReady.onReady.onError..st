@@ -21,8 +21,8 @@ gciNbEnd_OnNotReady: notReadyBlock onReady: readyBlock onError: errorBlock
 					result = 2
 						ifTrue: [ 
 							"GCI_RESULT_READY"
-							readyBlock value: ((nbEndAddress unsignedLongAt: 1) asGsOopType: self) ]
+							readyBlock value: ((nbEndAddress unsignedLongAt: 1) gciResultToGsOopType: self) ]
 						ifFalse: [ 
 							"GCI_RESULT_HAS_ERROR"
 							"call #gciErr to get error information"
-							errorBlock value: (nil asGsOopType: self) ] ] ]
+							errorBlock value: (nil gciResultToGsOopType: self) ] ] ]

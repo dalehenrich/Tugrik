@@ -1,7 +1,7 @@
-private
+*Tugrik-Core
 asLocalByteObj: aTugricGciSession
 	| class |
-	class := (aTugricGciSession gciLibrary apiGciFetchClass: self) asGsOopType: aTugricGciSession.
+	class := (aTugricGciSession gciLibrary apiGciFetchClass: self) gciResultToGsOopType: aTugricGciSession.
 	class = self oopClassString
 		ifTrue: [ ^ self fetchChars: aTugricGciSession ].
 	class = self oopClassUnicode7
