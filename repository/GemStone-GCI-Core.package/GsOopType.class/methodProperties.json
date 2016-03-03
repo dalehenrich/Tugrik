@@ -2,7 +2,7 @@
 	"class" : {
 		"fields" : "dkh 2/15/2016 10:57",
 		"fromInteger:" : "dkh 2/13/2016 14:55",
-		"initialize" : "dkh 2/19/2016 07:20",
+		"initialize" : "dkh 3/2/2016 20:31",
 		"oopClassDoubleByteString" : "dkh 2/18/2016 15:42",
 		"oopClassDoubleByteSymbol" : "dkh 2/18/2016 15:42",
 		"oopClassQuadByteString" : "dkh 2/18/2016 15:42",
@@ -12,10 +12,12 @@
 		"oopClassUnicode32" : "dkh 2/18/2016 15:43",
 		"oopClassUnicode7" : "dkh 2/18/2016 15:42",
 		"oopClassUtf8" : "dkh 2/13/2016 16:31",
+		"oopFalse" : "dkh 3/2/2016 20:31",
 		"oopIllegal" : "dkh 2/13/2016 16:27",
 		"oopMaxSmallInteger" : "dkh 2/14/2016 07:05",
 		"oopNil" : "dkh 2/13/2016 16:27",
 		"oopNoContext" : "dkh 2/13/2016 18:30",
+		"oopTrue" : "dkh 3/2/2016 20:31",
 		"oopTypes" : "dkh 2/19/2016 07:21" },
 	"instance" : {
 		"=" : "dkh 2/14/2016 06:51",

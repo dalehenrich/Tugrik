@@ -15,5 +15,7 @@ initialize
 		at: #oopClassQuadByteString put: (GsOopType fromInteger: 144385);
 		at: #oopClassQuadByteSymbol put: (GsOopType fromInteger: 144641);
 		at: #oopClassUnicode32 put: (GsOopType fromInteger: 154881);
+		at: #oopTrue put: (GsOopType fromInteger: 268);
+		at: #oopFalse put: (GsOopType fromInteger: 12);
 		at: #oopMaxSmallInteger put: (GsOopType fromInteger: 16r7FFFFFFFFFFFFFFA);
 		yourself
