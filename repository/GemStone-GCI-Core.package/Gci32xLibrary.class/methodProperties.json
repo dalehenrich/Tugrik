@@ -5,6 +5,7 @@
 		"new" : "dkh 2/13/2016 09:12",
 		"nullPtr" : "dkh 2/13/2016 18:19" },
 	"instance" : {
+		"addressOfArrayOfOopsForGsOopTypes:" : "dkh 3/3/2016 10:22",
 		"apiGciAbort" : "dkh 2/15/2016 16:50",
 		"apiGciBegin" : "dkh 2/15/2016 16:53",
 		"apiGciCallInProgress" : "dkh 2/14/2016 08:36",
@@ -31,7 +32,7 @@
 		"apiGciNewByteObj:a:a:" : "dkh 3/3/2016 09:46",
 		"apiGciNewString:" : "dkh 3/3/2016 06:18",
 		"apiGciNewSymbol:" : "dkh 3/3/2016 06:40",
-		"apiGciPerformNoDebug_:a:a:a:a:a:" : "dkh 3/2/2016 19:14",
+		"apiGciPerformNoDebug_:a:a:a:a:a:" : "dkh 3/3/2016 10:07",
 		"apiGciPollForSignal" : "dkh 2/14/2016 08:36",
 		"apiGciSetNet:a:a:a:" : "dkh 2/13/2016 09:42",
 		"apiGciSetSessionId:" : "dkh 2/13/2016 09:48",
@@ -41,4 +42,6 @@
 		"mutex" : "dkh 2/13/2016 10:07",
 		"nullPtr" : "dkh 2/13/2016 18:19",
 		"oopNumberAtAddress:" : "dkh 2/13/2016 19:42",
-		"oopNumberAtAddress:offset:" : "dkh 2/13/2016 19:42" } }
+		"oopNumberAtAddress:offset:" : "dkh 2/13/2016 19:42",
+		"put:in:" : "dkh 3/3/2016 10:23",
+		"sizeInBytesOfOop" : "dkh 3/3/2016 10:21" } }

@@ -1,5 +1,5 @@
 API
-apiGciPerformNoDebug_: receiver a: selector a: args a: numArgs a: flags a: environmentId
+apiGciPerformNoDebug_: receiver a: selectorString a: args a: numArgs a: flags a: environmentId
 "/* =============================================================================
  * GciPerformNoDebug, GciPerformNoDebug_ functions
  *   Send a message to a GemStone object, and possibly debugging.

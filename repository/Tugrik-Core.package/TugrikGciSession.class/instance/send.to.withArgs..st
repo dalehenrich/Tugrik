@@ -1,9 +1,12 @@
 api
-send: selector to: receiverOopType withArgs: args
-	| arrayOfArgOopTypes |
-	self
+send: selector to: receiver withArgs: args
+	| receiverOopType arrayOfGsOopTypes result |
+	receiverOopType := receiver localObjectToGciOopType: self.
+	arrayOfGsOopTypes := args collect: [ :each | each localObjectToGciOopType: self ].
+	result := self
 		gciPerform: receiverOopType
 		selector: selector
-		args: arrayOfArgOopTypes
+		args: arrayOfGsOopTypes
 		flags: 0
-		environmentId: 0
+		environmentId: 0.
+	^ result asLocalObjectFor: self

@@ -1,15 +1,16 @@
 gci api
-gciPerform: receiverOopType selector: selector args: arrayOfArgOopTypes flags: flags environmentId: environmentId
+gciPerform: receiverOopType selector: selector args: arrayOfGsOopTypes flags: flags environmentId: environmentId
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
-			| result |
+			| result address |
 			lib apiGciSetSessionId: gciSessionNumber.
+			address := lib addressOfArrayOfOopsForGsOopTypes: arrayOfGsOopTypes.
 			result := lib
 				apiGciPerformNoDebug_: receiverOopType
-				a: selector
-				a: arrayOfArgOopTypes
-				a: arrayOfArgOopTypes size
+				a: selector asString
+				a: address asInteger
+				a: arrayOfGsOopTypes size
 				a: flags
 				a: environmentId.
 			^ result = 20
