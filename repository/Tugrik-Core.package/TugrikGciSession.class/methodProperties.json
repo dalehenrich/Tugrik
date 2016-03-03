@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addressOfArrayOfOopsForObjects:" : "dkh 2/20/2016 12:26",
 		"bindToGciLibrary" : "dkh 2/13/2016 15:31",
 		"createLocalObjectFrom:ifNotConverted:" : "dkh 2/18/2016 15:26",
 		"executeString:" : "dkh 2/16/2016 10:36",
@@ -19,6 +20,7 @@
 		"gciNbBegin" : "dkh 2/16/2016 08:13",
 		"gciNbCommit" : "dkh 2/16/2016 08:13",
 		"gciNbEnd_OnNotReady:onReady:onError:" : "dkh 2/16/2016 09:20",
+		"gciPerform:selector:args:flags:environmentId:" : "dkh 2/20/2016 12:24",
 		"gciPollForSignal" : "dkh 2/16/2016 08:15",
 		"gciSessionNumber" : "dkh 2/13/2016 09:57",
 		"gciSessionNumber:" : "dkh 2/13/2016 09:57",
@@ -26,4 +28,6 @@
 		"isSessionValid" : "dkh 2/13/2016 10:00",
 		"login:" : "dkh 2/13/2016 10:25",
 		"logout" : "dkh 2/13/2016 10:20",
-		"pollForNbResult:" : "dkh 2/16/2016 09:56" } }
+		"pollForNbResult:" : "dkh 2/16/2016 09:56",
+		"send:to:withArgs:" : "dkh 2/20/2016 10:48",
+		"sizeInBytesForOop" : "dkh 2/20/2016 12:26" } }
