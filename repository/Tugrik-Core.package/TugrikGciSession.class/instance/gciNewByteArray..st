@@ -1,10 +1,10 @@
 gci api
-gciI64ToOop: anInteger
+gciNewByteArray: aByteArray
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
 			| result |
 			result := lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciI64ToOop: anInteger.
+				apiGciNewByteObj: GsOopType oopClassByteArray a: aByteArray a: aByteArray size.
 			^ result gciResultToGsOopType: self ]

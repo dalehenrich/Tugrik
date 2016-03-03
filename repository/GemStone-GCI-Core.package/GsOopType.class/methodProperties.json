@@ -2,7 +2,8 @@
 	"class" : {
 		"fields" : "dkh 2/15/2016 10:57",
 		"fromInteger:" : "dkh 2/13/2016 14:55",
-		"initialize" : "dkh 3/2/2016 20:31",
+		"initialize" : "dkh 3/3/2016 07:20",
+		"oopClassByteArray" : "dkh 3/3/2016 07:20",
 		"oopClassDoubleByteString" : "dkh 2/18/2016 15:42",
 		"oopClassDoubleByteSymbol" : "dkh 2/18/2016 15:42",
 		"oopClassQuadByteString" : "dkh 2/18/2016 15:42",

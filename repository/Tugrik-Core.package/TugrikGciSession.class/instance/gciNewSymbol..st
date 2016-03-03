@@ -1,10 +1,10 @@
 gci api
-gciI64ToOop: anInteger
+gciNewSymbol: aByteSymbol
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
 			| result |
 			result := lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciI64ToOop: anInteger.
+				apiGciNewSymbol: aByteSymbol.
 			^ result gciResultToGsOopType: self ]

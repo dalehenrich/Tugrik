@@ -18,4 +18,6 @@ asLocalByteObj: aTugricGciSession
 		ifTrue: [ ^ self fetchQuadByteChars: aTugricGciSession ].
 	class = self oopClassUnicode32
 		ifTrue: [ ^ self fetchQuadByteChars: aTugricGciSession ].
-	^ self fetchBytes: aTugricGciSession
+	class = self oopClassByteArray
+		ifTrue: [ ^ self fetchBytes: aTugricGciSession ].
+	self error: 'Unsupported gci byte class ' , class printString

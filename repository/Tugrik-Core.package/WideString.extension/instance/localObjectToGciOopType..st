@@ -1,3 +1,3 @@
 *Tugrik-Core
 localObjectToGciOopType: aTugricGciSession
-	^ aTugricGciSession gciNewByteArray: self
+	^ aTugricGciSession gciNewWideString: self
