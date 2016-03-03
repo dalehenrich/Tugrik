@@ -6,5 +6,5 @@ gciNewSymbol: aByteSymbol
 			| result |
 			result := lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciNewSymbol: aByteSymbol.
+				apiGciNewSymbol: aByteSymbol asString.
 			^ result gciResultToGsOopType: self ]

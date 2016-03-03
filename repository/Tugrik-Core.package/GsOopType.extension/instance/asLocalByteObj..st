@@ -16,6 +16,8 @@ asLocalByteObj: aTugricGciSession
 		ifTrue: [ ^ (self fetchDoubleByteChars: aTugricGciSession) asSymbol ].
 	class = self oopClassQuadByteString
 		ifTrue: [ ^ self fetchQuadByteChars: aTugricGciSession ].
+	class = self oopClassQuadByteSymbol
+		ifTrue: [ ^ (self fetchQuadByteChars: aTugricGciSession) asSymbol ].
 	class = self oopClassUnicode32
 		ifTrue: [ ^ self fetchQuadByteChars: aTugricGciSession ].
 	class = self oopClassByteArray

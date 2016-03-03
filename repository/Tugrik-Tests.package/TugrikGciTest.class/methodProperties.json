@@ -9,10 +9,9 @@
 		"testGciNBExecuteString1" : "dkh 2/16/2016 09:24",
 		"testGciNBExecuteString2" : "dkh 2/16/2016 09:25",
 		"testGetGciErrSType" : "dkh 2/16/2016 10:00",
-		"testLocalByteObjects" : "dkh 3/3/2016 06:36",
+		"testLocalByteObjects" : "dkh 2/18/2016 15:21",
 		"testLocalByteObjectsToGciOopType" : "dkh 3/3/2016 07:09",
 		"testLocalSpecialObjectsToGciOopType" : "dkh 3/2/2016 20:33",
 		"testLocalSpecials" : "dkh 3/2/2016 14:45",
-		"testLocalWideStringObject" : "dkh 3/3/2016 07:29",
 		"testSigAbortHandling" : "dkh 2/19/2016 11:26",
 		"testSigAbortHandlingNew" : "dkh 3/2/2016 19:39" } }
