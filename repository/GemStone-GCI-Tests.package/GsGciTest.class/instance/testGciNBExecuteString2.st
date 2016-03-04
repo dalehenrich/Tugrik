@@ -36,8 +36,8 @@ testGciNBExecuteString2
 					self fail: 'Timed out'.
 					count := count + 1 ].
 			(Delay forMilliseconds: 250) wait ].
-	self assert: resultOopType1 = GsOopType oopClassString.
-	self assert: resultOopType2 = GsOopType oopClassUtf8 ]
+	self assert: resultOopType1 = GsGciOopType oopClassString.
+	self assert: resultOopType2 = GsGciOopType oopClassUtf8 ]
 		ensure: [ 
 			session1 logout.
 			session2 logout ]

@@ -27,4 +27,4 @@ testGciNBExecuteString1
 					count := count + 1 ].
 			(Delay forMilliseconds: 250) wait ] ]
 		ensure: [ session logout ].
-	self assert: resultOopType = GsOopType oopClassString
+	self assert: resultOopType = GsGciOopType oopClassString

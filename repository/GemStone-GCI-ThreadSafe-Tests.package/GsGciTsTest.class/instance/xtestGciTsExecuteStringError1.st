@@ -8,4 +8,4 @@ xtestGciTsExecuteStringError1
 	System logout.
 	String' ]
 		ensure: [ session logout ].
-	self assert: resultOopType = GsOopType oopClassString
+	self assert: resultOopType = GsGciOopType oopClassString

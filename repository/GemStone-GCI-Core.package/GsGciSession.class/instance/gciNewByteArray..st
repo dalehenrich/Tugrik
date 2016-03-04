@@ -6,5 +6,5 @@ gciNewByteArray: aByteArray
 			| result |
 			result := lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciNewByteObj: GsOopType oopClassByteArray a: aByteArray a: aByteArray size.
+				apiGciNewByteObj: GsGciOopType oopClassByteArray a: aByteArray a: aByteArray size.
 			^ result gciResultToGsOopType: self ]

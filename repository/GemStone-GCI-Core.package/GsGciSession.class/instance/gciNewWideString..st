@@ -8,5 +8,5 @@ gciNewWideString: aWideString
 			| result |
 			result := lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciNewByteObj: GsOopType oopClassQuadByteString a: byteArray a: byteArray size.
+				apiGciNewByteObj: GsGciOopType oopClassQuadByteString a: byteArray a: byteArray size.
 			^ result gciResultToGsOopType: self ]

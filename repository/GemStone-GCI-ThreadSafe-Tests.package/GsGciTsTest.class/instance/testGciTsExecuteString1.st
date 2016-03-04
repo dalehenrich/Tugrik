@@ -4,4 +4,4 @@ testGciTsExecuteString1
 	session := GsGciTsSession login: GsGciSessionDescription example.
 	[ resultOopType := session gciExecuteString: 'String' ]
 		ensure: [ session logout ].
-	self assert: resultOopType = GsOopType oopClassString
+	self assert: resultOopType = GsGciOopType oopClassString

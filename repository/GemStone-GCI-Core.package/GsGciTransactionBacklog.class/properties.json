@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tugrikGciSession",
+		"gciSession",
 		"gci32xErrSType" ],
 	"name" : "GsGciTransactionBacklog",
 	"pools" : [

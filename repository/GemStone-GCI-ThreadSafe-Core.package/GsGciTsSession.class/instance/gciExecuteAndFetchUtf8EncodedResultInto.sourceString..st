@@ -3,6 +3,6 @@ gciExecuteAndFetchUtf8EncodedResultInto: utf8EncodedResultString sourceString: s
 	^ self
 		gciExecuteAndFetchResultAsUtf8EncodedString: utf8EncodedResultString
 		sourceString: sourceString
-		sourceOopType: GsOopType oopClassString
-		contextOopType: GsOopType oopIllegal
-		symbolListOopType: GsOopType oopNil
+		sourceOopType: GsGciOopType oopClassString
+		contextOopType: GsGciOopType oopIllegal
+		symbolListOopType: GsGciOopType oopNil

@@ -2,8 +2,8 @@ gci api
 gciExecuteString: sourceString
 	^ self
 		gciExecuteString: sourceString
-		sourceOopType: GsOopType oopClassString
-		contextOopType: GsOopType oopIllegal
-		symbolListOopType: GsOopType oopNil
+		sourceOopType: GsGciOopType oopClassString
+		contextOopType: GsGciOopType oopIllegal
+		symbolListOopType: GsGciOopType oopNil
 		flags: 0
 		environmentId: 0
