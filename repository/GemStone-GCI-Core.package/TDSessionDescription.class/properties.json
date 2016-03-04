@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Core-SessionDescription",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TDSessionDescription",
+	"pools" : [
+		 ],
+	"super" : "GsGciSessionDescription",
+	"type" : "normal" }

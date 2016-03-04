@@ -1,0 +1,15 @@
+{
+	"category" : "Tugrik-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"root",
+		"query" ],
+	"name" : "TugrikCursor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

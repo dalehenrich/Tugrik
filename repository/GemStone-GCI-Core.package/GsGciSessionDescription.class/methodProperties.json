@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"example" : "dkh 2/13/2016 08:09" },
+		"example" : "dkh 2/13/2016 08:09",
+		"importFrom:" : "dkh 3/4/2016 10:46" },
 	"instance" : {
 		"defaultGemHost" : "dkh 2/13/2016 07:45",
 		"defaultGemTask" : "dkh 2/13/2016 07:45",
@@ -24,6 +25,7 @@
 		"gemTask:" : "dkh 2/13/2016 07:42",
 		"gemstoneVersion" : "dkh 2/13/2016 07:42",
 		"gemstoneVersion:" : "dkh 2/13/2016 07:42",
+		"login" : "dkh 3/4/2016 11:44",
 		"name" : "dkh 2/13/2016 07:42",
 		"name:" : "dkh 2/13/2016 07:42",
 		"netLDI" : "dkh 2/13/2016 07:42",

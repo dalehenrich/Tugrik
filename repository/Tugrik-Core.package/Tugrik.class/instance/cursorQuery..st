@@ -2,6 +2,6 @@ private-communicating
 cursorQuery: aQuery
 	(QueryOperation 
 		id: self nextRequestID
-		session: session
+		stream: stream
 		query: aQuery)
-			write
+			performTugrikOperationOn: self

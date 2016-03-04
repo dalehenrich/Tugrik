@@ -1,0 +1,16 @@
+{
+	"category" : "Tugrik-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"collection",
+		"root",
+		"database" ],
+	"name" : "TugrikTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

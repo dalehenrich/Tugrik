@@ -1,14 +1,18 @@
 {
 	"class" : {
 		"ascending" : "dkh 2/11/2016 19:55",
-		"default" : "dkh 2/11/2016 19:55",
-		"default:" : "dkh 2/12/2016 14:33",
+		"default" : "dkh 3/4/2016 11:41",
+		"default:" : "dkh 3/4/2016 11:05",
+		"defaultGciSessionDescription" : "dkh 3/4/2016 11:21",
+		"defaultGciSessionDescription:" : "dkh 3/4/2016 11:13",
+		"defaultGciSessionDescriptionFileReference" : "dkh 3/4/2016 11:20",
+		"defaultGciSessionDescriptionFileReference:" : "dkh 3/4/2016 11:21",
 		"descending" : "dkh 2/11/2016 19:55",
 		"sessionDescription:" : "dkh 2/12/2016 14:36" },
 	"instance" : {
 		"close" : "dkh 2/12/2016 14:42",
 		"command:database:" : "dkh 2/11/2016 19:55",
-		"cursorQuery:" : "dkh 2/12/2016 14:42",
+		"cursorQuery:" : "dkh 3/4/2016 13:54",
 		"databaseNamed:" : "dkh 2/11/2016 19:55",
 		"databases" : "dkh 2/11/2016 19:55",
 		"delete:collection:" : "dkh 2/12/2016 14:43",
@@ -19,11 +23,9 @@
 		"nextRequestID" : "dkh 2/11/2016 19:55",
 		"open" : "dkh 2/12/2016 14:41",
 		"printOn:" : "dkh 2/12/2016 14:40",
-		"query:" : "dkh 2/11/2016 19:55",
-		"queryOne:" : "dkh 2/11/2016 19:55",
+		"query:" : "dkh 3/4/2016 13:43",
+		"queryOne:" : "dkh 3/4/2016 13:43",
 		"session" : "dkh 2/12/2016 14:43",
-		"session:" : "dkh 2/12/2016 14:47",
 		"sessionDescription" : "dkh 2/12/2016 14:37",
-		"sessionDescription:" : "dkh 2/12/2016 14:37",
-		"update:with:collection:" : "dkh 2/12/2016 14:44",
-		"username:password:database:" : "dkh 2/12/2016 14:46" } }
+		"sessionDescription:" : "dkh 3/4/2016 11:52",
+		"update:with:collection:" : "dkh 2/12/2016 14:44" } }

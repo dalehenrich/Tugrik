@@ -1,9 +1,11 @@
 {
-	"category" : "Tugrik-Core-MongoAPI",
+	"category" : "Tugrik-Core-Base",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Default" ],
+		"Default",
+		"DefaultGciSessionDescription",
+		"DefaultGciSessionDescriptionFileReference" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"sessionDescription",
