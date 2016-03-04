@@ -3,7 +3,7 @@ testSigAbortHandlingNew
 	| session1 session2 gciTestServerClassOopType oldStnSigAbortCrBacklog retryLimit retryCount results |
 	session1 := GsGciSession login: GsGciSessionDescription example.
 	session2 := GsGciSession login: GsGciSessionDescription example.
-	gciTestServerClassOopType := session1 executeString: 'TugrikGciTestServerObj'.
+	gciTestServerClassOopType := session1 executeString: 'GsGciTestServerObj'.
 	[ 
 	| session2SessionId session1SessionId gciErrSType session2SigAbort |
 	session1SessionId := session1 send: #enableSignaledFinishTransactionErrorAndGetSessionId to: gciTestServerClassOopType.
