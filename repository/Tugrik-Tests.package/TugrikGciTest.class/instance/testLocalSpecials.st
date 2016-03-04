@@ -1,7 +1,7 @@
 tests
 testLocalSpecials
 	| session |
-	session := TugrikGciSession login: GsGciSessionDescription example.
+	session := GsGciSession login: GsGciSessionDescription example.
 	[ 
 	{('3/4' -> (3 / 4)).
 	('-3/4' -> (-3 / 4)).

@@ -1,0 +1,15 @@
+{
+	"category" : "GemStone-GCI-Core-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tugrikGciSession",
+		"gci32xErrSType" ],
+	"name" : "GsGciTransactionBacklog",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

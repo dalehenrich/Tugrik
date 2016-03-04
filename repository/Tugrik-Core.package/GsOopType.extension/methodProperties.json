@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"asLocalByteObj:" : "dkh 3/3/2016 09:54",
-		"asLocalObjectFor:" : "dkh 2/14/2016 07:38",
-		"asLocalObjectFor:ifNotConverted:" : "dkh 2/18/2016 15:28",
-		"localObjectToGciOopType:" : "dkh 3/2/2016 19:53" } }

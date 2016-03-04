@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-ThreadSafe-Core-Session",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"gciSession" ],
+	"name" : "GsGciTsSession",
+	"pools" : [
+		 ],
+	"super" : "GsGciCommonSession",
+	"type" : "normal" }

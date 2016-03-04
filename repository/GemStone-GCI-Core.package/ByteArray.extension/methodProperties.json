@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"localObjectToGciOopType:" : "dkh 3/3/2016 07:24",
 		"unsignedLongLongAt:" : "dkh 2/15/2016 11:21",
 		"unsignedLongLongAt:put:" : "dkh 2/15/2016 11:20" } }

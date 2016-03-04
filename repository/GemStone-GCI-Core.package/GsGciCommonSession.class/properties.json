@@ -1,0 +1,16 @@
+{
+	"category" : "GemStone-GCI-Core-Session",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sessionDescription",
+		"gciLibrary",
+		"gciLibraryVersion" ],
+	"name" : "GsGciCommonSession",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

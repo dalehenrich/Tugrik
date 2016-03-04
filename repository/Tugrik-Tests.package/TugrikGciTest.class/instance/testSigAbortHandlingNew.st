@@ -1,8 +1,8 @@
 tests
 testSigAbortHandlingNew
 	| session1 session2 gciTestServerClassOopType oldStnSigAbortCrBacklog retryLimit retryCount results |
-	session1 := TugrikGciSession login: GsGciSessionDescription example.
-	session2 := TugrikGciSession login: GsGciSessionDescription example.
+	session1 := GsGciSession login: GsGciSessionDescription example.
+	session2 := GsGciSession login: GsGciSessionDescription example.
 	gciTestServerClassOopType := session1 executeString: 'TugrikGciTestServerObj'.
 	[ 
 	| session2SessionId session1SessionId gciErrSType session2SigAbort |

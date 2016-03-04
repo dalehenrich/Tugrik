@@ -1,8 +1,8 @@
 tests
 testGciNBExecuteString2
 	| session1 session2 resultOopType1 resultOopType2 limit count done1 done2 |
-	session1 := TugrikGciSession login: GsGciSessionDescription example.
-	session2 := TugrikGciSession login: GsGciSessionDescription example.
+	session1 := GsGciSession login: GsGciSessionDescription example.
+	session2 := GsGciSession login: GsGciSessionDescription example.
 	resultOopType1 := resultOopType2 := nil.
 	limit := 100.
 	count := 0.
