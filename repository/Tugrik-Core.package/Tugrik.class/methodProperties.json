@@ -16,6 +16,7 @@
 		"databaseNamed:" : "dkh 2/11/2016 19:55",
 		"databases" : "dkh 2/11/2016 19:55",
 		"delete:collection:" : "dkh 2/12/2016 14:43",
+		"deleteOperation:collectionBytes:dataBytes:" : "dkh 3/4/2016 15:32",
 		"getMore:collection:chunkSize:" : "dkh 2/12/2016 14:43",
 		"insert:collection:" : "dkh 2/12/2016 14:43",
 		"isAvailable" : "dkh 2/11/2016 19:55",
@@ -25,7 +26,9 @@
 		"printOn:" : "dkh 2/12/2016 14:40",
 		"query:" : "dkh 3/4/2016 13:43",
 		"queryOne:" : "dkh 3/4/2016 13:43",
+		"queryOperation:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 3/4/2016 15:32",
 		"session" : "dkh 2/12/2016 14:43",
 		"sessionDescription" : "dkh 2/12/2016 14:37",
 		"sessionDescription:" : "dkh 3/4/2016 11:52",
-		"update:with:collection:" : "dkh 2/12/2016 14:44" } }
+		"update:with:collection:" : "dkh 2/12/2016 14:44",
+		"updateOperation:collectionBytes:dataBytes:" : "dkh 3/4/2016 15:32" } }
