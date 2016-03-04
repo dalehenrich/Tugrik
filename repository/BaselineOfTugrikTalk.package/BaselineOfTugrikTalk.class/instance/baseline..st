@@ -6,9 +6,10 @@ baseline: spec
     do: [ 
       spec
         baseline: 'Ston'
-          with: [ spec 
-	                 loads: 'Core';
-	                 repository: 'github://GsDevKit/ston:v0.9.4/repository' ];
+          with: [ 
+              spec
+                loads: 'Core';
+                repository: 'github://GsDevKit/ston:v0.9.4/repository' ];
         configuration: 'FFI'
           with: [ 
               spec
@@ -50,9 +51,11 @@ baseline: spec
         package: 'Tugrik-Server-Core';
         package: 'Tugrik-Server-Tests'
           with: [ spec requires: #('Tugrik-Server-Core') ];
+        package: 'GemStone-GCI-Server-Tests';
         yourself.
       spec
         group: 'default' with: #('Server');
         group: 'Server' with: #('Tugrik-Server-Core');
-        group: 'Tests' with: #('Tugrik-Server-Tests');
+        group: 'Tests'
+          with: #('Tugrik-Server-Tests' 'GemStone-GCI-Server-Tests');
         yourself ]
