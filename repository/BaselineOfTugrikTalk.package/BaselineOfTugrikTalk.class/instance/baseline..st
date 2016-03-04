@@ -5,6 +5,10 @@ baseline: spec
     for: #'pharo'
     do: [ 
       spec
+        baseline: 'Ston'
+          with: [ spec 
+	                 loads: 'Core';
+	                 repository: 'github://GsDevKit/ston:v0.9.4/repository' ];
         configuration: 'FFI'
           with: [ 
               spec
@@ -21,14 +25,14 @@ baseline: spec
         package: 'GemStone-GCI-Core'
           with: [ 
               spec
-                requires: #('FFI');
+                requires: #('FFI' 'Ston');
                 postLoadDoIt: #'initGci32xErrSType' ];
         package: 'GemStone-GCI-Tests'
           with: [ spec requires: 'GemStone-GCI-Core' ];
         package: 'GemStone-GCI-ThreadSafe-Core'
           with: [ spec requires: 'GemStone-GCI-Core' ];
         package: 'GemStone-GCI-ThreadSafe-Tests'
-          with: [ spec requires: 'GemStone-GCI-ThreadSafe' ];
+          with: [ spec requires: 'GemStone-GCI-ThreadSafe-Core' ];
         package: 'Tugrik-Core' with: [ spec requires: 'GemStone-GCI-Core' ];
         package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'MongoTalk' ];
         package: 'Tugrik-Tests' with: [ spec requires: 'Tugrik-Core' ];
@@ -46,11 +50,9 @@ baseline: spec
         package: 'Tugrik-Server-Core';
         package: 'Tugrik-Server-Tests'
           with: [ spec requires: #('Tugrik-Server-Core') ];
-        package: 'GemStone-GCI-Server-Tests';
         yourself.
       spec
         group: 'default' with: #('Server');
         group: 'Server' with: #('Tugrik-Server-Core');
-        group: 'Tests'
-          with: #('Tugrik-Server-Tests' 'GemStone-GCI-Server-Tests');
+        group: 'Tests' with: #('Tugrik-Server-Tests');
         yourself ]
