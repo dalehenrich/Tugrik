@@ -1,0 +1,4 @@
+sigabort test
+enableSignaledFinishTransactionErrorAndGetSessionId
+  System enableSignaledFinishTransactionError.
+  ^ System session

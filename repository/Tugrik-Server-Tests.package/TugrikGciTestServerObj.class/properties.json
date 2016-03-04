@@ -1,0 +1,14 @@
+{
+	"category" : "Tugrik-Server-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TugrikGciTestServerObj",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
