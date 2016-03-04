@@ -1,8 +1,8 @@
 tests
 testSigAbortHandling
 	| session1 session2 oldStnSigAbortCrBacklog count limit session2SessionId session1SessionId retryLimit retryCount results |
-	session1 := TugrikGciSession login: GciSessionDescription example.
-	session2 := TugrikGciSession login: GciSessionDescription example.
+	session1 := TugrikGciSession login: GsGciSessionDescription example.
+	session2 := TugrikGciSession login: GsGciSessionDescription example.
 	session1SessionId := session1 executeString: 'System session'.
 	session2SessionId := session2 executeString: 'System session'.
 	[ 

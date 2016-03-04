@@ -1,7 +1,7 @@
 tests
 testExceptions
 	| session |
-	session := TugrikGciSession login: GciSessionDescription example.
+	session := TugrikGciSession login: GsGciSessionDescription example.
 	[ 
 	| result |
 	result := session executeString: '1'.

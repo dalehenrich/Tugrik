@@ -1,7 +1,7 @@
 private
 bindToGciLibrary
 	| libraryClass library libName ext versionBuf gsProdId |
-	libraryClass := GciTs32xLibrary withAllSubclasses
+	libraryClass := GsGciTs32xLibrary withAllSubclasses
 		detect: [ :each | each isClassForVersion: sessionDescription gemstoneVersion ].
 	libName := sessionDescription gciTsLibraryName.
 	ext := self gciLibraryExtension.

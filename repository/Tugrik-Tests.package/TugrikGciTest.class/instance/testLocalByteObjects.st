@@ -1,7 +1,7 @@
 tests
 testLocalByteObjects
 	| session |
-	session := TugrikGciSession login: GciSessionDescription example.
+	session := TugrikGciSession login: GsGciSessionDescription example.
 	[ 
 	{('''hello world''' -> 'hello world').
 	('''élève en Français''' -> 'élève en Français').

@@ -21,7 +21,7 @@
 		"gemstoneVersion",
 		"gciLibraryName",
 		"gciTsLibraryName" ],
-	"name" : "GciSessionDescription",
+	"name" : "GsGciSessionDescription",
 	"pools" : [
 		 ],
 	"super" : "Object",

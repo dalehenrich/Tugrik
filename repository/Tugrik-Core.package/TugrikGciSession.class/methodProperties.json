@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"addressOfArrayOfOopsForObjects:" : "dkh 2/20/2016 12:26",
-		"bindToGciLibrary" : "dkh 2/13/2016 15:31",
+		"bindToGciLibrary" : "dkh 3/4/2016 09:17",
 		"bytesForWideString:" : "dkh 3/3/2016 06:57",
 		"createLocalObjectFrom:ifNotConverted:" : "dkh 2/18/2016 15:26",
 		"executeString:" : "dkh 2/16/2016 10:36",
@@ -31,7 +31,7 @@
 		"gciPollForSignal" : "dkh 2/16/2016 08:15",
 		"gciSessionNumber" : "dkh 2/13/2016 09:57",
 		"gciSessionNumber:" : "dkh 2/13/2016 09:57",
-		"getGciErrSType" : "dkh 2/16/2016 08:57",
+		"getGciErrSType" : "dkh 3/4/2016 09:17",
 		"isSessionValid" : "dkh 2/13/2016 10:00",
 		"login:" : "dkh 2/13/2016 10:25",
 		"logout" : "dkh 2/13/2016 10:20",

@@ -2,7 +2,7 @@ tests
 xtestGciTsExecuteAndFetchResultAsUtf8EncodedString1
 	| session utf8EncodedResultString |
 	utf8EncodedResultString := String new: 10.
-	session := TugrikGciTsSession login: GciSessionDescription example.
+	session := TugrikGciTsSession login: GsGciSessionDescription example.
 	[ 
 	session
 		gciExecuteAndFetchUtf8EncodedResultInto: utf8EncodedResultString
