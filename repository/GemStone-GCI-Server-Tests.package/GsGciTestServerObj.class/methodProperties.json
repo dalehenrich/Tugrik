@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"doCommits:" : "dkh 03/04/2016 10:09",
+		"enableSignaledFinishTransactionErrorAndGetSessionId" : "dkh 03/04/2016 10:09",
+		"finishTransaction" : "dkh 03/04/2016 10:09",
+		"getStnSignalAbortCrBacklog" : "dkh 03/04/2016 10:09",
+		"sessionsReferencingOldestCr:" : "dkh 03/04/2016 10:09",
+		"sessionsReferencingOldestCrInTransactionReport:" : "dkh 03/04/2016 10:09",
+		"setStnSignalAbortCrBacklog:" : "dkh 03/04/2016 10:09",
+		"setStnSignalAbortCrBacklogAndCleanup:" : "dkh 03/04/2016 10:09" },
+	"instance" : {
+		 } }

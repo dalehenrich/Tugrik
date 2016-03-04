@@ -1,13 +1,13 @@
 {
-	"category" : "Tugrik-Server-Tests",
+	"category" : "GemStone-GCI-Server-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "dkh 03/04/2016 10:09",
 	"instvars" : [
 		 ],
-	"name" : "TugrikGciTestServerObj",
+	"name" : "GsGciTestServerObj",
 	"pools" : [
 		 ],
 	"super" : "Object",
