@@ -1,13 +1,10 @@
 {
 	"class" : {
-		"countCollectionNamed:" : "dkh 03/04/2016 17:35",
-		"createCollectionNamed:" : "dkh 03/04/2016 17:34",
-		"deleteOperation:collectionBytes:dataBytes:" : "dkh 03/04/2016 15:29",
-		"doQuery:key:value:result:" : "dkh 03/04/2016 17:53",
-		"processQuery:with:result:" : "dkh 03/04/2016 17:50",
-		"queryOperation:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 03/04/2016 17:32",
-		"resetRoot" : "dkh 03/04/2016 16:27",
+		"deleteOperation:collectionBytes:dataBytes:" : "dkh 03/05/2016 08:23",
+		"insertOperation:collectionBytes:dataBytes:" : "dkh 03/05/2016 08:48",
+		"queryOperation:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 03/05/2016 08:30",
+		"resetRoot" : "dkh 03/05/2016 08:31",
 		"root" : "dkh 03/04/2016 16:17",
-		"updateOperation:collectionBytes:dataBytes:" : "dkh 03/04/2016 15:30" },
+		"updateOperation:collectionBytes:dataBytes:" : "dkh 03/05/2016 08:23" },
 	"instance" : {
 		 } }

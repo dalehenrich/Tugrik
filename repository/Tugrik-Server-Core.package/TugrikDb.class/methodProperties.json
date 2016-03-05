@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"named:" : "dkh 03/05/2016 08:18" },
+	"instance" : {
+		"collections" : "dkh 03/05/2016 08:25",
+		"collections:" : "dkh 03/05/2016 08:17",
+		"countCollectionNamed:" : "dkh 03/05/2016 08:42",
+		"createCollectionNamed:" : "dkh 03/05/2016 08:25",
+		"doQuery:value:result:" : "dkh 03/05/2016 08:20",
+		"name" : "dkh 03/05/2016 08:17",
+		"name:" : "dkh 03/05/2016 08:17",
+		"processQuery:result:" : "dkh 03/05/2016 08:20",
+		"queryOperation:offset:chunkSize:query:" : "dkh 03/05/2016 08:16" } }

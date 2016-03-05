@@ -1,5 +1,5 @@
 query processing
-doQuery: collectionString key: key value: value result: result
+doQuery: key value: value result: result
   key = 'create'
     ifTrue: [ ^ result add: (self createCollectionNamed: value) ].
   key = 'count'
