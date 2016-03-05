@@ -1,6 +1,6 @@
 tests
 testTugrikInsertCollection
-  | resultString resultArray |
+  | resultString resultArray result |
   resultString := TugrikDbServer
     queryOperation: 10
     collectionBytes: #[116 101 115 116 46 36 99 109 100]
@@ -14,5 +14,5 @@ testTugrikInsertCollection
     collectionBytes:
       #[116 101 115 116 46 116 101 115 116 67 111 108 108 101 99 116 105 111 110]
     dataBytes: '[{''key'':''value''}]'.
-  resultArray := STON fromString: resultString.
-  self halt
+  result := STON fromString: resultString.
+  self assert: (result includesKey: 'ok')
