@@ -1,1 +1,1 @@
-(name 'Tugrik-Server-Core-dkh.1' message 'create package' id '8e6671c0-635a-4ace-a37e-4da849091a64' date '02/20/2016' time '10:30:40' author 'dkh' ancestors () stepChildren ())
+(name 'Tugrik-Server-Core-dkh.2' message 'checkpoint ... initial server-side implementation' id '21431bba-a9c4-4f6a-8af5-cbb19b3e5d13' date '03/04/2016' time '16:37:23' author 'dkh' ancestors ((name 'Tugrik-Server-Core-dkh.1' message 'create package' id '8e6671c0-635a-4ace-a37e-4da849091a64' date '02/20/2016' time '10:30:40' author 'dkh' ancestors () stepChildren ())) stepChildren ())

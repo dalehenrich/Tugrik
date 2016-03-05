@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "dkh 03/04/2016 16:29",
+		"tearDown" : "dkh 03/04/2016 16:28",
+		"testTugrikCursorQueryCreateCollection" : "dkh 03/04/2016 16:32" } }

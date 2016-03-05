@@ -1,0 +1,14 @@
+{
+	"category" : "Tugrik-Server-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 03/04/2016 15:39",
+	"instvars" : [
+		 ],
+	"name" : "TugrikDbServerBasicTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

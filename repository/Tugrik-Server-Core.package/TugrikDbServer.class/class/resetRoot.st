@@ -1,0 +1,3 @@
+accessing
+resetRoot
+  Root := nil

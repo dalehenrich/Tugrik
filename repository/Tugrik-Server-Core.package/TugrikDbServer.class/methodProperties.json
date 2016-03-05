@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"createCollectionNamed:" : "dkh 03/04/2016 16:25",
+		"deleteOperation:collectionBytes:dataBytes:" : "dkh 03/04/2016 15:29",
+		"processQuery:with:" : "dkh 03/04/2016 16:24",
+		"queryOperation:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 03/04/2016 16:22",
+		"resetRoot" : "dkh 03/04/2016 16:27",
+		"root" : "dkh 03/04/2016 16:17",
+		"updateOperation:collectionBytes:dataBytes:" : "dkh 03/04/2016 15:30" },
+	"instance" : {
+		 } }
