@@ -1,4 +1,8 @@
 initialize
 initialize
-	counter := 0.
-	Smalltalk addToShutDownList: self
+  "self initialize"
+
+  counter := TransientValue value: 0.
+  sessionSerialNum := TransientValue
+    value: GsCurrentSession currentSession sessionSerialNum.
+  SystemLoginNotification subscribe: self name

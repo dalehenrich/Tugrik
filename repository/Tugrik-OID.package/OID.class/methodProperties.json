@@ -1,20 +1,16 @@
 {
 	"class" : {
-		"counterNext" : "NorbertHartl 5/11/2014 17:43",
-		"initialize" : "NorbertHartl 5/11/2014 18:11",
-		"machineIdentifier" : "NorbertHartl 5/11/2014 18:06",
-		"newMachineIdentifier" : "NorbertHartl 5/11/2014 18:06",
+		"counterNext" : "dkh 03/05/2016 10:42",
+		"initialize" : "dkh 03/05/2016 10:41",
 		"nextOID" : "NorbertHartl 5/11/2014 17:58",
-		"reset" : "TorstenBergmann 3/4/2015 10:07",
-		"shutDown:" : "NorbertHartl 5/11/2014 18:05",
+		"sessionSerialNum" : "dkh 03/05/2016 10:41",
+		"sessionStart" : "dkh 03/05/2016 10:41",
 		"value:" : "NorbertHartl 5/11/2014 17:57" },
 	"instance" : {
 		"=" : "guest 2/7/2010 19:08",
-		"bsonTypeCode" : "NorbertHartl 5/11/2014 18:07",
 		"hash" : "NorbertHartl 5/11/2014 18:07",
-		"initialize" : "NorbertHartl 5/11/2014 18:10",
-		"printOn:" : "EstebanLorenzano 9/23/2011 20:13",
+		"initialize" : "dkh 03/05/2016 10:48",
+		"printOn:" : "dkh 03/05/2016 10:50",
 		"setValue:" : "guest 2/7/2010 19:08",
 		"timeStamp" : "NorbertHartl 5/11/2014 18:10",
-		"value" : "guest 2/7/2010 19:08",
-		"writeBSONOn:" : "guest 2/7/2010 19:08" } }
+		"value" : "guest 2/7/2010 19:08" } }

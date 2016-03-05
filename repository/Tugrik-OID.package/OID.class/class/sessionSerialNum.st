@@ -1,0 +1,3 @@
+accessing
+sessionSerialNum
+  ^ sessionSerialNum value
