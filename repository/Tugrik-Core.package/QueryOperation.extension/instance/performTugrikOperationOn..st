@@ -5,4 +5,4 @@ performTugrikOperationOn: aTugrik
 		collectionBytes: collectionBytes
 		offset: mongoQuery offset
 		chunkSize: mongoQuery chunkSize 
-		dataBytes: self dataBytes
+		dataBytes: self tugrikDataBytes

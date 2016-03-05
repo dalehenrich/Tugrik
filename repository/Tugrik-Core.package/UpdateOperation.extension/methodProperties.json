@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performTugrikOperationOn:" : "dkh 3/4/2016 14:25" } }
+		"computeTugrikDataBytes" : "dkh 3/4/2016 15:53",
+		"performTugrikOperationOn:" : "dkh 3/4/2016 14:25",
+		"tugrikDataBytes" : "dkh 3/4/2016 15:50" } }
