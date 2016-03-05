@@ -1,3 +1,6 @@
 operations
 open
-	session := sessionDescription login
+	false
+		ifTrue: [ 
+			"session created on demand for now"
+			session := sessionDescription login ]
