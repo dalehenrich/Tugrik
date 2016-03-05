@@ -1,9 +1,11 @@
 {
 	"class" : {
-		"createCollectionNamed:" : "dkh 03/04/2016 16:25",
+		"countCollectionNamed:" : "dkh 03/04/2016 17:35",
+		"createCollectionNamed:" : "dkh 03/04/2016 17:34",
 		"deleteOperation:collectionBytes:dataBytes:" : "dkh 03/04/2016 15:29",
-		"processQuery:with:" : "dkh 03/04/2016 16:24",
-		"queryOperation:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 03/04/2016 16:22",
+		"doQuery:key:value:result:" : "dkh 03/04/2016 17:53",
+		"processQuery:with:result:" : "dkh 03/04/2016 17:50",
+		"queryOperation:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 03/04/2016 17:32",
 		"resetRoot" : "dkh 03/04/2016 16:27",
 		"root" : "dkh 03/04/2016 16:17",
 		"updateOperation:collectionBytes:dataBytes:" : "dkh 03/04/2016 15:30" },
