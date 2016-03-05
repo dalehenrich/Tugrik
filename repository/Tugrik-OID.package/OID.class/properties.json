@@ -1,0 +1,15 @@
+{
+	"category" : "Tugrik-OID",
+	"classinstvars" : [
+		"counter",
+		"machineIdentifier" ],
+	"classvars" : [
+		"NumberGenerator" ],
+	"commentStamp" : "guest 2/12/2010 01:38",
+	"instvars" : [
+		"value" ],
+	"name" : "OID",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,3 +1,3 @@
 *Tugrik-Core
 computeTugrikDataBytes
-	^ BSON writeAll: objects
+	^ STON toString: objects

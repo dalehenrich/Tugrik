@@ -3,6 +3,6 @@ insert: aCollection collection: aString
 	(InsertOperation
 		collection: aString
 		id: self nextRequestID
-		session: session
+		stream: stream
 		objects: aCollection)
-			write
+			performTugrikOperationOn: self

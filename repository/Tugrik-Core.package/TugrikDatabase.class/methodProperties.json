@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"root:name:" : "dkh 3/5/2016 07:37" },
+	"instance" : {
+		"addCollection:" : "dkh 3/5/2016 07:37",
+		"collectionAt:" : "dkh 3/5/2016 07:37",
+		"collections" : "dkh 3/5/2016 07:37",
+		"command:" : "dkh 3/5/2016 07:37",
+		"delete:collection:" : "dkh 3/5/2016 07:37",
+		"do:" : "dkh 3/5/2016 07:37",
+		"drop" : "dkh 3/5/2016 07:37",
+		"hasCollectionNamed:" : "dkh 3/5/2016 07:37",
+		"insert:collection:" : "dkh 3/5/2016 07:37",
+		"name" : "dkh 3/5/2016 07:37",
+		"printOn:" : "dkh 3/5/2016 07:37",
+		"qualifiedName" : "dkh 3/5/2016 07:37",
+		"query:" : "dkh 3/5/2016 07:37",
+		"queryOne:" : "dkh 3/5/2016 07:37",
+		"setRoot:name:" : "dkh 3/5/2016 07:37",
+		"update:with:collection:" : "dkh 3/5/2016 07:37",
+		"username:password:" : "dkh 3/5/2016 07:37" } }
