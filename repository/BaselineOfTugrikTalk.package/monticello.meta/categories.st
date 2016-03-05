@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'BaselineOfTugrikTalk'!
+SystemOrganization addCategory: #BaselineOfTugrikTalk!

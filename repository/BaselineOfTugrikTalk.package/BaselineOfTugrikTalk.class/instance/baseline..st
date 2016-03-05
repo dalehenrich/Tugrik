@@ -48,7 +48,8 @@ baseline: spec
     for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x')
     do: [ 
       spec
-        package: 'Tugrik-Server-Core';
+        package: 'Tugrik-OID';
+        package: 'Tugrik-Server-Core' with: [spec requires: #('Tugrik-OID')];
         package: 'Tugrik-Server-Tests'
           with: [ spec requires: #('Tugrik-Server-Core') ];
         package: 'GemStone-GCI-Server-Tests';
