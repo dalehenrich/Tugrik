@@ -1,0 +1,3 @@
+reset
+resetCollections
+  collection removeAllIndexes

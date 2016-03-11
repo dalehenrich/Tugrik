@@ -4,6 +4,6 @@
 	"instance" : {
 		"setUp" : "dkh 03/04/2016 16:29",
 		"tearDown" : "dkh 03/04/2016 16:28",
-		"testTugrikCursorQueryCountCollection" : "dkh 03/04/2016 17:38",
+		"testTugrikCursorQueryCountCollection" : "dkh 03/11/2016 15:05",
 		"testTugrikCursorQueryCreateCollection" : "dkh 03/04/2016 17:30",
-		"testTugrikInsertCollection" : "dkh 03/05/2016 14:12" } }
+		"testTugrikInsertCollection" : "dkh 03/10/2016 15:35" } }

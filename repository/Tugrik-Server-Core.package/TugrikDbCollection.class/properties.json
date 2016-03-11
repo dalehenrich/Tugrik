@@ -1,0 +1,15 @@
+{
+	"category" : "Tugrik-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"collection" ],
+	"name" : "TugrikDbCollection",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

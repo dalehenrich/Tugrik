@@ -1,3 +1,3 @@
 reset
 resetCollections
-  self collections valuesDo: [ :coll | coll removeAllIndexes ]
+  self collections valuesDo: [ :coll | coll resetCollections ]

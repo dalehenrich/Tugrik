@@ -17,4 +17,5 @@ testTugrikCursorQueryCountCollection
     dataBytes:
       '{''$query'':{''count'':''testCollection'',''fields'':{},''query'':{}}}'.
   resultArray := STON fromString: resultString.
+  self assert: (resultArray first includesKey: 'ok').
   self halt
