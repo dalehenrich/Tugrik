@@ -1,3 +1,3 @@
 reset
-resetCollections
+removeIndexes
   collection removeAllIndexes

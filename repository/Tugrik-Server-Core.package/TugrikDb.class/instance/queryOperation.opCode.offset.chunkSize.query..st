@@ -1,5 +1,5 @@
 command processing
-queryOperation: id offset: mongoQueryOffset chunkSize: mongoQueryChunkSize query: queryDict
+queryOperation: id opCode: opCode offset: mongoQueryOffset chunkSize: mongoQueryChunkSize query: queryDict
   | result |
   result := {}.
   queryDict

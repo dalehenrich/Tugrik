@@ -1,5 +1,5 @@
 tests
-testTugrikCursorQueryCountCollection
+testTugrikCursorQueryDropCollection
   | resultString resultArray |
   resultString := TugrikDbServer
     queryOperation: 10
@@ -11,13 +11,11 @@ testTugrikCursorQueryCountCollection
   resultArray := STON fromString: resultString.
   self assert: (resultArray first includesKey: 'ok').
   resultString := TugrikDbServer
-    queryOperation: 18
-    opCode: 0
+    queryOperation: 10
+    opCode: 2004
     collectionBytes: #[116 101 115 116 46 36 99 109 100]
     offset: 0
     chunkSize: 1
-    dataBytes:
-      '{''$query'':{''count'':''testCollection'',''fields'':{},''query'':{}}}'.
+    dataBytes: '{''$query'':{''drop'':''testCollection''}}'.
   resultArray := STON fromString: resultString.
-  self assert: (resultArray first includesKey: 'ok').
-  self assert: (resultArray first at: 'n') = 0
+  self assert: (resultArray first includesKey: 'ok')

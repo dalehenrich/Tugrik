@@ -2,6 +2,8 @@ query processing
 doQuery: key value: value result: result
   key = 'create'
     ifTrue: [ ^ result add: (self createCollectionNamed: value) ].
+  key = 'drop'
+    ifTrue: [ ^ result add: (self dropCollectionNamed: value) ].
   key = 'count'
     ifTrue: [ ^ result add: (self countCollectionNamed: value) ].
   key = 'query'
