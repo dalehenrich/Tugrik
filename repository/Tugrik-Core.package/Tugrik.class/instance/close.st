@@ -1,3 +1,6 @@
 operations
 close
-	session logout
+	false
+		ifTrue: [ 
+			"session created on demand for now"
+			session logout ]
