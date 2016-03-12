@@ -1,10 +1,5 @@
-command processing
+query processing
 queryOperation: id opCode: opCode offset: mongoQueryOffset chunkSize: mongoQueryChunkSize query: queryDict
   | result |
-  result := {}.
-  queryDict
-    keysAndValuesDo: [ :key :value | 
-      key = '$query'
-        ifTrue: [ self processQuery: value result: result ]
-        ifFalse: [ self error: 'Unknown operation' ] ].
+  result := self processQueryDict: queryDict.
   ^ STON toString: result

@@ -1,6 +1,6 @@
 tests
 testTugrikCursorQueryCountCollection
-  | resultString resultArray |
+  | resultString result |
   resultString := TugrikDbServer
     queryOperation: 10
     opCode: 0
@@ -8,8 +8,8 @@ testTugrikCursorQueryCountCollection
     offset: 0
     chunkSize: 1
     dataBytes: '{''$query'':{''create'':''testCollection''}}'.
-  resultArray := STON fromString: resultString.
-  self assert: (resultArray first includesKey: 'ok').
+  result := STON fromString: resultString.
+  self assert: (result includesKey: 'ok').
   resultString := TugrikDbServer
     queryOperation: 18
     opCode: 0
@@ -18,6 +18,6 @@ testTugrikCursorQueryCountCollection
     chunkSize: 1
     dataBytes:
       '{''$query'':{''count'':''testCollection'',''fields'':{},''query'':{}}}'.
-  resultArray := STON fromString: resultString.
-  self assert: (resultArray first includesKey: 'ok').
-  self assert: (resultArray first at: 'n') = 0
+  result := STON fromString: resultString.
+  self assert: (result includesKey: 'ok').
+  self assert: (result at: 'n') = 0

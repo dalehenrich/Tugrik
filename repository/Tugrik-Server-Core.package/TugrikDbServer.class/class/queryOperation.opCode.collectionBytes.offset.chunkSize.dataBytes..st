@@ -17,7 +17,7 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
         opCode: opCode
         offset: mongoQueryOffset
         chunkSize: mongoQueryChunkSize
-        query: data ]
+        query: (data at: '$query') ]
     ifFalse: [ 
       collectionName := operationType.
       result := db

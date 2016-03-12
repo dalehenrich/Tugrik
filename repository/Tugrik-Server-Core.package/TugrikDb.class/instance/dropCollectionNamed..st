@@ -1,4 +1,4 @@
-query processing
+command processing
 dropCollectionNamed: collectionName
   | dbColl |
   dbColl := self collections at: collectionName.

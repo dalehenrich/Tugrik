@@ -1,4 +1,4 @@
-query processing
+command processing
 createCollectionNamed: collectionName
   | dbColl |
   dbColl := self collections

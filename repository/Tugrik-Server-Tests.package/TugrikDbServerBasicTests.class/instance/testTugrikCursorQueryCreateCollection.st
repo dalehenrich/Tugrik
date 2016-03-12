@@ -1,6 +1,6 @@
 tests
 testTugrikCursorQueryCreateCollection
-  | resultString resultArray |
+  | resultString result |
   resultString := TugrikDbServer
     queryOperation: 10
     opCode: 0
@@ -8,5 +8,5 @@ testTugrikCursorQueryCreateCollection
     offset: 0
     chunkSize: 1
     dataBytes: '{''$query'':{''create'':''testCollection''}}'.
-  resultArray := STON fromString: resultString.
-  self assert: (resultArray first includesKey: 'ok')
+  result := STON fromString: resultString.
+  self assert: (result includesKey: 'ok')

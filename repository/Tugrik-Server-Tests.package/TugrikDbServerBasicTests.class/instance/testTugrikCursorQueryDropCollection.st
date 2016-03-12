@@ -1,6 +1,6 @@
 tests
 testTugrikCursorQueryDropCollection
-  | resultString resultArray |
+  | resultString result |
   resultString := TugrikDbServer
     queryOperation: 10
     opCode: 0
@@ -8,8 +8,8 @@ testTugrikCursorQueryDropCollection
     offset: 0
     chunkSize: 1
     dataBytes: '{''$query'':{''create'':''testCollection''}}'.
-  resultArray := STON fromString: resultString.
-  self assert: (resultArray first includesKey: 'ok').
+  result := STON fromString: resultString.
+  self assert: (result includesKey: 'ok').
   resultString := TugrikDbServer
     queryOperation: 10
     opCode: 2004
@@ -17,5 +17,5 @@ testTugrikCursorQueryDropCollection
     offset: 0
     chunkSize: 1
     dataBytes: '{''$query'':{''drop'':''testCollection''}}'.
-  resultArray := STON fromString: resultString.
-  self assert: (resultArray first includesKey: 'ok')
+  result := STON fromString: resultString.
+  self assert: (result includesKey: 'ok')

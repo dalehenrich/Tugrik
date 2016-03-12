@@ -1,6 +1,6 @@
 tests
 testTugrikInsertCollection
-  | resultString resultArray result |
+  | resultString result |
   resultString := TugrikDbServer
     queryOperation: 10
     opCode: 0
@@ -8,8 +8,8 @@ testTugrikInsertCollection
     offset: 0
     chunkSize: 1
     dataBytes: '{''$query'':{''create'':''testCollection''}}'.
-  resultArray := STON fromString: resultString.
-  self assert: (resultArray first includesKey: 'ok').
+  result := STON fromString: resultString.
+  self assert: (result includesKey: 'ok').
   resultString := TugrikDbServer
     insertOperation: 56
     collectionBytes:
