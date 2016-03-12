@@ -9,7 +9,7 @@ testTugrikCursorQueryDropCollection
     chunkSize: 1
     dataBytes: '{''$query'':{''create'':''testCollection''}}'.
   result := STON fromString: resultString.
-  self assert: (result includesKey: 'ok').
+  self assert: (result first includesKey: 'ok').
   resultString := TugrikDbServer
     queryOperation: 10
     opCode: 2004
@@ -18,4 +18,4 @@ testTugrikCursorQueryDropCollection
     chunkSize: 1
     dataBytes: '{''$query'':{''drop'':''testCollection''}}'.
   result := STON fromString: resultString.
-  self assert: (result includesKey: 'ok')
+  self assert: (result first includesKey: 'ok')

@@ -4,7 +4,8 @@
 	"instance" : {
 		"setUp" : "dkh 03/04/2016 16:29",
 		"tearDown" : "dkh 03/04/2016 16:28",
-		"testTugrikCursorQueryCountCollection" : "dkh 03/11/2016 20:31",
-		"testTugrikCursorQueryCreateCollection" : "dkh 03/11/2016 20:32",
-		"testTugrikCursorQueryDropCollection" : "dkh 03/11/2016 20:33",
-		"testTugrikInsertCollection" : "dkh 03/11/2016 20:34" } }
+		"testTugrikCursorQueryCountCollection" : "dkh 03/12/2016 08:43",
+		"testTugrikCursorQueryCreateCollection" : "dkh 03/12/2016 08:43",
+		"testTugrikCursorQueryDropCollection" : "dkh 03/12/2016 08:43",
+		"testTugrikInsertCollection" : "dkh 03/12/2016 08:44",
+		"testTugrikSizeForQueryCollection" : "dkh 03/12/2016 10:58" } }

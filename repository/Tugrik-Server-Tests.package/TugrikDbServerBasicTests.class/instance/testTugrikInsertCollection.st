@@ -9,7 +9,7 @@ testTugrikInsertCollection
     chunkSize: 1
     dataBytes: '{''$query'':{''create'':''testCollection''}}'.
   result := STON fromString: resultString.
-  self assert: (result includesKey: 'ok').
+  self assert: (result first includesKey: 'ok').
   resultString := TugrikDbServer
     insertOperation: 56
     collectionBytes:

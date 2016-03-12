@@ -4,13 +4,13 @@
 	"instance" : {
 		"collections" : "dkh 03/05/2016 08:25",
 		"collections:" : "dkh 03/05/2016 08:17",
-		"countCollectionNamed:queryDict:" : "dkh 03/11/2016 20:27",
+		"countCollectionNamed:queryDict:" : "dkh 03/12/2016 09:51",
 		"createCollectionNamed:" : "dkh 03/11/2016 15:16",
 		"dropCollectionNamed:" : "dkh 03/11/2016 19:35",
 		"insertOperation:collectionName:data:" : "dkh 03/11/2016 15:02",
 		"name" : "dkh 03/05/2016 08:17",
 		"name:" : "dkh 03/05/2016 08:17",
-		"processQueryDict:" : "dkh 03/11/2016 20:20",
+		"processQueryDict:result:" : "dkh 03/12/2016 08:41",
 		"queryOperation:opCode:collectionName:offset:chunkSize:query:" : "dkh 03/11/2016 19:20",
-		"queryOperation:opCode:offset:chunkSize:query:" : "dkh 03/11/2016 20:16",
+		"queryOperation:opCode:offset:chunkSize:query:" : "dkh 03/12/2016 08:37",
 		"resetCollections" : "dkh 03/11/2016 19:33" } }

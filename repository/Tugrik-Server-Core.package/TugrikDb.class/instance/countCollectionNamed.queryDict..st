@@ -1,10 +1,8 @@
 query processing
 countCollectionNamed: collectionName queryDict: queryDict
-  | query |
+  | query fields |
   query := queryDict at: 'query'.
   query isEmpty
-    ifFalse: [ 
-      | fields |
-      fields := queryDict at: 'fields'.
-      self halt ].
-  ^ (self collections at: collectionName) count
+    ifTrue: [ ^ (self collections at: collectionName) count ].
+  fields := queryDict at: 'fields'.
+  ^ (self collections at: collectionName) count: query fields: fields
