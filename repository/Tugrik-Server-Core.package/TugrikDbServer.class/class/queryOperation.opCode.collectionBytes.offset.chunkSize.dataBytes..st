@@ -13,7 +13,7 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
   operationType = '$cmd'
     ifTrue: [ 
       result := db
-        queryOperation: id
+        queryCommand: id
         opCode: opCode
         offset: mongoQueryOffset
         chunkSize: mongoQueryChunkSize

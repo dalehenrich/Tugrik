@@ -10,8 +10,9 @@
 		"insertOperation:collectionName:data:" : "dkh 03/11/2016 15:02",
 		"name" : "dkh 03/05/2016 08:17",
 		"name:" : "dkh 03/05/2016 08:17",
-		"processQueryDict:result:" : "dkh 03/12/2016 08:41",
+		"processQueryCommand:result:" : "dkh 03/13/2016 12:47",
+		"queryCommand:opCode:offset:chunkSize:query:" : "dkh 03/13/2016 12:46",
 		"queryOperation:opCode:collectionName:offset:chunkSize:query:" : "dkh 03/12/2016 19:11",
-		"queryOperation:opCode:offset:chunkSize:query:" : "dkh 03/12/2016 08:37",
 		"resetCollections" : "dkh 03/11/2016 19:33",
-		"selectCollectionNamed:queryDict:" : "dkh 03/12/2016 19:17" } }
+		"selectCollectionNamed:queryDict:" : "dkh 03/12/2016 19:17",
+		"validateCollectionNamed:" : "dkh 03/13/2016 12:49" } }
