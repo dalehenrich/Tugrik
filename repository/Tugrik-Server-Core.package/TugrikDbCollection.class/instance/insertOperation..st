@@ -29,14 +29,16 @@ insertOperation: dataArray
               key ~= '_id'
                 ifTrue: [ 
                   | indexSpec |
-                  TugrikObject
-                    compile:
-                      key , ' ^self dynamicInstVarAt: #' , key printString
-                    classified: '*generated'.
-                  indexSpec := RcEqualityIndexSpecification
-                    path: '#' , key
-                    lastElementClass: value class.
-                  indexSpec createIndexOn: collection.
+                  (self validateClassForIndexCreation: value class)
+                    ifTrue: [ 
+                      TugrikObject
+                        compile:
+                          key , ' ^self dynamicInstVarAt: #' , key printString
+                        classified: '*generated'.
+                      indexSpec := RcEqualityIndexSpecification
+                        path: '#' , key
+                        lastElementClass: value class.
+                      indexSpec createIndexOn: collection ].
                   obj
                     dynamicInstVarAt: key asSymbol put: value;
                     yourself ] ].

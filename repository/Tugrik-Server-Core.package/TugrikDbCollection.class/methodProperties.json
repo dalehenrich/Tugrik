@@ -7,8 +7,9 @@
 		"count" : "dkh 03/11/2016 14:59",
 		"count:fields:" : "dkh 03/12/2016 11:15",
 		"createCollection" : "dkh 03/11/2016 14:55",
-		"insertOperation:" : "dkh 03/13/2016 08:16",
+		"insertOperation:" : "dkh 03/13/2016 12:42",
 		"name" : "dkh 03/11/2016 15:16",
 		"name:" : "dkh 03/11/2016 15:16",
 		"removeIndexes" : "dkh 03/11/2016 19:33",
-		"selectCollection:" : "dkh 03/12/2016 19:17" } }
+		"selectCollection:" : "dkh 03/12/2016 19:17",
+		"validateClassForIndexCreation:" : "dkh 03/13/2016 12:41" } }
