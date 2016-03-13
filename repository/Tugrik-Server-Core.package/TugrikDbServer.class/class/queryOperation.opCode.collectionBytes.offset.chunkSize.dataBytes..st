@@ -26,6 +26,6 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
         collectionName: collectionName
         offset: mongoQueryOffset
         chunkSize: mongoQueryChunkSize
-        query: data ].
+        query: (data at: '$query') ].
   System commit.
   ^ result

@@ -11,6 +11,7 @@
 		"name" : "dkh 03/05/2016 08:17",
 		"name:" : "dkh 03/05/2016 08:17",
 		"processQueryDict:result:" : "dkh 03/12/2016 08:41",
-		"queryOperation:opCode:collectionName:offset:chunkSize:query:" : "dkh 03/11/2016 19:20",
+		"queryOperation:opCode:collectionName:offset:chunkSize:query:" : "dkh 03/12/2016 19:11",
 		"queryOperation:opCode:offset:chunkSize:query:" : "dkh 03/12/2016 08:37",
-		"resetCollections" : "dkh 03/11/2016 19:33" } }
+		"resetCollections" : "dkh 03/11/2016 19:33",
+		"selectCollectionNamed:queryDict:" : "dkh 03/12/2016 19:17" } }
