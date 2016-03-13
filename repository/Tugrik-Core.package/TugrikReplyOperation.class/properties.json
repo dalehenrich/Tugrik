@@ -1,0 +1,14 @@
+{
+	"category" : "Tugrik-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"result" ],
+	"name" : "TugrikReplyOperation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -2,13 +2,21 @@ executing
 execute
 	| limit reply numberReturned |
 	numberReturned := 0.
+	reply := nil.
 	limit := query limit.
 	limit = 0
 		ifTrue: [ limit := Float infinity ].
 	limit < query chunkSize
 		ifTrue: [ query chunkSize: limit ].
-	reply := root cursorQuery: query.
 	[ 
+	reply isNil
+		ifTrue: [ 
+			| result |
+			result := root cursorQuery: query.
+			reply := TugrikReplyOperation new
+				result: result;
+				yourself ]
+		ifFalse: [ self halt ].
 	reply
 		do: [ :each | 
 			numberReturned < limit
