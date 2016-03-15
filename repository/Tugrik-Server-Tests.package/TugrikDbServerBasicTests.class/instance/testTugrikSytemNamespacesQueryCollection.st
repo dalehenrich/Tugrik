@@ -7,7 +7,7 @@ testTugrikSytemNamespacesQueryCollection
     collectionBytes: #[116 101 115 116 46 36 99 109 100]
     offset: 0
     chunkSize: 1
-    dataBytes: '{''$query'':{''create'':''testCollection''}}'.
+    dataBytes: '{''$query'':{''create'':''collection''}}'.
   result := STON fromString: resultString.
   self assert: (result first includesKey: 'ok').
   resultString := TugrikDbServer
@@ -19,4 +19,7 @@ testTugrikSytemNamespacesQueryCollection
     chunkSize: 0
     dataBytes: '{''$query'':{}}'.
   result := STON fromString: resultString.
-  self halt
+  self
+    assert:
+      (result detect: [ :dict | (dict at: 'name') = 'test.collection' ] ifNone: [  ])
+        notNil

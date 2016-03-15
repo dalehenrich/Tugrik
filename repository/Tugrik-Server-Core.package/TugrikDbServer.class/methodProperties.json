@@ -2,10 +2,9 @@
 	"class" : {
 		"deleteOperation:collectionBytes:dataBytes:" : "dkh 03/05/2016 08:23",
 		"insertOperation:collectionBytes:dataBytes:" : "dkh 03/11/2016 19:18",
-		"queryOperation:opCode:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 03/13/2016 12:56",
+		"queryOperation:opCode:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 03/14/2016 18:28",
 		"resetRoot" : "dkh 03/11/2016 15:07",
 		"root" : "dkh 03/04/2016 16:17",
-		"systemQuery:" : "dkh 03/13/2016 12:59",
 		"updateOperation:collectionBytes:dataBytes:" : "dkh 03/05/2016 08:23" },
 	"instance" : {
 		 } }

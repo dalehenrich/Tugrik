@@ -20,7 +20,7 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
         query: (data at: '$query') ]
     ifFalse: [ 
       operationType = 'system'
-        ifTrue: [ result := self systemQuery: (tokens copyFrom: 2 to: tokens size) ]
+        ifTrue: [ result := db systemQuery: (tokens copyFrom: 2 to: tokens size) ]
         ifFalse: [ 
           collectionName := operationType.
           result := db

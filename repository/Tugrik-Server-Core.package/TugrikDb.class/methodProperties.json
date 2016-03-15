@@ -15,4 +15,5 @@
 		"queryOperation:opCode:collectionName:offset:chunkSize:query:" : "dkh 03/12/2016 19:11",
 		"resetCollections" : "dkh 03/11/2016 19:33",
 		"selectCollectionNamed:queryDict:" : "dkh 03/12/2016 19:17",
+		"systemQuery:" : "dkh 03/14/2016 19:50",
 		"validateCollectionNamed:" : "dkh 03/13/2016 12:49" } }
