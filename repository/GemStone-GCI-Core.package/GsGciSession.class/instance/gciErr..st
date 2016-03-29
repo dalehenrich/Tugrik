@@ -1,8 +1,8 @@
 gci api - exception handling
-gciErr: aGciTs32xErrSType
+gciErr: aGsGci32xErrSType
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
 			^ lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciErr: aGciTs32xErrSType ]
+				apiGciErr: aGsGci32xErrSType ]

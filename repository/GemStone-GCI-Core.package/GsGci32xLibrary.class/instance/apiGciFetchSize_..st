@@ -15,5 +15,5 @@ apiGciFetchSize_: theObject
   EXTERN_GCI_DEC(int64) 
 GciFetchSize_(OopType theObject);
 "
-	<apicall: ulonglong 'GciFetchSize_' (GsOopType) >
+	<apicall: ulonglong 'GciFetchSize_' (GsGciOopType) >
 	^self externalCallFailed

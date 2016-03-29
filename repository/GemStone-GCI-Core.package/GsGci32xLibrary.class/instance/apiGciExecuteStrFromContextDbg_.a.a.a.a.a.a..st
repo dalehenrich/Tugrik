@@ -45,7 +45,7 @@ GciExecuteStrFromContextDbg_(
   OopType contextObject, OopType symbolList,
   int flags,  ushort environmentId );
 "
-	<apicall: GsOopType 'GciExecuteStrFromContextDbg_' (char* ulonglong GsOopType GsOopType GsOopType ulonglong ushort) >
+	<apicall: GsGciOopType 'GciExecuteStrFromContextDbg_' (char* ulonglong GsGciOopType GsGciOopType GsGciOopType ulonglong ushort) >
 	^self externalCallFailed
 "enum { 
   GCI_PERFORM_FLAG_ENABLE_DEBUG = 1,  

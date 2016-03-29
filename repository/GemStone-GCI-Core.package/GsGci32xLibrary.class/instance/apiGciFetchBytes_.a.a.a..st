@@ -34,5 +34,5 @@ GciFetchBytes_(
   ByteType theBytes[], int64 numBytes 
     );
 "
-	<apicall: ulonglong 'GciFetchBytes_' (GsOopType ulonglong void* ulonglong) >
+	<apicall: ulonglong 'GciFetchBytes_' (GsGciOopType ulonglong void* ulonglong) >
 	^self externalCallFailed

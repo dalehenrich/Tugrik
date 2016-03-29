@@ -14,5 +14,5 @@ apiGciNewString: aByteString
   EXTERN_GCI_DEC(OopType)
 GciNewString(const char *cString);
 "
-	<apicall: GsOopType 'GciNewString' (char*) >
+	<apicall: GsGciOopType 'GciNewString' (char*) >
 	^self externalCallFailed

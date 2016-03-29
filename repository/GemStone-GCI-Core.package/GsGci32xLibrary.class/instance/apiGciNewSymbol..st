@@ -14,5 +14,5 @@ apiGciNewSymbol: aByteSymbol
   EXTERN_GCI_DEC(OopType)
 GciNewSymbol(const char *cString);
 "
-	<apicall: GsOopType 'GciNewSymbol' (char*) >
+	<apicall: GsGciOopType 'GciNewSymbol' (char*) >
 	^self externalCallFailed

@@ -17,5 +17,5 @@ apiGciNewByteObj: classOop a: byteArray a: byteArraySize
   EXTERN_GCI_DEC(OopType)
 GciNewByteObj(OopType aClass, const ByteType *value, int64 valueSize);
 "
-	<apicall: GsOopType 'GciNewByteObj' (GsOopType char* longlong) >
+	<apicall: GsGciOopType 'GciNewByteObj' (GsGciOopType char* longlong) >
 	^self externalCallFailed

@@ -24,5 +24,5 @@ apiGciErr: errorReport
   GCI_ALIGN_STACK EXTERN_GCI_DEC(BoolType)
 GciErr(GciErrSType *errorReport);
 "
-	<apicall: bool 'GciErr' (GciTs32xErrSType*) >
+	<apicall: bool 'GciErr' (GsGci32xErrSType*) >
 	^self externalCallFailed
