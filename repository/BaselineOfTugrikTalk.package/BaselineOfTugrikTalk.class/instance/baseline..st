@@ -10,7 +10,7 @@ baseline: spec
               spec
                 loads: 'Core';
                 repository: 'github://GsDevKit/ston:v0.9.4/repository' ];
-        baseline: 'GemStone-GCI'
+        baseline: 'GemStoneGCI'
           with: [
               spec
                 loads:  #( 'Core' 'GsDevKit' );
@@ -28,7 +28,7 @@ baseline: spec
                     'http://www.smalltalkhub.com/mc/MongoTalkTeam/mongotalk/main' ];
         yourself.
       spec
-        package: 'Tugrik-Core' with: [ spec requires: 'GemStone-GCI' ];
+        package: 'Tugrik-Core' with: [ spec requires: 'GemStoneGCI' ];
         package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'MongoTalk' ];
         package: 'Tugrik-Tests' with: [ spec requires: 'Tugrik-Core' ];
         yourself.
