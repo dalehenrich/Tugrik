@@ -10,6 +10,11 @@ baseline: spec
               spec
                 loads: 'Core';
                 repository: 'github://GsDevKit/ston:v0.9.4/repository' ];
+        baseline: 'GemStone-GCI'
+          with: [
+              spec
+                loads:  #( 'Core' 'GsDevKit' );
+                repository: 'github://GsDevKit/GemStone-GCI:master/repository' ];
         configuration: 'FFI'
           with: [ 
               spec
@@ -23,18 +28,7 @@ baseline: spec
                     'http://www.smalltalkhub.com/mc/MongoTalkTeam/mongotalk/main' ];
         yourself.
       spec
-        package: 'GemStone-GCI-Core'
-          with: [ 
-              spec
-                requires: #('FFI' 'Ston');
-                postLoadDoIt: #'initGci32xErrSType' ];
-        package: 'GemStone-GCI-Tests'
-          with: [ spec requires: 'GemStone-GCI-Core' ];
-        package: 'GemStone-GCI-ThreadSafe-Core'
-          with: [ spec requires: 'GemStone-GCI-Core' ];
-        package: 'GemStone-GCI-ThreadSafe-Tests'
-          with: [ spec requires: 'GemStone-GCI-ThreadSafe-Core' ];
-        package: 'Tugrik-Core' with: [ spec requires: 'GemStone-GCI-Core' ];
+        package: 'Tugrik-Core' with: [ spec requires: 'GemStone-GCI' ];
         package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'MongoTalk' ];
         package: 'Tugrik-Tests' with: [ spec requires: 'Tugrik-Core' ];
         yourself.
@@ -42,7 +36,8 @@ baseline: spec
         group: 'default' with: #('Core' 'Tools' 'Tests');
         group: 'Core' with: #('Tugrik-Core');
         group: 'Tools' with: #('Tugrik-Pharo-Tools');
-        group: 'Tests' with: #('Tugrik-Tests' 'GemStone-GCI-Tests');
+        group: 'Tests' with: #('Tugrik-Tests' );
+        group: 'CI' with: #( 'Core' 'Tools' 'Tests');
         yourself ].
   spec
     for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x')
@@ -52,11 +47,11 @@ baseline: spec
         package: 'Tugrik-Server-Core' with: [spec requires: #('Tugrik-OID')];
         package: 'Tugrik-Server-Tests'
           with: [ spec requires: #('Tugrik-Server-Core') ];
-        package: 'GemStone-GCI-Server-Tests';
         yourself.
       spec
         group: 'default' with: #('Server');
         group: 'Server' with: #('Tugrik-Server-Core');
         group: 'Tests'
-          with: #('Tugrik-Server-Tests' 'GemStone-GCI-Server-Tests');
+          with: #('Tugrik-Server-Tests');
+        group: 'CI' with: #( 'Server' 'Tests');
         yourself ]

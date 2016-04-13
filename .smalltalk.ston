@@ -1,0 +1,10 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Tugrik',
+      #load : [ 'CI' ],
+      #directory : 'repository',
+      #platforms : [ #gemstone, #pharo ]
+    }
+  ]
+}
