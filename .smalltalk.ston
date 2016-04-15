@@ -1,4 +1,10 @@
 SmalltalkCISpec {
+  #configuring : [
+    SCIGemStoneServerConfigSpec {
+     #defaultSessionName : 'Tugrik',
+     #platforms : [ #gemstone, #gemstoneClient ] 
+    }
+  ],
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'TugrikTalk',
