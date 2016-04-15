@@ -5,8 +5,13 @@
 Tugrik is based on the Mongo-Core package of the [MongoTalk project][1]. Tugrik makes it possible to use the [MongoTalk][1] Smalltalk API to store objects in a [GemStone/S 64][3] database using [GsDevKit_home][2]. 
 The obvious advantage is that instead of storing your domain objects in an opaque db like [Mongo][4], your Smalltalk objects are stored in a Smalltalk db and operations can be performed in-place in the GemStone/S 64 db.
 
-## Installation
-Follow the [GsDevKit_home installation instructions][6] up to the `createStone ...` command and do the following instead:
+## [100 mongo = 1 tugrik][5]
+
+## Installation - based on soon to be released version of GsDevKit_home
+
+### Install GsDevKit_home
+
+The following are based on the [GsDevKit_home installation instructions][6]:
 
 ```
 # Install GsDevKit_home
@@ -17,26 +22,28 @@ installServerClient
 
 # Create tODE client
 createClient tode
+```
 
+### Create Tugrik stone and client
+
+```
 # Create Tugrik stone
 cd $GS_HOME/shared/repos
 git clone https://github.com/dalehenrich/Tugrik.git
 createStone -u http://gsdevkit.github.io/GsDevKit_home/TugrikTalk.ston -i TugrikTalk -l TugrikTalk -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston Tugrik 3.3.0
 
-# Create Tugrik client
-createClient -t pharo tugrik -v Pharo4.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
+# Create Tugrik Pharo4.0 client
+createClient -t pharo Tugrik -l -v Pharo4.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
 
 #interactive session
-startClient tugrik -s Tugrik
+startClient Tugrik -s Tugrik
 
 # run SmalltalkCI tests - batch mode
-startClient tugrik -f -s Tugrik -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston -r -t tugrik_tests
+startClient Tugrik -f -s Tugrik -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston -r -t tugrik_tests
 
 ```
 
-For more information about using [SmalltalkCI][8] and GemStone, read [SmalltalkCI and GsDevKit_home][7].
-
-## [100 mongo = 1 tugrik][5]
+For more information see [SmalltalkCI and GsDevKit_home][7].
 
 [1]: http://smalltalkhub.com/#!/~MongoTalkTeam/mongotalk
 [2]: https://github.com/GsDevKit/GsDevKit_home
