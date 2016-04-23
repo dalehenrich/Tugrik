@@ -9,6 +9,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"sessionDescription",
+		"todeClient",
 		"session",
 		"stream",
 		"requestID" ],
