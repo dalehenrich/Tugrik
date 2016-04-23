@@ -38,6 +38,7 @@ baseline: spec
         group: 'Tools' with: #('Tugrik-Pharo-Tools');
         group: 'Tests' with: #('Tugrik-Tests');
         group: 'CI' with: #('Core' 'Tools' 'Tests');
+        group: 'Minimal tODE' with: #();
         yourself ].
   spec
     for: #'pharo5.x'
