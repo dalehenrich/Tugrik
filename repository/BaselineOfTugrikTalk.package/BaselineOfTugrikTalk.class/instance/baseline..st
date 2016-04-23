@@ -13,8 +13,18 @@ baseline: spec
         baseline: 'GemStoneGCI'
           with: [ 
               spec
-                loads: #('Core' 'GsDevKit');
+                loads: #('Core');
                 repository: 'github://GsDevKit/GemStone-GCI:master/repository' ];
+        baseline: 'Tode'
+          with: [ 
+              spec
+                loads: #('Minimal Client' 'Minimal Tests');
+                repository: 'github://dalehenrich/tode:dev/repository' ];
+        baseline: 'TodeClient'
+          with: [ 
+              spec
+                loads: #('GsDevKitClient' 'GsDevKitClient Tests');
+                repository: 'github://GsDevKit/GsDevKit_home:dev/shared/repos/TodeClient' ];
         configuration: 'FFI'
           with: [ 
               spec
@@ -28,7 +38,7 @@ baseline: spec
                     'http://www.smalltalkhub.com/mc/MongoTalkTeam/mongotalk/main' ];
         yourself.
       spec
-        package: 'Tugrik-Core' with: [ spec requires: 'GemStoneGCI' ];
+        package: 'Tugrik-Core' with: [ spec requires: #('GemStoneGCI' 'TodeClient' 'Tode') ];
         package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'MongoTalk' ];
         package: 'Tugrik-Tests' with: [ spec requires: 'Tugrik-Core' ];
         yourself.
@@ -38,20 +48,6 @@ baseline: spec
         group: 'Tools' with: #('Tugrik-Pharo-Tools');
         group: 'Tests' with: #('Tugrik-Tests');
         group: 'CI' with: #('Core' 'Tools' 'Tests');
-        group: 'Minimal tODE' with: #();
-        yourself ].
-  spec
-    for: #'pharo5.x'
-    do: [ 
-      spec
-        baseline: 'Tode'
-          with: [ 
-              spec
-                loads: #('Minimal Client' 'Minimal Tests');
-                repository: 'github://dalehenrich/tode:dev/repository' ];
-        yourself.
-      spec
-        group: 'Minimal tODE' with: #('Tode');
         yourself ].
   spec
     for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x')
