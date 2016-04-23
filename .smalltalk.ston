@@ -2,7 +2,7 @@ SmalltalkCISpec {
   #configuring : [
     SCIGemStoneServerConfigSpec {
      #defaultSessionName : 'Tugrik',
-     #platforms : [ #gemstone, #gemstoneClient ] 
+     #platforms : [ #gemstoneClient ] 
     }
   ],
   #loading : [

@@ -28,9 +28,7 @@ createClient tode
 
 ```
 # Create Tugrik stone
-cd $GS_HOME/shared/repos
-git clone https://github.com/dalehenrich/Tugrik.git
-createStone -u http://gsdevkit.github.io/GsDevKit_home/TugrikTalk.ston -i TugrikTalk -l TugrikTalk -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston Tugrik 3.3.0
+createStone -u http://gsdevkit.github.io/GsDevKit_home/TugrikTalk.ston -i TugrikTalk -l TugrikTalk Tugrik 3.3.0
 
 # Create Tugrik Pharo4.0 client
 createClient -t pharo Tugrik -l -v Pharo4.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
