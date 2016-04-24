@@ -10,6 +10,7 @@
 		"descending" : "dkh 2/11/2016 19:55",
 		"sessionDescription:" : "dkh 2/12/2016 14:36" },
 	"instance" : {
+		"admin" : "dkh 4/23/2016 15:49",
 		"close" : "dkh 3/11/2016 19:39",
 		"command:database:" : "dkh 2/11/2016 19:55",
 		"cursorQuery:" : "dkh 3/4/2016 16:57",
@@ -32,6 +33,6 @@
 		"session" : "dkh 4/23/2016 07:46",
 		"sessionDescription" : "dkh 2/12/2016 14:37",
 		"sessionDescription:" : "dkh 3/4/2016 11:52",
-		"todeClient" : "dkh 4/23/2016 14:31",
+		"todeClient" : "dkh 4/23/2016 17:57",
 		"update:with:collection:" : "dkh 2/12/2016 14:44",
 		"updateOperation:collectionBytes:dataBytes:" : "dkh 3/4/2016 15:32" } }

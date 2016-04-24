@@ -5,7 +5,10 @@ todeClient
 		registerService: [ :stonString :aClient | 
 			| clientElement |
 			clientElement := aClient objectSerializer fromString: stonString.
-			clientElement halt.	"poor man's tode debugger"
+			clientElement topez: aClient.
+			clientElement editorWindowLocation == #debugger
+				ifTrue: [ TDMinimalDebugger openOn: clientElement ]
+				ifFalse: [ self halt ].
 			1	"windowId" ]
 			for: #editStonElement:;
 		yourself

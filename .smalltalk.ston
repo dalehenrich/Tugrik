@@ -9,6 +9,7 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'TugrikTalk',
       #load : [ 'CI' ],
+      #onWarningLog : true,
       #directory : 'repository',
       #platforms : [ #gemstone, #pharo ]
     }
