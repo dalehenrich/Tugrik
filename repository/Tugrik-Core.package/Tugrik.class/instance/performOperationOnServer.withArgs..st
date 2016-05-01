@@ -1,6 +1,8 @@
 operation API
 performOperationOnServer: selector withArgs: args
-	session := self  todeClient session.
+| client |
+	client := self  todeClient.
+	session := client session.
 	[ 
 	| dbOopType resultString |
 	dbOopType := session executeString: 'TugrikDbServer'.
