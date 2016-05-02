@@ -3,7 +3,7 @@ todeClient
 	| client |
 	client := (TDMinimalClient loginWith: self sessionDescription)
 		debugMode: Smalltalk isHeadless not;
-		interactive: true;
+		interactive: false;
 		yourself.
 	self registerTodeEventsFor: client gemTrace: false.
 	^client
