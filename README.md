@@ -30,15 +30,28 @@ createClient tode
 # Create Tugrik stone
 createStone -u http://gsdevkit.github.io/GsDevKit_home/TugrikTalk.ston -i TugrikTalk -l TugrikTalk Tugrik 3.3.0
 
-# Create Tugrik Pharo4.0 client
-createClient -t pharo Tugrik -l -v Pharo4.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
+# Create Tugrik Pharo5.0 client
+createClient -t pharo tugrik_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
 
 #interactive session
-startClient Tugrik -s Tugrik
+startClient tugrik_50 -s Tugrik
 
 # run SmalltalkCI tests - batch mode
-startClient Tugrik -f -s Tugrik -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston -r -t tugrik_tests
+startClient tugrik_50 -f -s Tugrik -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston -r -t tugrik_tests
+```
 
+### Update Tugrik client and server after a refreshing Tugrik clone
+
+```
+# refresh git clone
+cd $GS_HOME/shared/repos/Tugrik
+git pull origin master
+
+# refresh client (-f option)
+createClient -f -t pharo tugrik_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
+
+# refresh server
+todeIt Tugrik project load TugrikTalk
 ```
 
 For more information see [SmalltalkCI and GsDevKit_home][7].
