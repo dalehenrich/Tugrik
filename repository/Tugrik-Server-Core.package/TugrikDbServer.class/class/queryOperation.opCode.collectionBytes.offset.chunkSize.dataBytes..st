@@ -22,13 +22,25 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
       operationType = 'system'
         ifTrue: [ result := db systemQuery: (tokens copyFrom: 2 to: tokens size) ]
         ifFalse: [ 
-          collectionName := operationType.
-          result := db
-            queryOperation: id
-            opCode: opCode
-            collectionName: collectionName
-            offset: mongoQueryOffset
-            chunkSize: mongoQueryChunkSize
-            query: (data at: '$query') ] ].
+          data isArray
+            ifTrue: [ 
+              collectionName := operationType.
+              result := db
+                queryOperation: id
+                opCode: opCode
+                collectionName: collectionName
+                offset: mongoQueryOffset
+                chunkSize: mongoQueryChunkSize
+                query: (data at: 1)
+                fields: (data at: 2) ]
+            ifFalse: [ 
+              collectionName := operationType.
+              result := db
+                queryOperation: id
+                opCode: opCode
+                collectionName: collectionName
+                offset: mongoQueryOffset
+                chunkSize: mongoQueryChunkSize
+                query: (data at: '$query') ] ] ].
   System commit.
   ^ result
