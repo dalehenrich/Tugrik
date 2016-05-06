@@ -5,7 +5,7 @@ validateCollectionNamed: collectionName
     at: collectionName
     ifAbsent: [ 
       ^ Dictionary new
-        at: 'ok' put: 0;
+        at: 'ok' put: -1;
         yourself ].
   ^ Dictionary new
     at: 'ok' put: 1.0;

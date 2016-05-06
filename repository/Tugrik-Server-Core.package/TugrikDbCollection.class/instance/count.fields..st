@@ -14,6 +14,6 @@ count: queryDict fields: fieldsDict
   query := GsQuery fromFormula: formula on: collection.
   result := query queryResult.
   ^ Dictionary new
-    at: 'ok' put: 0;
+    at: 'ok' put: 1.0;
     at: 'n' put: result size;
     yourself

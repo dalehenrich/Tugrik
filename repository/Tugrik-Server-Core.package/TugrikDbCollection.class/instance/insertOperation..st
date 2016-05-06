@@ -44,6 +44,6 @@ insertOperation: dataArray
                     yourself ] ].
           collection add: obj ] ].
   result
-    at: 'ok' put: 0;
+    at: 'ok' put: 1.0;
     yourself.
   ^ result

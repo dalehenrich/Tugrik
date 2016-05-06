@@ -5,5 +5,5 @@ dropCollectionNamed: collectionName
   dbColl removeIndexes.
   self collections removeKey: collectionName.
   ^ Dictionary new
-    at: 'ok' put: 0;
+    at: 'ok' put: 1.0;
     yourself
