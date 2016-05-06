@@ -7,4 +7,4 @@ update: origDictionary with: newDictionary collection: aString flags: aFlag
 		originalObject: origDictionary 
 		newObject: newDictionary)
 			flags: aFlag;
-			write
+			performTugrikOperationOn: self
