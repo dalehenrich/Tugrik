@@ -1,7 +1,6 @@
 queries
 selectCollection: queryDict
   | query formula |
-  self halt.
   queryDict
     keysAndValuesDo: [ :key :value | 
       | predicate |

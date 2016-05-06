@@ -7,7 +7,7 @@ insertOperation: dict query: query result: result
     ifPresent: [ :oid | 
       hasOid := true.
       theOid := oid.
-      (query bind: 'oid' to: oid value) qeuryResult
+      (query bind: 'oid' to: oid value) queryResult
         detect: [ :each | true ]
         ifNone: [ self error: 'Object with id: ' , oid printString , ' not found' ] ].
   obj
@@ -24,7 +24,7 @@ insertOperation: dict query: query result: result
           key ~= '_id'
             ifTrue: [ 
               | indexSpec |
-              (self validateClassForIndexCreation: value class)
+              (false and: [ self validateClassForIndexCreation: value class ])
                 ifTrue: [ 
                   TugrikObject
                     compile:

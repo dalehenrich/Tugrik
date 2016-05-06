@@ -17,6 +17,6 @@ testUpdate
 	newObj := (Dictionary new
 				at: 'key1' put: 'another1';
 				yourself).
-	collection replace: selected first with: newObj.
+	collection replace: oldObj with: newObj.
 	selected := collection select: {('key1' -> 'another1')} asDictionary.
 	self assert: selected size equals: 1.
