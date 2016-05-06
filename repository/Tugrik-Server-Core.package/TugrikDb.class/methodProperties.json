@@ -12,9 +12,8 @@
 		"name:" : "dkh 03/05/2016 08:17",
 		"processQueryCommand:result:" : "dkh 03/13/2016 12:47",
 		"queryCommand:opCode:offset:chunkSize:query:" : "dkh 03/13/2016 12:46",
-		"queryOperation:opCode:collectionName:offset:chunkSize:query:" : "dkh 05/05/2016 19:23",
-		"queryOperation:opCode:collectionName:offset:chunkSize:query:fields:" : "dkh 05/05/2016 19:35",
+		"queryOperation:opCode:collectionName:offset:chunkSize:query:orderBy:fields:" : "dkh 05/05/2016 20:00",
 		"resetCollections" : "dkh 03/11/2016 19:33",
-		"selectCollectionNamed:queryDict:" : "dkh 05/01/2016 06:58",
+		"selectCollectionNamed:queryDict:" : "dkh 05/05/2016 19:57",
 		"systemQuery:" : "dkh 03/14/2016 19:50",
 		"validateCollectionNamed:" : "dkh 03/13/2016 12:49" } }

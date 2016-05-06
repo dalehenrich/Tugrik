@@ -32,6 +32,7 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
                 offset: mongoQueryOffset
                 chunkSize: mongoQueryChunkSize
                 query: (data at: 1)
+                orderBy: Dictionary new
                 fields: (data at: 2) ]
             ifFalse: [ 
               collectionName := operationType.
@@ -41,6 +42,8 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
                 collectionName: collectionName
                 offset: mongoQueryOffset
                 chunkSize: mongoQueryChunkSize
-                query: (data at: '$query') ] ] ].
+                query: (data at: '$query')
+                orderBy: (data at: '$orderby' ifAbsent: [ Dictionary new ])
+                fields: Dictionary new ] ] ].
   System commit.
   ^ result

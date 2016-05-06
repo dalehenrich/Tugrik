@@ -112,9 +112,7 @@ registerTodeEventsFor: client gemTrace: gemTrace
 			aClient objectSerializer fromString: stonString	"return result to caller" ]
 			for: #getListForClientListElement:;
 		registerService: [ :windowId :aClient | 
-			windowId == 1
-				ifTrue: [ debuggerSession debugger refreshView ]
-				ifFalse: [ self halt ].
+			debuggerSession debugger refreshView .
 			nil ]
 			for: #refreshViewFor:;
 		registerService: [ :windowId :aClient | 
