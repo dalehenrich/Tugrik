@@ -1,9 +1,11 @@
 private-communicating
 getMore: idInteger collection: aString chunkSize: countInteger
+	| id |
+	id := self nextRequestID.
 	(GetMoreOperation
-		collection: aString 
-		id: idInteger 
-		session: session
-		cursorId: idInteger 
-		returnCount: countInteger)
-			write
+		collection: aString
+		id: id
+		stream: stream
+		cursorId: idInteger
+		returnCount: countInteger) write.
+	^ id

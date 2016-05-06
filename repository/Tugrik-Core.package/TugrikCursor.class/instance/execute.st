@@ -1,6 +1,7 @@
 executing
 execute
-	| limit reply numberReturned |
+"outstanding unported changes to MongoCursor, since Mongo-Core-HolgerHansPeterFreyther.47 "
+	| limit reply numberReturned  |
 	numberReturned := 0.
 	reply := nil.
 	limit := query limit.
@@ -10,9 +11,8 @@ execute
 		ifTrue: [ query chunkSize: limit ].
 	[ 
 	reply isNil
-		ifTrue: [ 
-			| result |
-			result := root cursorQuery: query.
+		ifTrue: [ | result|
+			result :=  root cursorQuery: query.
 			reply := TugrikReplyOperation new
 				result: result;
 				yourself ]

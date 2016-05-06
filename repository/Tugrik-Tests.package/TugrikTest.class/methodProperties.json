@@ -32,4 +32,5 @@
 		"testSelect" : "dkh 3/4/2016 10:26",
 		"testSelectWithLimit" : "dkh 3/4/2016 10:26",
 		"testSelectWithLimitAndNumberToSkip" : "dkh 3/4/2016 10:26",
-		"testUpdate" : "dkh 3/5/2016 14:07" } }
+		"testUpdate" : "dkh 3/5/2016 14:07",
+		"testUpdateWithFlags" : "dkh 5/6/2016 10:48" } }

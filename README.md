@@ -56,6 +56,15 @@ todeIt Tugrik project load TugrikTalk
 
 For more information see [SmalltalkCI and GsDevKit_home][7].
 
+
+###Active packages when port initially started:
+Project start date is roughly February 12, 2016 and these are the packages in the [MongTalk repository][1] that containing code that was copied (at this point in time) for TugrikTalk:
+
+- Mongo-Core-HolgerHansPeterFreyther.47
+- Mongo-Tests-Core-TorstenBergmann.2
+- Mongo-Pharo-Tools-TorstenBergmann.7
+ 
+
 [1]: http://smalltalkhub.com/#!/~MongoTalkTeam/mongotalk
 [2]: https://github.com/GsDevKit/GsDevKit_home
 [3]: https://gemtalksystems.com/products/gs64/

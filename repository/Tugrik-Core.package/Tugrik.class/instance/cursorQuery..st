@@ -1,3 +1,6 @@
 private-communicating
 cursorQuery: aQuery
-	^ (QueryOperation id: self nextRequestID stream: stream query: aQuery) performTugrikOperationOn: self
+	| id |
+	id := self nextRequestID.
+	(QueryOperation id: id stream: stream query: aQuery) performTugrikOperationOn: self.
+	^ id

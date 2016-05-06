@@ -2,13 +2,14 @@
 	"class" : {
 		"root:name:" : "dkh 3/5/2016 07:37" },
 	"instance" : {
-		"addCollection:" : "dkh 3/5/2016 07:37",
+		"addCollection:" : "dkh 5/6/2016 11:06",
 		"collectionAt:" : "dkh 3/5/2016 07:37",
 		"collections" : "dkh 3/5/2016 07:37",
 		"command:" : "dkh 3/5/2016 07:37",
 		"delete:collection:" : "dkh 3/5/2016 07:37",
 		"do:" : "dkh 3/5/2016 07:37",
 		"drop" : "dkh 3/5/2016 07:37",
+		"getCollection:" : "dkh 5/6/2016 11:06",
 		"hasCollectionNamed:" : "dkh 3/5/2016 07:37",
 		"insert:collection:" : "dkh 3/5/2016 07:37",
 		"name" : "dkh 3/5/2016 07:37",
@@ -18,4 +19,5 @@
 		"queryOne:" : "dkh 3/5/2016 07:37",
 		"setRoot:name:" : "dkh 3/5/2016 07:37",
 		"update:with:collection:" : "dkh 3/5/2016 07:37",
+		"update:with:collection:flags:" : "dkh 5/6/2016 11:07",
 		"username:password:" : "dkh 3/5/2016 07:37" } }
