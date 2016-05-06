@@ -5,7 +5,7 @@ queryOperation: id opCode: opCode collectionName: collectionName offset: mongoQu
   mongoQueryOffset > 0
     ifTrue: [ result := result copyFrom: mongoQueryOffset + 1 to: result size ].
   fieldsDictionary isEmpty
-    ifFalse: [  ].
+    ifFalse: [ result := self filterResult: result fields: fieldsDictionary ].
   orderByDict isEmpty
     ifFalse: [ 
       orderByDict

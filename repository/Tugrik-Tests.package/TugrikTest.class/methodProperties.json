@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"lastStoredRun" : "dkh 5/5/2016 19:36" },
+		"lastStoredRun" : "dkh 5/6/2016 10:28" },
 	"instance" : {
 		"setUp" : "dkh 3/4/2016 10:28",
 		"tearDown" : "dkh 3/4/2016 10:26",
@@ -21,7 +21,7 @@
 		"testInsertTwoAndQuery" : "dkh 3/4/2016 10:26",
 		"testIsEmpty" : "dkh 3/4/2016 10:26",
 		"testOccurrencesOf" : "dkh 3/4/2016 10:26",
-		"testOrderBy" : "dkh 5/5/2016 19:56",
+		"testOrderBy" : "dkh 3/4/2016 10:28",
 		"testRemove" : "dkh 3/4/2016 10:26",
 		"testRemoveAll" : "dkh 3/4/2016 10:26",
 		"testRemoveBoth" : "dkh 3/4/2016 10:26",

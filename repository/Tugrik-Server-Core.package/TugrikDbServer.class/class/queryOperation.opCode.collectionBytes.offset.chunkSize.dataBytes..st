@@ -31,8 +31,9 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
                 collectionName: collectionName
                 offset: mongoQueryOffset
                 chunkSize: mongoQueryChunkSize
-                query: (data at: 1)
-                orderBy: Dictionary new
+                query: ((data at: 1) at: '$query')
+                orderBy:
+                  ((data at: 1) at: '$orderby' ifAbsent: [ Dictionary new ])
                 fields: (data at: 2) ]
             ifFalse: [ 
               collectionName := operationType.
