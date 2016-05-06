@@ -2,7 +2,8 @@
 	"class" : {
 		"root:name:" : "dkh 3/5/2016 07:37" },
 	"instance" : {
-		"addCollection:" : "dkh 5/6/2016 11:06",
+		"addCollection:" : "dkh 5/6/2016 14:00",
+		"addCollection:capped:size:max:" : "dkh 5/6/2016 14:00",
 		"collectionAt:" : "dkh 3/5/2016 07:37",
 		"collections" : "dkh 3/5/2016 07:37",
 		"command:" : "dkh 3/5/2016 07:37",
