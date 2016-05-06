@@ -1,3 +1,8 @@
 operation API
 updateOperation: id collectionBytes: collectionBytes dataBytes: dataBytes
- 	self error
+	^ self
+		performOperationOnServer: #updateOperation:collectionBytes:dataBytes:
+		withArgs:
+			{id.
+			collectionBytes.
+			dataBytes}
