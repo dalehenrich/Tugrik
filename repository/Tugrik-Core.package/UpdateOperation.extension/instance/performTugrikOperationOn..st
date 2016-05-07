@@ -4,3 +4,4 @@ performTugrikOperationOn: aTugrik
 		updateOperation: id
 		collectionBytes: collectionBytes
 		dataBytes: self computeTugrikDataBytes
+		flags: self flags

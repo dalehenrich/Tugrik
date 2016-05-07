@@ -1,5 +1,5 @@
 queries
-insertOperation: dict query: query result: result
+insertOperation: dict query: query
   | obj hasOid theOid |
   hasOid := false.
   obj := dict

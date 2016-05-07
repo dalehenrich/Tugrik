@@ -1,5 +1,5 @@
 operations
-updateOperation: id collectionBytes: collectionBytes dataBytes: dataBytes
+updateOperation: id collectionBytes: collectionBytes dataBytes: dataBytes flags: flags
   | collectionString data tokens dbName db collectionName result operationType |
   collectionString := collectionBytes decodeFromUTF8.
   data := STON fromString: dataBytes.
@@ -14,6 +14,10 @@ updateOperation: id collectionBytes: collectionBytes dataBytes: dataBytes
     ifTrue: [  ]
     ifFalse: [ 
       collectionName := operationType.
-      result := db updateOperation: id collectionName: collectionName data: data ].
+      result := db
+        updateOperation: id
+        collectionName: collectionName
+        data: data
+        flags: flags ].
   System commit.
   ^ result
