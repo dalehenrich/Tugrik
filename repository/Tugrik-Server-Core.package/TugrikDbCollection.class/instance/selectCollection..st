@@ -2,7 +2,7 @@ queries
 selectCollection: queryDict
   | query formula |
   queryDict isEmpty
-    ifTrue: [ ^ collection ].
+    ifTrue: [ ^ collection copy ].
   queryDict
     keysAndValuesDo: [ :key :value | 
       | predicate |
