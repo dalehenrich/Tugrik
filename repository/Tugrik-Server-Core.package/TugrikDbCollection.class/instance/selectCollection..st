@@ -1,6 +1,8 @@
 queries
 selectCollection: queryDict
   | query formula |
+  queryDict isEmpty
+    ifTrue: [ ^ collection ].
   queryDict
     keysAndValuesDo: [ :key :value | 
       | predicate |
