@@ -23,13 +23,12 @@ insertOperation: dict query: query
         keysAndValuesDo: [ :key :value | 
           key ~= '_id'
             ifTrue: [ 
-              | indexSpec |
+              TugrikObject
+                compile: key , ' ^self dynamicInstVarAt: #' , key printString
+                classified: '*generated'.
               (false and: [ self validateClassForIndexCreation: value class ])
                 ifTrue: [ 
-                  TugrikObject
-                    compile:
-                      key , ' ^self dynamicInstVarAt: #' , key printString
-                    classified: '*generated'.
+                  | indexSpec |
                   indexSpec := RcEqualityIndexSpecification
                     path: '#' , key
                     lastElementClass: value class.
