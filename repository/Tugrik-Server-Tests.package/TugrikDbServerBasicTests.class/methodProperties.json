@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"setUp" : "dkh 05/08/2016 10:32",
-		"tearDown" : "dkh 05/08/2016 10:32",
+		"tearDown" : "dkh 05/08/2016 11:23",
 		"testTugrikCursorQueryCountCollection" : "dkh 03/12/2016 08:43",
 		"testTugrikCursorQueryCreateCollection" : "dkh 03/12/2016 08:43",
 		"testTugrikCursorQueryDropCollection" : "dkh 03/12/2016 08:43",
