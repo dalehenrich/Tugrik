@@ -1,4 +1,3 @@
 tests
 setUp
-  super setUp.
-  TugrikDbServer resetRoot
+  super setUp

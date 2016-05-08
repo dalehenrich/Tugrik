@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "dkh 03/04/2016 16:29",
-		"tearDown" : "dkh 03/04/2016 16:28",
+		"setUp" : "dkh 05/08/2016 10:32",
+		"tearDown" : "dkh 05/08/2016 10:32",
 		"testTugrikCursorQueryCountCollection" : "dkh 03/12/2016 08:43",
 		"testTugrikCursorQueryCreateCollection" : "dkh 03/12/2016 08:43",
 		"testTugrikCursorQueryDropCollection" : "dkh 03/12/2016 08:43",
