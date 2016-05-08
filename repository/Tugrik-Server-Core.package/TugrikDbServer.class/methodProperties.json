@@ -1,6 +1,7 @@
 {
 	"class" : {
 		"deleteOperation:collectionBytes:dataBytes:" : "dkh 05/06/2016 13:43",
+		"initialize" : "dkh 05/08/2016 11:04",
 		"insertOperation:collectionBytes:dataBytes:" : "dkh 03/11/2016 19:18",
 		"queryOperation:opCode:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 05/06/2016 09:51",
 		"resetRoot" : "dkh 03/11/2016 15:07",
