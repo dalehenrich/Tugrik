@@ -1,4 +1,4 @@
 private
-setRoot: aMongo name: aString 
-	root := aMongo.
+setRoot: aTugrik name: aString 
+	root := aTugrik.
 	name := aString
