@@ -23,7 +23,7 @@ insertOperation: dict query: query
           | keyString keySymbol |
           keyString := key asString.
           keySymbol := key asSymbol.
-          keyString ~= '_id'
+          (keyString ~= '_id' and: [ (keyString beginsWith: '#') not ])
             ifTrue: [ 
               (TugrikObject includesSelector: keySymbol)
                 ifFalse: [ 
