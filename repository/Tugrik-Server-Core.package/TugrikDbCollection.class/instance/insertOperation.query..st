@@ -38,8 +38,8 @@ insertOperation: dict query: query
                       indexSpec := RcEqualityIndexSpecification
                         path: '#' , key
                         lastElementClass: value class.
-                      indexSpec createIndexOn: collection ] ].
-              obj
-                dynamicInstVarAt: key asSymbol put: value;
-                yourself ] ].
+                      indexSpec createIndexOn: collection ] ] ].
+          obj
+            dynamicInstVarAt: key asSymbol put: value;
+            yourself ].
       collection add: obj ]
