@@ -1,0 +1,14 @@
+{
+	"category" : "Tugrik-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"queryBlock" ],
+	"name" : "TugrikBlockQueryPredicate",
+	"pools" : [
+		 ],
+	"super" : "GsQueryFormula",
+	"type" : "normal" }
