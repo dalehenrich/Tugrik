@@ -1,3 +1,3 @@
 querying-private
 executeClause
-  ^ nsc select: queryBlock
+  ^ nsc select: selectBlock

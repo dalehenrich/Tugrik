@@ -11,7 +11,7 @@ testTugrikBlockPredicate01
     nsc add: assoc.
     elements add: assoc ].
   blockPredicate := TugrikBlockQueryPredicate
-    queryBlock: [ :each | each value = #('1') ].
+    selectBlock: [ :each | each value = #('1') ].
   query := blockPredicate asQuery on: nsc.
   queryResult := query queryResult.
   self assert: queryResult size = 1.

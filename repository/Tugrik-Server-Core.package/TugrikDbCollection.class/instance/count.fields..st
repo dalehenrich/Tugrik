@@ -9,7 +9,7 @@ count: queryDict fields: fieldsDict
         operator: #'='
         constant: value.
       formula
-        ifNil: [ formula := predicate asFormula ]
+        ifNil: [ formula := predicate ]
         ifNotNil: [ formula := formula & predicate ] ].
   query := GsQuery fromFormula: formula on: collection.
   result := query queryResult.

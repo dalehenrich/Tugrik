@@ -4,8 +4,8 @@
 	"instance" : {
 		"setUp" : "dkh 05/08/2016 10:32",
 		"tearDown" : "dkh 05/08/2016 11:23",
-		"testTugrikBlockPredicate01" : "dkh 05/13/2016 06:54",
-		"testTugrikBlockPredicate02" : "dkh 05/13/2016 06:54",
+		"testTugrikBlockPredicate01" : "dkh 05/13/2016 07:07",
+		"testTugrikBlockPredicate02" : "dkh 05/13/2016 07:07",
 		"testTugrikCursorQueryCountCollection" : "dkh 03/12/2016 08:43",
 		"testTugrikCursorQueryCreateCollection" : "dkh 03/12/2016 08:43",
 		"testTugrikCursorQueryDropCollection" : "dkh 03/12/2016 08:43",

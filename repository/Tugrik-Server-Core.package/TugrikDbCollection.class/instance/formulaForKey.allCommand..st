@@ -1,5 +1,5 @@
 formula creation
-formulaForKey: key allCommand: value
+formulaForKey: key allCommand: allArray
   "$all
 
     The $all operator selects the documents where the value of a field is an array that contains all the specified elements. To specify an $all expression, use the following prototype:
@@ -9,4 +9,7 @@ formulaForKey: key allCommand: value
 
   "set-valued query?"
 
-  self error: 'Not yet implemented'
+  | selector |
+  selector := key asSymbol.
+  ^ TugrikBlockQueryPredicate
+    selectBlock: [ :each | (each perform: selector) includesAllOf: allArray ]

@@ -16,7 +16,7 @@ testTugrikBlockPredicate02
       elements add: assoc ].
   predicate := GsQueryPredicate path: 'each.key' operator: #'>' constant: 2.
   blockPredicate := TugrikBlockQueryPredicate
-    queryBlock: [ :each | each value = #('1' '2') ].
+    selectBlock: [ :each | each value = #('1' '2') ].
   query := (predicate & blockPredicate) asQuery on: nsc.
   queryResult := query queryResult.
   self assert: queryResult size = 1.
