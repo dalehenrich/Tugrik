@@ -1,3 +1,4 @@
 visitors
 acceptVisitor: aFormulaVisitor
-  self halt
+  super acceptVisitor: aFormulaVisitor.
+  aFormulaVisitor acceptPredicate: self
