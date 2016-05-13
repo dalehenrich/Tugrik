@@ -3,7 +3,7 @@ formulaForKey: key commandDict: commandDict
   commandDict size > 1
     ifTrue: [ self error: 'Expected only one key in a commandDict' ].
   commandDict
-    keysAndValusDo: [ :command :value | 
+    keysAndValuesDo: [ :command :value | 
       command = '$all'
         ifTrue: [ ^ self formulaForKey: key allCommand: value ].
       (#('$or' '$and' '$not') includes: command)
