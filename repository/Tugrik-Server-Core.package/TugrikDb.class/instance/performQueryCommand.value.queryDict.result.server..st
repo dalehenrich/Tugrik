@@ -1,5 +1,5 @@
 query processing
-performQueryCommand: key value: value queryDict: queryDict result: result
+performQueryCommand: key value: value queryDict: queryDict result: result server: aDbServer
   key = 'create'
     ifTrue: [ ^ result add: (self createCollectionNamed: value) ].
   key = 'drop'
@@ -8,6 +8,8 @@ performQueryCommand: key value: value queryDict: queryDict result: result
     ifTrue: [ ^ result add: (self validateCollectionNamed: value) ].
   key = 'count'
     ifTrue: [ ^ result add: (self countCollectionNamed: value queryDict: queryDict) ].
+  key = 'dropDatabase'
+    ifTrue: [ ^ aDbServer dropDatabase: self ].
   key = 'query'
     ifTrue: [ ^ self ].
   key = 'fields'

@@ -17,7 +17,8 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
         opCode: opCode
         offset: mongoQueryOffset
         chunkSize: mongoQueryChunkSize
-        query: (data at: '$query') ]
+        query: (data at: '$query')
+        server: self ]
     ifFalse: [ 
       operationType = 'system'
         ifTrue: [ result := db systemQuery: (tokens copyFrom: 2 to: tokens size) ]
