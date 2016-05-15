@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "dkh 5/14/2016 20:39",
+		"tearDown" : "dkh 5/14/2016 20:38",
+		"testAnd" : "dkh 5/14/2016 20:38",
+		"testAndNot" : "dkh 5/14/2016 20:38",
+		"testAt" : "dkh 5/14/2016 20:38",
+		"testComparison" : "dkh 5/14/2016 20:38",
+		"testDetect" : "dkh 5/14/2016 20:38",
+		"testNestedQueries" : "dkh 5/14/2016 20:38",
+		"testNor" : "dkh 5/14/2016 20:38",
+		"testNot" : "dkh 5/14/2016 20:38",
+		"testOr" : "dkh 5/14/2016 20:38",
+		"testSelect" : "dkh 5/14/2016 20:38",
+		"testSize" : "dkh 5/14/2016 20:38",
+		"testType" : "dkh 5/14/2016 20:38",
+		"testWhere" : "dkh 5/14/2016 20:38" } }
