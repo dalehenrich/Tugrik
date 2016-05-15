@@ -4,12 +4,12 @@ formulaForKey: key logicCommand: command predicates: predicateArray
   logicalOperator := self logicalOperatorFor: command.
   predicateArray
     do: [ :dict | 
-      theFormula := (dict isKindOf: Dictionary)
+      (dict isKindOf: Dictionary)
         ifTrue: [ 
           dict size > 1
             ifTrue: [ self error: 'Expected only one key in a queryPredicate' ].
           dict
-            keysAndValuesDo: [ :cmd :value | self formulaForKey: cmd value: value ] ]
+            keysAndValuesDo: [ :cmd :value | theFormula := self formulaForKey: cmd value: value ] ]
         ifFalse: [ self error: 'Expected a queryPredicate object' ].
       formula
         ifNil: [ formula := theFormula ]

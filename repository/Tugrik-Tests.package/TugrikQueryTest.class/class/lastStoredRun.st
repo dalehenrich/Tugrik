@@ -1,0 +1,3 @@
+history
+lastStoredRun
+	^ ((Dictionary new) add: (#timeStamp->(DateAndTime basicNew instVarAt: 1 put: 60551; instVarAt: 2 put: (Duration seconds: -25200 nanoSeconds: 0); instVarAt: 3 put: 2457524; instVarAt: 4 put: 558345000; yourself)); add: (#passed->((Set new) add: #testOr; add: #testAnd; add: #testAt; add: #testNestedQueries; add: #testComparison; add: #testDetect; add: #testSelect; add: #testAndNot; yourself)); add: (#failures->((Set new))); add: (#errors->((Set new) add: #testWhere; add: #testNot; add: #testSize; add: #testNor; add: #testType; yourself)); yourself)
