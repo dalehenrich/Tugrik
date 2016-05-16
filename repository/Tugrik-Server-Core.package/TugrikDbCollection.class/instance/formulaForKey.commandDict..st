@@ -10,4 +10,15 @@ formulaForKey: key commandDict: commandDict
         ifTrue: [ ^ self formulaForKey: key logicCommand: command predicates: value ].
       (#('$eq' '$gt' '$gte' '$lt' '$lte' '$ne') includes: command)
         ifTrue: [ ^ self formulaForKey: key compare: (self operatorFor: command) value: value ].
-      self error: 'Unknown query command: ' command printString ]
+      (#('$size') includes: command)
+        ifTrue: [ 
+          | selector |
+          selector := key asSymbol.
+          ^ TugrikBlockQueryPredicate
+            selectBlock: [ :each | 
+              | obj |
+              obj := each perform: selector.
+              obj isArray
+                ifTrue: [ obj size = value ]
+                ifFalse: [ false ] ] ].
+      self error: 'Unknown query command: ' , command printString ]
