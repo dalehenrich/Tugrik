@@ -11,5 +11,5 @@ formulaForKey: key commandDict: commandDict
       (#('$eq' '$gt' '$gte' '$lt' '$lte' '$ne') includes: command)
         ifTrue: [ ^ self formulaForKey: key compare: (self operatorFor: command) value: value ].
       (#('$size') includes: command)
-        ifTrue: [ self formulaForKey: key sizeCommand: value ].
+        ifTrue: [ ^ self formulaForKey: key sizeCommand: value ].
       self error: 'Unknown query command: ' , command printString ]
