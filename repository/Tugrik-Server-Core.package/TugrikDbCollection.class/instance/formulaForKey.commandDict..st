@@ -12,4 +12,6 @@ formulaForKey: key commandDict: commandDict
         ifTrue: [ ^ self formulaForKey: key compare: (self operatorFor: command) value: value ].
       (#('$size') includes: command)
         ifTrue: [ ^ self formulaForKey: key sizeCommand: value ].
+      (#('$type') includes: command)
+        ifTrue: [ ^ self formulaForKey: key typeCommand: value ].
       self error: 'Unknown query command: ' , command printString ]
