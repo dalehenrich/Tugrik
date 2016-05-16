@@ -10,7 +10,9 @@ selectCollection: queryDict
   queryDict
     keysAndValuesDo: [ :key :value | 
       | theFormula |
-      theFormula := self formulaForKey: key value: value.
+      theFormula := key = '$where'
+        ifTrue: [ self formulaForWhere: value ]
+        ifFalse: [ self formulaForKey: key value: value ].
       formula
         ifNil: [ formula := theFormula ]
         ifNotNil: [ formula := formula & theFormula ] ].

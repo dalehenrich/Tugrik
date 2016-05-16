@@ -16,6 +16,7 @@
 		"formulaForKey:logicCommand:predicates:" : "dkh 05/15/2016 09:46",
 		"formulaForKey:sizeCommand:" : "dkh 05/16/2016 06:10",
 		"formulaForKey:value:" : "dkh 05/15/2016 09:37",
+		"formulaForWhere:" : "dkh 05/16/2016 06:31",
 		"insertOperation:" : "dkh 05/06/2016 17:15",
 		"insertOperation:query:" : "dkh 05/09/2016 10:03",
 		"logicalOperatorFor:" : "dkh 05/09/2016 19:07",
@@ -23,6 +24,6 @@
 		"name:" : "dkh 03/11/2016 15:16",
 		"operatorFor:" : "dkh 05/09/2016 16:49",
 		"removeIndexes" : "dkh 03/11/2016 19:33",
-		"selectCollection:" : "dkh 05/09/2016 18:18",
+		"selectCollection:" : "dkh 05/16/2016 06:27",
 		"updateOperation:flags:" : "dkh 05/06/2016 17:19",
 		"validateClassForIndexCreation:" : "dkh 03/13/2016 12:41" } }
