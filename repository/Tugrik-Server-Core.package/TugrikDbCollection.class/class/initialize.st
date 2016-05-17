@@ -18,4 +18,8 @@ initialize
     at: '$or' put: #'|';
     at: '$and' put: #'&';
     at: '$not' put: #'not';
+    yourself.
+  self
+    createTypeToClassMap;
+    createAliasToTypeMap;
     yourself

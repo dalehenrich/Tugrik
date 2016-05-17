@@ -3,8 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"AliasToTypeMap",
 		"LogicalMap",
-		"OperatorMap" ],
+		"OperatorMap",
+		"TypeToClassMap" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"name",

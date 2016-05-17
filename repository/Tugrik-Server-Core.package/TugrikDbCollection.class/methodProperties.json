@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"initialize" : "dkh 05/09/2016 19:07",
+		"createAliasToTypeMap" : "dkh 05/17/2016 06:48",
+		"createTypeToClassMap" : "dkh 05/17/2016 06:53",
+		"initialize" : "dkh 05/17/2016 06:52",
 		"named:" : "dkh 03/11/2016 15:18" },
 	"instance" : {
 		"collection" : "dkh 03/11/2016 15:16",
@@ -15,7 +17,7 @@
 		"formulaForKey:compare:value:" : "dkh 05/13/2016 07:10",
 		"formulaForKey:logicCommand:predicates:" : "dkh 05/15/2016 09:46",
 		"formulaForKey:sizeCommand:" : "dkh 05/16/2016 06:10",
-		"formulaForKey:typeCommand:" : "dkh 05/16/2016 14:36",
+		"formulaForKey:typeCommand:" : "dkh 05/17/2016 06:46",
 		"formulaForKey:value:" : "dkh 05/15/2016 09:37",
 		"formulaForWhere:" : "dkh 05/16/2016 06:31",
 		"insertOperation:" : "dkh 05/06/2016 17:15",
