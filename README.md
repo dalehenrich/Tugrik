@@ -63,9 +63,7 @@ For more information see [SmalltalkCI and GsDevKit_home][7].
 
 ### [Merged as of no-sql/mongotalk@32108d4](https://github.com/pharo-nosql/mongotalk/commit/32108d4daa7c38310ce03fd69d2bdd8e47d09a27)
 
-
-
-[1]: http://smalltalkhub.com/#!/~MongoTalkTeam/mongotalk
+[1]: https://github.com/pharo-nosql/mongotalk
 [2]: https://github.com/GsDevKit/GsDevKit_home
 [3]: https://gemtalksystems.com/products/gs64/
 [4]: https://www.mongodb.org
