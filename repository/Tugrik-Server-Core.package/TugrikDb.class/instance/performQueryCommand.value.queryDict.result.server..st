@@ -9,7 +9,7 @@ performQueryCommand: key value: value queryDict: queryDict result: result server
   key = 'count'
     ifTrue: [ ^ result add: (self countCollectionNamed: value queryDict: queryDict) ].
   key = 'dropDatabase'
-    ifTrue: [ ^ aDbServer dropDatabase: self ].
+    ifTrue: [ ^ result add: (aDbServer dropDatabase: self) ].
   key = 'query'
     ifTrue: [ ^ self ].
   key = 'fields'
