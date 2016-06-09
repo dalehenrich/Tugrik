@@ -24,21 +24,22 @@ baseline: spec
           with: [ 
               spec
                 loads: #('GsDevKitClient' 'GsDevKitClient Tests');
-                repository: 'github://GsDevKit/GsDevKit_home:dev/shared/repos/TodeClient' ];
+                repository:
+                    'github://GsDevKit/GsDevKit_home:dev/shared/repos/TodeClient' ];
         configuration: 'FFI'
           with: [ 
               spec
                 versionString: #'stable';
                 repository: 'http://www.squeaksource.com/MetacelloRepository' ];
-        configuration: 'MongoTalk'
+        baseline: 'MongoTalk'
           with: [ 
               spec
-                version: #'stable';
-                repository:
-                    'http://www.smalltalkhub.com/mc/MongoTalkTeam/mongotalk/main' ];
+                loads: #('Tools' 'Tests');
+                repository: 'github://pharo-nosql/mongotalk:master/mc' ];
         yourself.
       spec
-        package: 'Tugrik-Core' with: [ spec requires: #('GemStoneGCI' 'TodeClient' 'Tode') ];
+        package: 'Tugrik-Core'
+          with: [ spec requires: #('GemStoneGCI' 'TodeClient' 'Tode') ];
         package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'MongoTalk' ];
         package: 'Tugrik-Tests' with: [ spec requires: 'Tugrik-Core' ];
         yourself.
