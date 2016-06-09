@@ -7,7 +7,7 @@ SmalltalkCISpec {
   ],
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'TugrikTalk',
+      #baseline : 'Tugrik',
       #load : [ 'CI' ],
       #onWarningLog : true,
       #directory : 'repository',

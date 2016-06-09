@@ -28,7 +28,7 @@ createClient tode
 
 ```
 # Create Tugrik stone
-createStone -u http://gsdevkit.github.io/GsDevKit_home/TugrikTalk.ston -i TugrikTalk -l TugrikTalk Tugrik 3.3.0
+createStone -u http://gsdevkit.github.io/GsDevKit_home/Tugrik.ston -i Tugrik -l Tugrik Tugrik 3.3.0
 
 # Create Tugrik Pharo5.0 client
 createClient -t pharo tugrik_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
@@ -51,14 +51,14 @@ git pull origin master
 createClient -f -t pharo tugrik_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
 
 # refresh server
-todeIt Tugrik project load TugrikTalk
+todeIt Tugrik project load Tugrik
 ```
 
 For more information see [SmalltalkCI and GsDevKit_home][7].
 
 
 ###Active packages when port initially started:
-Project start date is roughly February 12, 2016 and these are the packages in the [MongTalk repository][1] that containing code that was copied (at this point in time) for TugrikTalk:
+Project start date is roughly February 12, 2016 and these are the packages in the [MongTalk repository][1] that containing code that was copied (at this point in time) for Tugrik:
 
 - Mongo-Core-HolgerHansPeterFreyther.47
 - Mongo-Tests-Core-TorstenBergmann.2
