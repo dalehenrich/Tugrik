@@ -7,5 +7,6 @@ listDatabases: value queryDict: queryDict
         at: 'name' put: db name;
         yourself ].
   ^ Dictionary new
+    at: 'ok' put: 1.0;
     at: 'databases' put: dbs;
     yourself
