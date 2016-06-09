@@ -61,12 +61,7 @@ todeIt Tugrik project load Tugrik
 For more information see [SmalltalkCI and GsDevKit_home][7].
 
 
-### pharo-nosql/mongotalk@32108d4daa7c38310ce03fd69d2bdd8e47d09a27
-
-pharo-nosql/mongotalk@32108d4daa7c38310ce03fd69d2bdd8e47d09a27
-
-
-https://github.com/pharo-nosql/mongotalk/commit/32108d4daa7c38310ce03fd69d2bdd8e47d09a27
+### [Merged as of no-sql/mongotalk@32108d4](https://github.com/pharo-nosql/mongotalk/commit/32108d4daa7c38310ce03fd69d2bdd8e47d09a27)
 
 
 
