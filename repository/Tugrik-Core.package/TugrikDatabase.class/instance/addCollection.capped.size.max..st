@@ -1,14 +1,17 @@
 operations
-addCollection: aString capped: capped size: sizeOrNil max: maxOrNil
-	| command reply |
+addCollection: aString capped: aCapped size: aSize max: aMax
+	| command |
 	command := Dictionary new.
 	command at: 'create' put: aString.
-	reply := self command: command.
-	(reply at: 'ok' ifAbsent: [self halt]) = 1.0 ifFalse: [
-		"Tolerate error 48: collection already exists"
-		((reply at: 'code') = 48) 
-			ifTrue: [ 
-				(MongoCollectionAlreadyExists new
-					collectionName: aString) signal  ]
-			ifFalse: [ self error: 'Command failed' ]].
-	^MongoCollection database: self name: aString
+	aCapped
+		ifTrue: [ command at: 'capped' put: true.
+			aSize ifNotNil: [ command at: 'size' put: aSize ].
+			aMax ifNotNil: [ command at: 'max' put: aMax ] ].
+	[ self command: command ]
+		on: MongoCommandError
+		do: [ :error | 
+			error isCollectionAlreadyExists
+				ifTrue: [ (MongoCollectionAlreadyExists new collectionName: aString) signal ]
+				ifFalse: [ error signal ] ].
+	"Tolerate error 48: collection already exists"
+	^ MongoCollection database: self name: aString
