@@ -2,7 +2,7 @@
 
 ## Work in Progress
 
-Tugrik is based on the Mongo-Core package of the [MongoTalk project][1]. Tugrik makes it possible to use the [MongoTalk][1] Smalltalk API to store objects in a [GemStone/S 64][3] database using [GsDevKit_home][2]. 
+Tugrik makes it possible to use the [MongoTalk][1] Smalltalk API to store objects in a [GemStone/S 64][3] database using [GsDevKit_home][2]. 
 The obvious advantage is that instead of storing your domain objects in an opaque db like [Mongo][4], your Smalltalk objects are stored in a Smalltalk db and operations can be performed in-place in the GemStone/S 64 db.
 
 ## [100 mongo = 1 tugrik][5]
@@ -61,13 +61,14 @@ todeIt Tugrik project load Tugrik
 For more information see [SmalltalkCI and GsDevKit_home][7].
 
 
-###Active packages when port initially started:
-Project start date is roughly February 12, 2016 and these are the packages in the [MongTalk repository][1] that containing code that was copied (at this point in time) for Tugrik:
+### pharo-nosql/mongotalk@32108d4daa7c38310ce03fd69d2bdd8e47d09a27
 
-- Mongo-Core-HolgerHansPeterFreyther.47
-- Mongo-Tests-Core-TorstenBergmann.2
-- Mongo-Pharo-Tools-TorstenBergmann.7
- 
+pharo-nosql/mongotalk@32108d4daa7c38310ce03fd69d2bdd8e47d09a27
+
+
+https://github.com/pharo-nosql/mongotalk/commit/32108d4daa7c38310ce03fd69d2bdd8e47d09a27
+
+
 
 [1]: http://smalltalkhub.com/#!/~MongoTalkTeam/mongotalk
 [2]: https://github.com/GsDevKit/GsDevKit_home
