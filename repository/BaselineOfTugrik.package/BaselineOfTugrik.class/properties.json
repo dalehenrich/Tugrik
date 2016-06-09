@@ -1,13 +1,13 @@
 {
-	"category" : "BaselineOfTugrikTalk",
+	"category" : "BaselineOfTugrik",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "dkh 06/09/2016 11:27",
 	"instvars" : [
 		 ],
-	"name" : "BaselineOfTugrikTalk",
+	"name" : "BaselineOfTugrik",
 	"pools" : [
 		 ],
 	"super" : "BaselineOf",
