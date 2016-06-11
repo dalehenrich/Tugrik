@@ -1,4 +1,4 @@
-instance creation
+examples
 example
 	"self example"
 
@@ -7,7 +7,7 @@ example
 	tugrik open.
 	db := tugrik databaseNamed: 'tugrik examples'.
 	collection := db getCollection: 'Basic Examples'.
-	sorted := SortedCollection sortBlock: [ :a :b | (a at: #name) <= (b at: #name) ].
+	sorted := SortedCollection sortBlock: [ :a :b | (a at: #order) <= (b at: #order) ].
 	collection do: [ :each | sorted add: each ].
 	group := GroupWindowMorph new.
 	sorted

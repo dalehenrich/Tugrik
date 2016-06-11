@@ -1,6 +1,7 @@
 operations
 open
-	false
-		ifTrue: [ 
-			"session created on demand for now"
-			session := sessionDescription login ]
+	true
+		ifTrue: [ | client |
+			session
+				ifNil: [ client := self todeClient.
+					session := client session ] ]

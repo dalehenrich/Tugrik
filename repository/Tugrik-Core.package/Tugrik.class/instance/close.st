@@ -1,6 +1,7 @@
 operations
 close
-	false
-		ifTrue: [ 
-			"session created on demand for now"
-			session logout ]
+	true
+		ifTrue: [ session ifNotNil: [ | sess |
+				sess := session.
+				session := nil.
+				sess isSessionValid ifTrue: [ sess logout ] . ]]
