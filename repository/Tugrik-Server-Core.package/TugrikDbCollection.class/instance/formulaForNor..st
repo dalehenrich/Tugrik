@@ -27,7 +27,7 @@ This query will return all documents that:
           theFormula := TugrikBlockQueryPredicate
             selectBlock: [ :each | 
               (each hasField: theField)
-                ifTrue: [ (each perform: theField) ~= value ]
+                ifTrue: [ (each dynamicInstVarAt: theField) ~= value ]
                 ifFalse: [ true ] ] ].
       formula
         ifNil: [ formula := theFormula ]

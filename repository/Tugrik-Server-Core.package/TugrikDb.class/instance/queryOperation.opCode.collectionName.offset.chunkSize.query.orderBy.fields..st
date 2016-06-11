@@ -9,5 +9,7 @@ queryOperation: id opCode: opCode collectionName: collectionName offset: mongoQu
   orderByDict isEmpty
     ifFalse: [ 
       orderByDict
-        keysAndValuesDo: [ :key :order | result := result sort: [ :a :b | (a perform: key) <= (b perform: key) ] ] ].
+        keysAndValuesDo: [ :key :order | 
+          result := result
+            sort: [ :a :b | (a dynamicInstVarAt: key) <= (b dynamicInstVarAt: key) ] ] ].
   ^ STON toString: result

@@ -22,5 +22,5 @@ $type
   ^ TugrikBlockQueryPredicate
     selectBlock: [ :each | 
       | obj |
-      obj := each perform: selector.
+      obj := each dynamicInstVarAt: selector.
       obj isKindOf: class ]

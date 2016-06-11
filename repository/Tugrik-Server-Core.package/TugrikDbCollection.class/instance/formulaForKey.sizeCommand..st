@@ -21,7 +21,7 @@ $size
   ^ TugrikBlockQueryPredicate
     selectBlock: [ :each | 
       | obj |
-      obj := each perform: selector.
+      obj := each dynamicInstVarAt: selector.
       obj isArray
         ifTrue: [ obj size = size ]
         ifFalse: [ false ] ]

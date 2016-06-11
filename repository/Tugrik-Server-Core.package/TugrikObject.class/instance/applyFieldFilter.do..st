@@ -5,7 +5,7 @@ applyFieldFilter: fieldsDictionary do: filterBlock
     keysAndValuesDo: [ :key :value | 
       | theValue sel |
       sel := key asSymbol.
-      theValue := self perform: sel.
+      theValue := self dynamicInstVarAt: sel.
       theValue = value
         ifTrue: [ 
           theCopy
