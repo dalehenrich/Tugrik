@@ -1,11 +1,12 @@
 {
 	"class" : {
-		"deleteOperation:collectionBytes:dataBytes:" : "dkh 05/06/2016 13:43",
+		"databaseNamed:" : "dkh 06/11/2016 10:12",
+		"deleteOperation:collectionBytes:dataBytes:" : "dkh 06/11/2016 10:12",
 		"dropDatabase:" : "dkh 06/09/2016 16:41",
-		"insertOperation:collectionBytes:dataBytes:" : "dkh 03/11/2016 19:18",
-		"queryOperation:opCode:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 05/14/2016 10:59",
+		"insertOperation:collectionBytes:dataBytes:" : "dkh 06/11/2016 10:13",
+		"queryOperation:opCode:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 06/11/2016 10:13",
 		"resetRoot" : "dkh 03/11/2016 15:07",
 		"root" : "dkh 06/10/2016 16:11",
-		"updateOperation:collectionBytes:dataBytes:flags:" : "dkh 05/06/2016 16:50" },
+		"updateOperation:collectionBytes:dataBytes:flags:" : "dkh 06/11/2016 10:13" },
 	"instance" : {
 		 } }

@@ -30,5 +30,6 @@ tugrikBasicExample
 
   "dispose collection and database"
   collection drop.
-  db drop
+  db drop.
+  tugrik close	  "close connection"
 '

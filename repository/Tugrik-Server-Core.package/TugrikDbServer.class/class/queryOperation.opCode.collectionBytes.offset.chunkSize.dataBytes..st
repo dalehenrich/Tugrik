@@ -7,9 +7,7 @@ queryOperation: id opCode: opCode collectionBytes: collectionBytes offset: mongo
   dbName := tokens at: 1.
   operationType := tokens at: 2.
   System abort.
-  db := self root
-    at: dbName
-    ifAbsent: [ self root at: dbName put: (TugrikDb named: dbName) ].
+  db := self databaseNamed: dbName.
   operationType = '$cmd'
     ifTrue: [ 
       result := db

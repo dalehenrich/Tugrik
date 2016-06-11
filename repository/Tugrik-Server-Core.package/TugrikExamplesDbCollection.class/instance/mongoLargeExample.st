@@ -19,6 +19,6 @@ mongoLargeExample
 
   "dispose collection and database"
   collection drop.
-  db drop.	"close connection"
-  db close
+  db drop.
+  mongo close	  "close connection"
 '
