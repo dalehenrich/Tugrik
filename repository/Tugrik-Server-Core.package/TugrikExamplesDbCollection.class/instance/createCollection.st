@@ -24,4 +24,4 @@ createCollection
     do: [ :dict | 
       | query |
       query := 'each._id.value = oid' asQueryOn: collection.
-      self insertOperation: dict query: query ]
+      self doInsert: dict ]
