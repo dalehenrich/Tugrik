@@ -3,5 +3,5 @@ testOr
 	| selected |
 	collection add: (Dictionary new at: 'key1' put: 1; at: 'key2' put: 2; yourself).
 	collection add: (Dictionary new at: 'key1' put: '1'; at: 'key2' put: 3; yourself).
-	selected := collection select: [ :each | (each key1 = 1) | (each key2 = 3)] .
+	selected := collection select: [ :each | ((each dyamicInstVarAt: #key1) = 1) | ((each dyamicInstVarAt: #key2) = 3)] .
 	self assert: selected size equals: 2

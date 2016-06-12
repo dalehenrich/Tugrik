@@ -16,7 +16,7 @@
 		"performQueryCommand:value:queryDict:result:server:" : "dkh 06/09/2016 16:44",
 		"processQueryCommand:result:server:" : "dkh 05/14/2016 11:00",
 		"queryCommand:opCode:offset:chunkSize:query:server:" : "dkh 05/14/2016 11:00",
-		"queryOperation:opCode:collectionName:offset:chunkSize:query:orderBy:fields:" : "dkh 06/11/2016 11:50",
+		"queryOperation:opCode:collectionName:offset:chunkSize:query:orderBy:fields:" : "dkh 06/12/2016 15:02",
 		"resetCollections" : "dkh 03/11/2016 19:33",
 		"selectCollectionNamed:queryDict:" : "dkh 05/10/2016 07:37",
 		"systemQuery:" : "dkh 03/14/2016 19:50",

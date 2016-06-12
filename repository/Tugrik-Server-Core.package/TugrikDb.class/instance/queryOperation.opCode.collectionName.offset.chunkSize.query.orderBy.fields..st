@@ -10,6 +10,8 @@ queryOperation: id opCode: opCode collectionName: collectionName offset: mongoQu
     ifFalse: [ 
       orderByDict
         keysAndValuesDo: [ :key :order | 
+          | selector |
+          selector := key asSymbol.
           result := result
-            sort: [ :a :b | (a dynamicInstVarAt: key) <= (b dynamicInstVarAt: key) ] ] ].
+            sort: [ :a :b | (a dynamicInstVarAt: selector) <= (b dynamicInstVarAt: selector) ] ] ].
   ^ STON toString: result

@@ -3,6 +3,7 @@
 		"selectBlock:" : "dkh 05/13/2016 07:06" },
 	"instance" : {
 		"acceptVisitor:" : "dkh 05/13/2016 06:38",
+		"applyDeMorgansTransform" : "dkh 06/12/2016 14:54",
 		"bind:to:" : "dkh 05/13/2016 06:46",
 		"executeClause" : "dkh 05/13/2016 07:06",
 		"selectBlock" : "dkh 05/13/2016 07:05",
