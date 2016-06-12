@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'BaselineOfTugrik'!
+SystemOrganization addCategory: #BaselineOfTugrik!
