@@ -7,7 +7,7 @@ initialize
 "
 
   value := LargeInteger basicNew: 12.
-  value := (value bitOr: DateAndTime now asSeconds rounded) bitShift: 24.
+  value := (value bitOr: DateAndTime secondsSince2001 rounded) bitShift: 24.
   value := (value bitOr: (self class sessionSerialNum bitAnd: 16rFFFFFF))
     bitShift: 40.
   value := value bitOr: self class counterNext
