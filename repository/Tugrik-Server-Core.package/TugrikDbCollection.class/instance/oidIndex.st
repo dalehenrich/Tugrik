@@ -1,3 +1,0 @@
-oid
-oidIndex
-  ^ oidIndex
