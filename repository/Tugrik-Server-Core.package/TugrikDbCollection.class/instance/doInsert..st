@@ -1,13 +1,13 @@
 queries
 doInsert: dict
-  | obj hasOid theOid |
+  | obj hasOid theOid query |
   hasOid := false.
   dict
     at: '_id'
     ifPresent: [ :oid | 
       hasOid := true.
       theOid := oid.
-      self oidMap at: oid value ifPresent: [ :o | obj := o ] ].
+      obj := self objWithOid: oid ifAbsent: [  ] ].
   obj
     ifNil: [ 
       obj := hasOid

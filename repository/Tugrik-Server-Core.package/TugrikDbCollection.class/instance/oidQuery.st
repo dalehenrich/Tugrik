@@ -1,0 +1,3 @@
+oid
+oidQuery
+  ^ oidQuery copy

@@ -9,8 +9,8 @@ updateOperation: anArray flags: flags
   oldObj
     at: '_id'
     ifPresent: [ :oid | 
-      theObj := self oidMap
-        at: oid value
+      theObj := self
+        objWithOid: oid
         ifAbsent: [ self error: 'Object with id: ' , oid printString , ' not found' ] ]
     ifAbsent: [ 
       theObj := (self selectCollection: oldObj)
@@ -19,11 +19,8 @@ updateOperation: anArray flags: flags
           flags = 1
             ifTrue: [ 
               "upsert"
-              self doInsert: newObj.
-              theObj := (self selectCollection: oldObj)
-                detect: [ :each | true ]
-                ifNone: [ ^ result ] ]
-            ifFalse: [ ^ result ] ] ].
+              self doInsert: newObj ].
+          ^ result ] ].
   newObj
     keysAndValuesDo: [ :key :value | theObj dynamicInstVarAt: key asSymbol put: value ].
   ^ result

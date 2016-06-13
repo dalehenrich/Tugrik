@@ -11,7 +11,9 @@
 	"instvars" : [
 		"name",
 		"collection",
-		"oidMap" ],
+		"oidMap",
+		"oidIndex",
+		"oidQuery" ],
 	"name" : "TugrikDbCollection",
 	"pools" : [
 		 ],

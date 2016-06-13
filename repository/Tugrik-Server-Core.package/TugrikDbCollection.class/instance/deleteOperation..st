@@ -5,7 +5,7 @@ deleteOperation: queryDict
   objs
     do: [ :obj | 
       collection remove: obj.
-      self oidMap removeKey: obj _id ifAbsent: [  ] ].
+      obj _id ifNotNil: [ self oidIndex remove: obj ifAbsent: [  ] ] ].
   ^ Dictionary new
     at: 'ok' put: 1.0;
     yourself
