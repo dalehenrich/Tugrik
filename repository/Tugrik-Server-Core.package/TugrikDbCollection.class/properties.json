@@ -11,7 +11,6 @@
 	"instvars" : [
 		"name",
 		"collection",
-		"oidMap",
 		"oidIndex",
 		"oidQuery" ],
 	"name" : "TugrikDbCollection",

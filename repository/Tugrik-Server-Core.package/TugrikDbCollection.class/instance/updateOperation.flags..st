@@ -10,7 +10,7 @@ updateOperation: anArray flags: flags
     at: '_id'
     ifPresent: [ :oid | 
       theObj := self
-        objWithOid: oid
+        objWithOid: oid value
         ifAbsent: [ self error: 'Object with id: ' , oid printString , ' not found' ] ]
     ifAbsent: [ 
       theObj := (self selectCollection: oldObj)

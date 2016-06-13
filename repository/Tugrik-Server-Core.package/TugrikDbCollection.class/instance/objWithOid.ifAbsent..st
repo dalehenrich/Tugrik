@@ -1,5 +1,5 @@
 oid
-objWithOid: oid ifAbsent: absentBlock
-  ^ (self oidQuery bind: 'oidValue' to: oid value)
+objWithOid: oidValue ifAbsent: absentBlock
+  ^ (self oidQuery bind: 'oidValue' to: oidValue)
     detect: [ :each | true ]
     ifNone: [  ]
