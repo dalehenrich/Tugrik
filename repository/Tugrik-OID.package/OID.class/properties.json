@@ -1,7 +1,6 @@
 {
 	"category" : "Tugrik-OID",
 	"classinstvars" : [
-		"counter",
 		"sessionSerialNum" ],
 	"classvars" : [
 		 ],
