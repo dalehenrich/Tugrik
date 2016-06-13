@@ -5,13 +5,14 @@ gemstoneLargeExample
   tugrik := Tugrik default.
   tugrik open.
 
-  tugrik session executeString: ''
-  | db collection |
+  elapsed := tugrik session executeString: ''
+  | db collection elapsed |
   "Add large number of collections"
   db := TugrikDbServer databaseNamed: ''''test''''.
   collection := db collectionNamed: ''''dummy''''.
   System commit.
-  (1 to: 100000)
+  elapsed := System millisecondsToRun: [
+    (1 to: 100000)
     do: [ :n | 
       collection
         add:
@@ -19,8 +20,10 @@ gemstoneLargeExample
             dynamicInstVarAt: #idx put: n;
             dynamicInstVarAt: #number put: n atRandom;
             yourself).
-       n \\ 1000 = 0 ifTrue: [ System commit ] ].
-  System commit''.
+       n \\ 1000 = 0 ifTrue: [ System commit ] ] ].
+  System commit.
+  elapsed''.
+  elapsed inspect.
   db := tugrik databaseNamed: ''test''.
   collection := db getCollection: ''dummy''.
   result := collection select: [ :item | (item at: #''number'') < 10 ].

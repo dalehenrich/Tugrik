@@ -8,12 +8,14 @@ mongoLargeExample
   "Add large number of collections"
   db := mongo databaseNamed: ''test''.
   collection := db addCollection: ''dummy''.
-  (1 to: 100000)
+  elapsed := Time millisecondsToRun: [ 
+    (1 to: 100000)
     do: [ :n | 
       collection
         add:
           ({(#''idx'' -> n).
-          (#''number'' -> n atRandom)} as: Dictionary) ].
+          (#''number'' -> n atRandom)} as: Dictionary) ] ].
+  elapsed inspect.
   result := collection select: [ :item | (item at: #''number'') < 10 ].
   result inspect.
 
