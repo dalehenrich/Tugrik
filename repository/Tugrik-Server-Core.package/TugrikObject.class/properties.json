@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"_id" ],
+		"_id",
+		"_oidValue" ],
 	"name" : "TugrikObject",
 	"pools" : [
 		 ],

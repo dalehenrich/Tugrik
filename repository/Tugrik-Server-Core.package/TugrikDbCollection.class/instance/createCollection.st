@@ -1,5 +1,5 @@
 queries
 createCollection
   collection := IdentityBag new.
-  collection createEqualityIndexOn: '_id' withLastElementClass: Integer.
-  oidQuery := 'each._id = oidValue' asQueryOn: collection
+  collection createEqualityIndexOn: '_oidValue' withLastElementClass: Integer.
+  oidQuery := 'each._oidValue = oidValue' asQueryOn: collection

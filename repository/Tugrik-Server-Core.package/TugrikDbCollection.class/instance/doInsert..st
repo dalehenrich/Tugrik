@@ -7,13 +7,13 @@ doInsert: dict
     ifPresent: [ :oid | 
       hasOid := true.
       theOid := oid.
-      obj := self objWithOid: oid value ifAbsent: [  ] ].
+      obj := self objWithOid: oid ifAbsent: [  ] ].
   obj
     ifNil: [ 
       obj := hasOid
         ifTrue: [ 
           TugrikObject basicNew
-            _id: theOid value;
+            _id: theOid;
             yourself ]
         ifFalse: [ TugrikObject new ].
       dict
