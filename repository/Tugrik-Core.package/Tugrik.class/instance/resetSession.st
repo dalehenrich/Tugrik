@@ -1,0 +1,3 @@
+accessing
+resetSession
+	^ session := nil
