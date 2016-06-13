@@ -1,0 +1,3 @@
+testing
+isInvariant
+  ^ true
