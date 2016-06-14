@@ -39,17 +39,19 @@ baseline: spec
         yourself.
       spec
         package: 'Tugrik-Core'
-          with: [ spec requires: #('GemStoneGCI' 'TodeClient' 'Tode') ];
+          with: [ spec requires: #('GemStoneGCI' 'TodeClient' 'Tode' 'MongoTalk') ];
         package: 'Tugrik-Queries' with: [ spec requires: #('Tugrik-Core') ];
-        package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'MongoTalk' ];
+        package: 'Tugrik-Pharo-Tools' with: [ spec requires: 'Tugrik-Core' ];
+		  package: 'Tugrik-Help' with: [ spec requires: 'Tugrik-Core' ];
         package: 'Tugrik-Tests' with: [ spec requires: #( 'Tugrik-Core' 'Tugrik-Queries') ];
         yourself.
       spec
-        group: 'default' with: #('Core' 'Tools' 'Tests');
+        group: 'default' with: #('Core' 'Tools' 'Tests' 'Help');
         group: 'Core' with: #('Tugrik-Core' 'Tugrik-Queries');
         group: 'Tools' with: #('Tugrik-Pharo-Tools');
         group: 'Tests' with: #('Tugrik-Tests');
-        group: 'CI' with: #('Core' 'Tools' 'Tests');
+        group: 'Help' with: #('Tugrik-Help');
+        group: 'CI' with: #('Core' 'Tools' 'Tests' 'Help');
         yourself ].
   spec
     for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x')

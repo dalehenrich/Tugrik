@@ -1,0 +1,72 @@
+TDScriptLeafNode{#name:'tugrik',#contents:'[ :topez :objIn :tokens :command :commandNode | 
+  | opts args |
+  \"for help: ./tugrik -h\"
+  command
+    getOptsMixedLongShort:
+      {#(\'help\' $h #\'none\').
+      #(\'clean\' nil #\'none\').
+      #(\'reset\' nil #\'none\').
+      #(\'large\' nil #\'none\').
+      #(\'inspect\' nil #\'none\')}
+    optionsAndArguments: [ :options :operands | 
+      opts := options.
+      args := operands ].
+  opts
+    at: \'help\'
+    ifAbsent: [ 
+      | result gs |
+      opts
+        at: \'clean\'
+        ifPresent: [ :ignored | 
+          | gsTool |
+          TugrikDbServer resetRoot.
+          gs := topez toolInstanceFor: \'gs\'.
+          gs gsFlushCaches: true.
+          gs gsMfc ].
+      opts at: \'reset\' ifPresent: [ :ignored | TugrikDbServer resetRoot ].
+      opts at: \'inspect\' ifPresent: [ :ignored | result := TugrikDbServer root ].
+      opts
+        at: \'large\'
+        ifPresent: [ :ignored | 
+          | db collection elapsed |
+              db := TugrikDbServer databaseNamed: \'test\'.
+              collection := db collectionNamed: \'dummy\'.
+              System commit.
+          elapsed := System
+            millisecondsToRun: [ 
+              \"Add large number of collections\"
+              (1 to: 100000)
+                do: [ :n | 
+                  collection
+                    add:
+                      (TugrikObject new
+                        dynamicInstVarAt: #\'idx\' put: n;
+                        dynamicInstVarAt: #\'number\' put: n atRandom;
+                        yourself).
+                  n \\\\ 1000 = 0
+                    ifTrue: [ System commit ] ].
+              System commit ].
+          result := {elapsed.
+          collection} ].
+      result ]
+    ifPresent: [ :ignored | 
+      TDManPage
+        viewManPage:
+          \'NAME
+  tugrik - tugrik script utility template
+SYNOPSIS
+  tugrik [-h|--help]
+DESCRIPTION
+EXAMPLES
+  ./tugrik -h
+
+  ./tugrik --clean
+  ./tugrik --reset
+  ./tugrik --inspect
+  ./tugrik --large
+
+  ./tugrik --reset --large; edit
+
+  ./tugrik --reset; pf start; ./tugrik --large; edit; pf view
+\'
+        topez: topez ] ]',#creationTime:DateAndTime['2016-06-10T16:59:25.68250703811646-07:00'],#modificationTime:DateAndTime['2016-06-13T16:12:33.23204708099365-07:00']}
