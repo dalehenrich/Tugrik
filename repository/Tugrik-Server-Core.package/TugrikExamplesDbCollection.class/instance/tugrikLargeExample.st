@@ -25,5 +25,6 @@ tugrikLargeExample
   "dispose collection and database"
   collection drop.
   db drop.	"close connection"
+  tugrik session executeString: ''System commit''.
   tugrik close	  "close connection"
 '
