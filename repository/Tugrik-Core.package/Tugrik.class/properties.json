@@ -5,7 +5,8 @@
 	"classvars" : [
 		"Default",
 		"DefaultGciSessionDescription",
-		"DefaultGciSessionDescriptionFileReference" ],
+		"DefaultGciSessionDescriptionFileReference",
+		"RemotePerformStringBuffer" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"sessionDescription",

@@ -4,8 +4,7 @@ performOperationOnServer: selector withArgs: args
 	session
 		ifNil: [ client := self todeClient.
 			session := client session ].
-	[ | resultString buffer |
-	buffer := String new: 50000.
+	[ RemotePerformStringBuffer ifNil: [ RemotePerformStringBuffer := String new: 50000 ].
 	stream := WriteStream on: String new.
 	stream
 		nextPutAll: self tugrikDbServerClassName;
@@ -14,8 +13,8 @@ performOperationOnServer: selector withArgs: args
 		nextPutAll: ' withArguments: (STON fromString: ';
 		nextPutAll: (STON toString: args) printString;
 		nextPutAll: ')'.
-	resultString := session executeStringFetchBytes: stream contents resultBuffer: buffer.
-	^ STON fromString: resultString ]
+	session executeStringFetchBytes: stream contents rawBuffer: RemotePerformStringBuffer.
+	^ STON fromString: RemotePerformStringBuffer ]
 		ensure: [ false
 				ifTrue: [ session logout.
 					session := nil ] ]
