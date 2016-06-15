@@ -1,4 +1,0 @@
-defaults
-defaultUserId
-
-	^'DataCurator'

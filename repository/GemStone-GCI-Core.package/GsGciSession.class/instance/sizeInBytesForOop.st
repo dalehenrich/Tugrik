@@ -1,3 +1,0 @@
-private
-sizeInBytesForOop
-	^ 8

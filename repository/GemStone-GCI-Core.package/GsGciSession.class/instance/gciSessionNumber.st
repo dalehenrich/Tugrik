@@ -1,3 +1,0 @@
-accessing
-gciSessionNumber
-	^ gciSessionNumber

@@ -1,3 +1,0 @@
-accessing
-oopClassQuadByteString
-	^ self class oopClassQuadByteString

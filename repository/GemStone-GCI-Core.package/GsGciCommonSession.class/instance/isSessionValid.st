@@ -1,3 +1,0 @@
-testing
-isSessionValid
-	self subclassResponsibility

@@ -1,4 +1,0 @@
-defaults
-defaultGemHost
-
-	^'glass'

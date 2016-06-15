@@ -1,3 +1,0 @@
-accessing
-oopClassQuadByteSymbol
-	^ self class oopClassQuadByteSymbol

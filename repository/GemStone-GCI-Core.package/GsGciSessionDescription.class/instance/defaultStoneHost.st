@@ -1,4 +1,0 @@
-defaults
-defaultStoneHost
-
-	^'glass'

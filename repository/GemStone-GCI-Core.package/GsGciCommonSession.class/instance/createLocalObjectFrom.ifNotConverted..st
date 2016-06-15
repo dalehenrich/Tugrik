@@ -1,3 +1,0 @@
-local object creation
-createLocalObjectFrom: aGsOopType ifNotConverted: notConvertedBlock
-	self subclassResponsibility
