@@ -12,7 +12,8 @@
 		"session",
 		"stream",
 		"requestID",
-		"tugrikDbServerClassName" ],
+		"tugrikDbServerClassName",
+		"tugrikDbServerOopType" ],
 	"name" : "Tugrik",
 	"pools" : [
 		 ],
