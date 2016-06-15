@@ -10,13 +10,15 @@ tugrikLargeExample
   "Add large number of collections"
   db := tugrik databaseNamed: ''test''.
   collection := db addCollection: ''dummy''.
-  (1 to: 100000)
+  elapsed := Time millisecondsToRun: [
+   (1 to: 100000)
     do: [ :n | 
       collection
         add:
           ({(#''idx'' -> n).
           (#''number'' -> n atRandom)} as: Dictionary) ].
-  tugrik session executeString: ''System commit''.
+  tugrik session executeString: ''System commit'' ].
+  elapsed inspect.
   result := collection select: [ :item | (item at: #''number'') < 10 ].
   result inspect.
 

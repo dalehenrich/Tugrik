@@ -1,7 +1,7 @@
 {
 	"category" : "Tugrik-Server-Core",
 	"classinstvars" : [
-		 ],
+		"StonOkayDict" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",

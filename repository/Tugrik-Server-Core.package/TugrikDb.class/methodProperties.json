@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"named:" : "dkh 03/05/2016 08:18" },
+		"named:" : "dkh 03/05/2016 08:18",
+		"stonOkayDict" : "dkh 06/14/2016 20:02" },
 	"instance" : {
 		"collectionNamed:" : "dkh 05/10/2016 07:35",
 		"collections" : "dkh 03/05/2016 08:25",
@@ -10,7 +11,7 @@
 		"deleteOperation:collectionName:data:" : "dkh 05/10/2016 07:40",
 		"dropCollectionNamed:" : "dkh 05/10/2016 07:52",
 		"filterResult:fields:" : "dkh 05/06/2016 10:07",
-		"insertOperation:collectionName:data:" : "dkh 05/10/2016 07:51",
+		"insertOperation:collectionName:data:" : "dkh 06/14/2016 20:00",
 		"name" : "dkh 03/05/2016 08:17",
 		"name:" : "dkh 03/05/2016 08:17",
 		"performQueryCommand:value:queryDict:result:server:" : "dkh 06/09/2016 16:44",
