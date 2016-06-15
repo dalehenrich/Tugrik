@@ -11,7 +11,8 @@
 		"sessionDescription",
 		"session",
 		"stream",
-		"requestID" ],
+		"requestID",
+		"tugrikDbServerClassName" ],
 	"name" : "Tugrik",
 	"pools" : [
 		 ],

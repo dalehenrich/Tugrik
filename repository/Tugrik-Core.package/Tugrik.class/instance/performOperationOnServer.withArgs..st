@@ -5,7 +5,7 @@ performOperationOnServer: selector withArgs: args
 		ifNil: [ client := self todeClient.
 			session := client session ].
 	[ | dbOopType resultString |
-	dbOopType := session executeString: 'TugrikDbServer'.
+	dbOopType := session executeString: self tugrikDbServerClassName.
 	resultString := session send: selector to: dbOopType withArgs: args.
 	^ STON fromString: resultString ]
 		ensure: [ false

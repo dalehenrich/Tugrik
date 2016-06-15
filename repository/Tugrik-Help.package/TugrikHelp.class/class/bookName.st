@@ -1,3 +1,3 @@
 accessing
 bookName
-	^ 'Tugrik'
+	^ 'Tugrik Help'

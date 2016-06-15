@@ -2,4 +2,4 @@ help
 example
 	"open help browser"
 
-	HelpBrowser openOn: self
+	HelpBrowser openOn: TugrikHelp

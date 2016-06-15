@@ -1,4 +1,4 @@
-as yet unclassified
+operation API
 update: origDictionary with: newDictionary collection: aString flags: aFlag
 	(UpdateOperation
 		collection: aString
