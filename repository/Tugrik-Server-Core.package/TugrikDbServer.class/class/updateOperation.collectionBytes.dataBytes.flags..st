@@ -6,16 +6,16 @@ updateOperation: id collectionBytes: collectionBytes dataBytes: dataBytes flags:
   tokens := collectionString findTokens: '.'.
   dbName := tokens at: 1.
   operationType := tokens at: 2.
-  System abort.
-  db := self databaseNamed: dbName.
-  operationType = '$cmd'
-    ifTrue: [  ]
-    ifFalse: [ 
-      collectionName := operationType.
-      result := db
-        updateOperation: id
-        collectionName: collectionName
-        data: data
-        flags: flags ].
-  System commit.
+  self
+    transact: [ 
+      db := self databaseNamed: dbName.
+      operationType = '$cmd'
+        ifTrue: [  ]
+        ifFalse: [ 
+          collectionName := operationType.
+          result := db
+            updateOperation: id
+            collectionName: collectionName
+            data: data
+            flags: flags ] ].
   ^ result

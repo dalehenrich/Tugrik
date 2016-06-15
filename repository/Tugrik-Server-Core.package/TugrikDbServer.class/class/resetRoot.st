@@ -2,7 +2,7 @@ accessing
 resetRoot
   "self resetRoot"
 
-  System abort.
+  self abort.
   Root ifNotNil: [ Root valuesDo: [ :db | db resetCollections ] ].
   Root := nil.
-  System commit
+  self commit

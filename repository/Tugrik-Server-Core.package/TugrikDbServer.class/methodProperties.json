@@ -1,12 +1,15 @@
 {
 	"class" : {
+		"abort" : "dkh 06/14/2016 16:59",
+		"commit" : "dkh 06/14/2016 16:59",
 		"databaseNamed:" : "dkh 06/11/2016 10:12",
-		"deleteOperation:collectionBytes:dataBytes:" : "dkh 06/11/2016 10:12",
+		"deleteOperation:collectionBytes:dataBytes:" : "dkh 06/14/2016 17:03",
 		"dropDatabase:" : "dkh 06/09/2016 16:41",
-		"insertOperation:collectionBytes:dataBytes:" : "dkh 06/11/2016 10:13",
-		"queryOperation:opCode:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 06/11/2016 10:13",
-		"resetRoot" : "dkh 03/11/2016 15:07",
+		"insertOperation:collectionBytes:dataBytes:" : "dkh 06/14/2016 17:04",
+		"queryOperation:opCode:collectionBytes:offset:chunkSize:dataBytes:" : "dkh 06/14/2016 17:05",
+		"resetRoot" : "dkh 06/14/2016 16:59",
 		"root" : "dkh 06/10/2016 16:11",
-		"updateOperation:collectionBytes:dataBytes:flags:" : "dkh 06/11/2016 10:13" },
+		"transact:" : "dkh 06/14/2016 17:03",
+		"updateOperation:collectionBytes:dataBytes:flags:" : "dkh 06/14/2016 17:05" },
 	"instance" : {
 		 } }

@@ -1,7 +1,7 @@
 private
 tugrikBasicExample
   ^ '  "Based on https://gist.github.com/anonymous/4389646"
-  "Connect Tugrik, databaes and create new collection"
+  "Connect Tugrik, database and create new collection"
   tugrik := Tugrik default.
   tugrik open.
   db := tugrik databaseNamed: ''library''.

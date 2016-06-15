@@ -1,8 +1,10 @@
 private
 tugrikLargeExample
   ^ '  "Based on https://gist.github.com/anonymous/4389646"
-  "Connect Tugrik, databaes and create new collection"
+  "Connect Tugrik, database and create new collection.
+   Use TugrikUnsafeDbServer to avoid commit on every update."
   tugrik := Tugrik default.
+  tugrik tugrikDbServerClassName: ''TugrikUnsafeDbServer''.
   tugrik open.
 
   "Add large number of collections"
@@ -14,6 +16,7 @@ tugrikLargeExample
         add:
           ({(#''idx'' -> n).
           (#''number'' -> n atRandom)} as: Dictionary) ].
+  tugrik session executeString: ''System commit''.
   result := collection select: [ :item | (item at: #''number'') < 10 ].
   result inspect.
 
