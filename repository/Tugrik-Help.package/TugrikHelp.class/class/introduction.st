@@ -1,23 +1,18 @@
 pages
 introduction
 	^ HelpTopic 
-		title: 'Proof of Concept'
+		title: 'Proof Of Concept'
 		contents: 
-'Tugrik[1] is a framework that implements a MongoTalk-style[2] API to a GemStone/S 64[3] data base.
+'Tugrik[1] is a persistence framework that uses GemStone/S 64[3] as the database engine.
 
 	"GemStone/S 64 provides a distributed, server-based, 
 	 multi-user, transactional Smalltalk runtime system, 
 	 with the ability to partition the application 
 	 between client and server"[4]
 
-A developer should be able to use Tugrik in place of MongoTalk in his or her Pharo application. 
+An initial proof of concept has been implemented using a MongoTalk-style[2] API. The proof of concept includes a Voyage[5] implementation for Tugrik.
 
-Tugirk passes all of the MongoTalk tests and a variant of Voyage[5] has been implemented that uses Tugrik in place of MongoTalk. All of the Voyage tests are passing, as well. 
-
-From a performance perspective, for simple benchmarks GemStone/S and MongoDb are roughly in the same ballpark. The client-server serialization model for Tugrik (using STON[6] and GemBuilder for C[7]) has not been optimized. A server-side only run for Tugrik is twice as fast as a client-server MongoTalk run (3 seconds vs 7 seconds).
-
-Performance is not necessarily the primary motivation for using Tugrik and GemStone/S in a Pharo application. With GemStone/S you get a complete Smalltalk implementation in the data base which makes for some very interesting possibilities over and above simple document storage.   
-     
+While it is somewhat interesting for developers to use Tugrik to simply replace MongoDb in their Pharo applications, the work moving forward will focus on expanding the functionality of Tugrik beyond that of a simple document database, after all, GemStone/S is a fully functional Smalltalk implementation.
 
 [1] https://github.com/dalehenrich/Tugrik
 [2] https://github.com/pharo-nosql/mongotalk

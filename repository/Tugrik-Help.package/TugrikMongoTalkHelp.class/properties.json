@@ -1,0 +1,14 @@
+{
+	"category" : "Tugrik-Help",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TugrikMongoTalkHelp",
+	"pools" : [
+		 ],
+	"super" : "TugrikHelp",
+	"type" : "normal" }

@@ -1,3 +1,3 @@
 accessing
 pages
-	^ #(#introduction )
+	^ #(#introduction #TugrikInstallationHelp #TugrikMongoTalkHelp)
