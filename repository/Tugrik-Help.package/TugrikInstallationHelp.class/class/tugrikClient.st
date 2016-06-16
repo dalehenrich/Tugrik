@@ -6,6 +6,8 @@ tugrikClient
 'The following bash script creates a Pharo5.0 Tugrik client named `tugrik`:
 
 	createClient -t pharo tugrik -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
+	# start the client
+	startClient tugrik
 
 The ''-t pharo tugrik'' option indicates that a Pharo client named `tugrik` will be created.
 
@@ -15,23 +17,23 @@ The ''-v Pharo5.0'' option indicates which version of Pharo to be used to create
 
 The ''-z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston'' option references a SmalltalkCI configuration file[1] that describes how the Tugrik project should installed in the client:
 
- SmalltalkCISpec {
-  #loading : [
-    SCIMetacelloLoadSpec {
-      #baseline : ''Tugrik'',
-      #load : [ ''CI'' ],
-      #onWarningLog : true,
-      #directory : ''repository'',
-      #platforms : [ #gemstone, #pharo ]
-    }
-  ],
-  #configuring : [
-    SCIGemStoneServerConfigSpec {
-     #defaultSessionName : ''Tugrik'',
-     #platforms : [ #gemstoneClient ] 
-    }
-  ]
- }
+	SmalltalkCISpec {
+		#loading : [
+			SCIMetacelloLoadSpec {
+				#baseline : ''Tugrik'',
+				#load : [ ''CI'' ],
+				#onWarningLog : true,
+				#directory : ''repository'',
+				#platforms : [ #gemstone, #pharo ]
+			}
+		],
+		#configuring : [
+			SCIGemStoneServerConfigSpec {
+				#defaultSessionName : ''Tugrik'',
+				#platforms : [ #gemstoneClient ] 
+			}
+		]
+	}
 
 The SCIMetacelloLoadSpec is a specification for a Metacello load expression. The SCIGemStoneServerConfigSpec specifies that the default session (or stone) name is ''Tugrik''.
 

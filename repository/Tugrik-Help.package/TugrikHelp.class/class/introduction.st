@@ -3,7 +3,7 @@ introduction
 	^ HelpTopic 
 		title: 'Tugrik'
 		contents: 
-'Tugrik[1] is a persistence framework that uses GemStone/S 64[3] as the database engine.
+'Tugrik[1] is a persistence framework for Pharo 5.0 that uses GemStone/S 64[3] as the database engine.
 
 	"GemStone/S 64 provides a distributed, server-based, multi-user, transactional
 	 Smalltalk runtime system, with the ability to partition the application 
