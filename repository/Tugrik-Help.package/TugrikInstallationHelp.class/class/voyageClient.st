@@ -1,7 +1,7 @@
 pages
-tugrikClient
+voyageClient
 	^ HelpTopic 
-		title: 'Tugrik Client'
+		title: 'Voyage Client'
 		contents: 
 'The following bash script creates a Pharo5.0 Tugrik client named `tugrik`:
 

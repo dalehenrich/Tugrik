@@ -1,3 +1,3 @@
 accessing
 pages
-	^ #(#overview #gsdevkithome #todeClient #tugrikClient #sessionDescriptions)
+	^ #(#overview #tugrikServer #tugrikClient #todeClient #voyageClient #sessionDescriptions #gsdevkithome)
