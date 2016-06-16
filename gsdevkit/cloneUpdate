@@ -1,0 +1,60 @@
+#! /usr/bin/env bash
+#=========================================================================
+# Copyright (c) 2015, 2016 GemTalk Systems, LLC <dhenrich@gemtalksystems.com>.
+#
+#   MIT license: https://github.com/dalehenrich/Tugrik/license.txt
+#=========================================================================
+
+theArgs="$*"
+source ${GS_HOME}/bin/private/shFeedback
+start_banner
+
+usage() {
+  cat <<HELP
+USAGE: $(basename $0) [-h] client|server|both
+
+Update GemStone-GCI, Tugrik, voyage
+ 
+OPTIONS
+  -h
+     display help
+
+EXAMPLES
+   $(basename $0) -h
+   $(basename $0) 
+
+HELP
+}
+
+source ${GS_HOME}/bin/defGsDevKit.env
+
+while getopts "hnb:c:" OPT ; do
+  case "$OPT" in
+    h) usage; exit 0;;
+    *) usage; exit_1_banner "Uknown option";;
+  esac
+done
+shift $(($OPTIND - 1))
+
+if [ $# -gt 0 ]; then
+  ${GS_SYS_DEFAULT}/gsdevkit_bin/cloneUpdate $*
+fi
+
+source ${GS_HOME}/bin/private/gitFunctions
+
+pushd ${GS_SHARED_REPO} >& /dev/null
+  if [ -d "GemStone-GCI" ] ; then
+    updateClone master origin ${GS_SHARED_REPO}/GemStone-GCI
+  fi
+  if [ -d "Tugrik" ] ; then
+    updateClone master origin ${GS_SHARED_REPO}/Tugrik
+  fi
+  if [ -d "voyage" ] ; then
+    updateClone tugrik origin ${GS_SHARED_REPO}/voyage
+  fi
+  if [ -d "mongotalk" ] ; then
+    updateClone tugrik dkh ${GS_SHARED_REPO}/mongotalk
+  fi
+popd >& /dev/null
+
+exit_0_banner "...finished"

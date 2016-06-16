@@ -11,7 +11,12 @@ tugrikClient
 
 The ''-t pharo tugrik'' option indicates that a Pharo client named `tugrik` will be created.
 
-The ''-l'' option indicates that that a non-tODE client is being built and that all of the git projects in $GS_HOME/shared/repos with a an applicable `.smalltalk.ston` file will be locked[2] in the image before loading begins. Locking local projects means that the git repositories in $GS_HOME/shared/repos will be used for dependent projects, ensuring that the server and client are using the same versions of the projects.
+The ''-l'' option indicates that that a non-tODE client is being built and that all of the git projects in $GS_HOME/shared/repos with a an applicable `.smalltalk.ston` file will be locked[2] in the image before loading begins. Locking local projects means that the git repositories in $GS_HOME/shared/repos will be used for dependent projects, ensuring that the server and client are using the same versions of the projects. Once the local shared pharo projects are locked the following projects are loaded into the client image:
+
+	- Metacello (pick up the latest bugfixes)
+	- STON (my fork)
+	- SmalltalkCI (for loading based on the SmalltalkCI configuration file)
+	- TodeClient (GsDevKitClient group)
 
 The ''-v Pharo5.0'' option indicates which version of Pharo to be used to create the client. In this case Pharo5.0.
 

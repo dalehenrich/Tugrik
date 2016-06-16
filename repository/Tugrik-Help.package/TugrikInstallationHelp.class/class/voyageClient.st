@@ -5,9 +5,6 @@ voyageClient
 		contents: 
 'The following bash script creates a Pharo5.0 voyage client named ''voyage'':
 
-	cd $GS_HOME/shared/repos
-	# clone the Voyage repository to your local disk, so that the SmalltalkCI config can be accessed
-	git clone https://github.com/dalehenrich/voyage.git
 	createClient -t pharo voyage -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.smalltalk_gemstone.ston
 	# start the client
 	startClient voyage
