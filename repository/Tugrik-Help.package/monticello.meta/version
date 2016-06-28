@@ -1,0 +1,2 @@
+(name 'Tugrik-Help-dkh.9' message 'testing GitFiletree' id 'e910e54a-4cf9-49ba-bf8a-5440629c8152' date '28 June 2016' time '4:24:24.789874 pm' author 'dkh' ancestors ((name 'Tugrik-Help-DaleHenrichs.8' message 'remove the monticello.meta/version files for Pharo-managed packages ... BaselineOf will be the test case for a shared package
+' id '941d711b-f250-5b41-9348-fe58f52b7f43' date '28 June 2016' time '4:20:27 pm' author 'DaleHenrichs' ancestors () stepChildren ())) stepChildren ())
