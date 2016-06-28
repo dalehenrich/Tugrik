@@ -12,4 +12,5 @@ and when you are done with the session you close it:
 
 	tugrik close	
 
-A Tugrik session is created by specifying'
+A Tugrik session is created by specifying 
+'
