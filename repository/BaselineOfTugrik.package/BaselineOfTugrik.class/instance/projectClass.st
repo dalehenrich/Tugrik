@@ -1,5 +1,9 @@
 accessing
 projectClass
-	"bullet proof until the day when MetacelloCypressBaselineProject included in standard Metacello release"
+  "bullet proof until the day when MetacelloCypressBaselineProject included in standard Metacello release"
 
-	^ Smalltalk at: #MetacelloCypressBaselineProject ifAbsent: [ super projectClass ]
+  "test change"
+
+  ^ Smalltalk
+    at: #'MetacelloCypressBaselineProject'
+    ifAbsent: [ super projectClass ]
