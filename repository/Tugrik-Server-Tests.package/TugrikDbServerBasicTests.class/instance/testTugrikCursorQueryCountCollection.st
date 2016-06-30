@@ -1,5 +1,7 @@
 tests
 testTugrikCursorQueryCountCollection
+  "inputs gleaned from api call on client"
+
   | resultString result |
   resultString := TugrikDbServer
     queryOperation: 10

@@ -1,5 +1,7 @@
 accessing
 stonOkayDict
+  "avoid object creation overhead for the standard result dictionary"
+
   ^ StonOkayDict
     ifNil: [ 
       StonOkayDict := STON
