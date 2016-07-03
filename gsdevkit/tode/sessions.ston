@@ -5,7 +5,7 @@ TDScriptLeafNode{#name:'sessions',#contents:'[ :topez :objIn :tokens :command :c
     getOptsMixedLongShort:
       {#(\'help\' $h #\'none\').
       #(\'sessions\' nil #\'none\').
-      #(\'sigal\' nil #\'required\')}
+      #(\'signal\' nil #\'none\')}
     optionsAndArguments: [ :options :operands | 
       opts := options.
       args := operands ].
@@ -13,19 +13,19 @@ TDScriptLeafNode{#name:'sessions',#contents:'[ :topez :objIn :tokens :command :c
     at: \'help\'
     ifAbsent: [ 
       | result |
-      System currentSessions
-        collect: [ :sessId | 
-          opts
-            at: \'signal\'
-            ifPresent: [ :arg | 
-              | sessionSerialNumber |
-              sessionSerialNumber := arg asNumber ].
-          opts
-            at: \'sessions\'
-            ifPresent: [ :ignored | 
+      opts
+        at: \'signal\'
+        ifPresent: [ :ignored | 
+          System currentSessions
+            do: [ :each | InterSessionSignal sendSignal: 8 to: each withMessage: \'hello sailor\' ] ].
+      opts
+        at: \'sessions\'
+        ifPresent: [ :ignored | 
+          result := System currentSessions
+            collect: [ :sessId | 
               | descr |
               descr := System descriptionOfSession: sessId.
-              result := (descr at: 1) userId -> descr ] ].
+              (descr at: 1) userId -> descr ] ].
       result ]
     ifPresent: [ :ignored | 
       TDManPage
@@ -33,12 +33,12 @@ TDScriptLeafNode{#name:'sessions',#contents:'[ :topez :objIn :tokens :command :c
           \'NAME
   sessions - sessions script utility template
 SYNOPSIS
-  sessions [-h|--help] [--sessions] [--signal=<session-serial-njmber>]
+  sessions [-h|--help] [--sessions] [--signal]
 DESCRIPTION
 EXAMPLES
   ./sessions -h
 
   ./sessions --sessions; edit
-  ./sessions --signal=7; edit
+  ./sessions --signal
 \'
-        topez: topez ] ]',#creationTime:DateAndTime['2016-07-03T08:19:10.368577003479-07:00'],#modificationTime:DateAndTime['2016-07-03T14:47:04.588685989379883-07:00']}
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-03T08:19:10.368577003479-07:00'],#modificationTime:DateAndTime['2016-07-03T15:13:13.83937692642212-07:00']}
