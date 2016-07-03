@@ -1,0 +1,44 @@
+TDScriptLeafNode{#name:'sessions',#contents:'[ :topez :objIn :tokens :command :commandNode | 
+  | opts args |
+  \"for help: ./sessions -h\"
+  command
+    getOptsMixedLongShort:
+      {#(\'help\' $h #\'none\').
+      #(\'sessions\' nil #\'none\').
+      #(\'sigal\' nil #\'required\')}
+    optionsAndArguments: [ :options :operands | 
+      opts := options.
+      args := operands ].
+  opts
+    at: \'help\'
+    ifAbsent: [ 
+      | result |
+      System currentSessions
+        collect: [ :sessId | 
+          opts
+            at: \'signal\'
+            ifPresent: [ :arg | 
+              | sessionSerialNumber |
+              sessionSerialNumber := arg asNumber ].
+          opts
+            at: \'sessions\'
+            ifPresent: [ :ignored | 
+              | descr |
+              descr := System descriptionOfSession: sessId.
+              result := (descr at: 1) userId -> descr ] ].
+      result ]
+    ifPresent: [ :ignored | 
+      TDManPage
+        viewManPage:
+          \'NAME
+  sessions - sessions script utility template
+SYNOPSIS
+  sessions [-h|--help] [--sessions] [--signal=<session-serial-njmber>]
+DESCRIPTION
+EXAMPLES
+  ./sessions -h
+
+  ./sessions --sessions; edit
+  ./sessions --signal=7; edit
+\'
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-03T08:19:10.368577003479-07:00'],#modificationTime:DateAndTime['2016-07-03T14:47:04.588685989379883-07:00']}
