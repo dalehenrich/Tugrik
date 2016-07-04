@@ -4,6 +4,8 @@ TDScriptLeafNode{#name:'sessions',#contents:'[ :topez :objIn :tokens :command :c
   command
     getOptsMixedLongShort:
       {#(\'help\' $h #\'none\').
+      #(\'block\' nil #\'none\').
+      #(\'doit\' nil #\'none\').
       #(\'sessions\' nil #\'none\').
       #(\'signal\' nil #\'none\')}
     optionsAndArguments: [ :options :operands | 
@@ -14,10 +16,41 @@ TDScriptLeafNode{#name:'sessions',#contents:'[ :topez :objIn :tokens :command :c
     ifAbsent: [ 
       | result |
       opts
+        at: \'doit\'
+        ifPresent: [ :ignored | 
+          result := \'| ar signalId |
+\t\tar := System signalFromGemStoneSession.
+\t\tar isEmpty ifTrue: [ ^ nil ].
+\t\tsignalId := ar at: 2.
+\t\tsignalId = 0
+\t\t\tifTrue: [ 
+\t\t\t\tar halt. 
+\t\t\t\t^ \'\'ping\'\' ].
+\t\tsignalId = 1
+\t\t\tifTrue: [
+\t\t\t\tSystem abort.
+\t\t\t\t(UserGlobals at: #\'\'Tugrik_Remote_Block\'\') value.
+\t\t\t\t^ \'\'block exec\'\' ].
+\t\t^ \'\'unrecognized signal: \'\',  signalId printString\' ].
+      opts
+        at: \'block\'
+        ifPresent: [ :ignored | 
+          | block |
+          block := [ (TDTopezServer for: 1) topezClientForwarder foo ].
+          UserGlobals at: #\'Tugrik_Remote_Block\' put: block.
+          System commit.
+          System currentSessions
+            do: [ :each | 
+              InterSessionSignal
+                sendSignal: 1
+                to: each
+                withMessage:
+                  \'Execute block that raises a MNU in client Smalltalk image.\' ] ].
+      opts
         at: \'signal\'
         ifPresent: [ :ignored | 
           System currentSessions
-            do: [ :each | InterSessionSignal sendSignal: 8 to: each withMessage: \'hello sailor\' ] ].
+            do: [ :each | InterSessionSignal sendSignal: 0 to: each withMessage: \'ping\' ] ].
       opts
         at: \'sessions\'
         ifPresent: [ :ignored | 
@@ -33,12 +66,15 @@ TDScriptLeafNode{#name:'sessions',#contents:'[ :topez :objIn :tokens :command :c
           \'NAME
   sessions - sessions script utility template
 SYNOPSIS
-  sessions [-h|--help] [--sessions] [--signal]
+  sessions [-h|--help] [--sessions] [--signal] [--block] [--doit]
 DESCRIPTION
 EXAMPLES
   ./sessions -h
 
   ./sessions --sessions; edit
+  ./sessions --doit; edit
+
   ./sessions --signal
+  ./sessions --block
 \'
-        topez: topez ] ]',#creationTime:DateAndTime['2016-07-03T08:19:10.368577003479-07:00'],#modificationTime:DateAndTime['2016-07-03T15:13:13.83937692642212-07:00']}
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-03T08:19:10.368577003479-07:00'],#modificationTime:DateAndTime['2016-07-03T19:31:55.6920371055603-07:00']}
