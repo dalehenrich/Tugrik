@@ -35,13 +35,13 @@ git clone https://github.com/pharo-nosql/mongotalk.git
 createStone -u http://gsdevkit.github.io/GsDevKit_home/Tugrik.ston -i Tugrik -l Tugrik Tugrik 3.3.0
 
 # Create Tugrik Pharo5.0 client
-createClient -t pharo tugrik_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
+createClient -t pharo tugrik -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
 
 #interactive session
-startClient tugrik_50 -s Tugrik
+startClient tugrik -s Tugrik
 
 # run SmalltalkCI tests - batch mode
-startClient tugrik_50 -f -s Tugrik -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston -r -t tugrik_tests
+startClient tugrik -f -s Tugrik -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston -r -t tugrik_tests
 ```
 
 ### Update Tugrik client and server after a refreshing Tugrik clone
@@ -52,7 +52,7 @@ cd $GS_HOME/shared/repos/Tugrik
 git pull origin master
 
 # refresh client (-f option)
-createClient -f -t pharo tugrik_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
+createClient -f -t pharo tugrik -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
 
 # refresh server
 todeIt Tugrik project load Tugrik
