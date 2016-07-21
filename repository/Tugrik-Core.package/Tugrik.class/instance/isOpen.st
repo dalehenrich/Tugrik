@@ -1,3 +1,3 @@
 testing
-isOpen 
-	^session notNil and: [ session isConnected ]
+isOpen
+	^ session notNil and: [ session isSessionValid ]
