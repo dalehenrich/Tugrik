@@ -1,3 +1,3 @@
 accessing
 pages
-	^ #(#overview #tugrikServer #tugrikClient #todeClient #voyageClient #sessionDescriptions )
+	^ #(#overview #tugrikServer #tugrikClient #todeClient #sessionDescriptions )

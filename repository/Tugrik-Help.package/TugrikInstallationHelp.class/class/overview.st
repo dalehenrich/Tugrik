@@ -7,7 +7,7 @@ overview
 
 GsDevKit_home[1] is used to create and manage a collection of GemStone/S databases or "stones". GsDevKit_home can also be used to create a manage a collection of Pharo images. GsDevKit_home may be installed on Ubunutu 14.04, CentOS, OSX and Windows (client only).
 
-The following bash script installs GsDevKit_home and then clones the GitHub repositories used by this project, creates a Tugrik stone, a tugrik client, a voyage client and a tODE client:
+The following bash script installs GsDevKit_home and then clones the GitHub repositories used by this project, creates a Tugrik stone, a tugrik client, and a tODE client:
 
 	#--------
 	# Setup
@@ -30,9 +30,6 @@ The following bash script installs GsDevKit_home and then clones the GitHub repo
 	git checkout tugrik
 	cd ..
 	git clone https://github.com/dalehenrich/Tugrik.git		# Tugrik
-	git clone https://github.com/dalehenrich/voyage.git		# Voyage (my fork)
-	cd voyage
-	git checkout tugrik
 	cd ..
 	git clone https://github.com/GsDevKit/GemStone-GCI.git	# GemStone-GCI
 	cd $GS_HOME
@@ -40,16 +37,13 @@ The following bash script installs GsDevKit_home and then clones the GitHub repo
 	#--------
 	# Create Tugrik server
 	#--------
-	createStone -u http://gsdevkit.github.io/GsDevKit_home/Tugrik.ston -i Tugrik -l Tugrik Tugrik 3.3.0
+	createStone -u http://gsdevkit.github.io/GsDevKit_home/Tugrik.ston -i Tugrik -l Tugrik Tugrik 3.3.1
 
 	#--------
 	# Create Clients
 	#--------
 	# Create tugrik client
 	createClient -t pharo tugrik -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston
-
-	# Create voyage client
-	createClient -t pharo voyage -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.smalltalk_gemstone.ston
 
 	# Create tODE client
 	createClient tode
