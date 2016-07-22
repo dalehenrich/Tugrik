@@ -3,8 +3,8 @@ example
 	"self example"
 
 	| tugrik db collection sorted group pg |
-	tugrik := Tugrik default.
-	tugrik open.
+	tugrik := self default.
+	[ tugrik open.
 	db := tugrik databaseNamed: 'tugrik examples'.
 	collection := db getCollection: 'Basic Examples'.
 	sorted := SortedCollection sortBlock: [ :a :b | (a at: #order) <= (b at: #order) ].
@@ -18,4 +18,5 @@ example
 			group addWindow: pg window ].
 	(group openInWindowLabeled: 'Tugrik Examples')
 		extent: 840 @ 720;
-		yourself
+		yourself ]
+		ensure: [ tugrik close ]
