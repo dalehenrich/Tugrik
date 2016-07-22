@@ -18,7 +18,7 @@ doInsert: dict
         ifFalse: [ TugrikObject new ].
       dict
         keysAndValuesDo: [ :key :value | 
-          obj
-            dynamicInstVarAt: key asSymbol put: value;
+          (key ~= '_id')
+            ifTrue: [ obj dynamicInstVarAt: key asSymbol put: value ];
             yourself ].
       self add: obj ]

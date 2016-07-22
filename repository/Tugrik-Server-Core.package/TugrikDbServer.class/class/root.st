@@ -2,11 +2,13 @@ accessing
 root
   "self resetRoot"
 
+  "self root"
+
   Root
     ifNil: [ 
       Root := RcKeyValueDictionary new.
-      Root
-        at: 'admin' put: (TugrikAdminDb named: 'admin');
-        at: 'tugrik examples' put: (TugrikExamplesDb named: 'tugrik examples');
-        yourself ].
+      TugrikDb allSubclasses
+        do: [ :cls | 
+          cls isSingletonDB
+            ifTrue: [ Root at: cls defaultName put: (cls named: cls defaultName) ] ] ].
   ^ Root
