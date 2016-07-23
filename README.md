@@ -46,6 +46,8 @@ startClient tugrik -f -s Tugrik -z $GS_HOME/shared/repos/Tugrik/.smalltalk.ston 
 
 ### Update Tugrik client and server after a refreshing Tugrik clone
 
+#### Bash scripts
+
 ```
 # refresh git clone
 cd $GS_HOME/shared/repos/Tugrik
@@ -56,6 +58,13 @@ createClient -f -t pharo tugrik -l -v Pharo5.0 -z $GS_HOME/shared/repos/Tugrik/.
 
 # refresh server
 todeIt Tugrik project load Tugrik
+```
+
+
+#### Client image doIt
+
+```smalltalk
+(FileLocator imageDirectory / 'customClientLoad.st') fileIn
 ```
 
 For more information see [SmalltalkCI and GsDevKit_home][7].
