@@ -1,6 +1,5 @@
 operation API
 performOperationOnServer: selector withArgs: args
-	self open.	"open if not already open"
 	RemotePerformStringBuffer ifNil: [ RemotePerformStringBuffer := String new: 50000 ].
 	stream := WriteStream on: String new.
 	stream

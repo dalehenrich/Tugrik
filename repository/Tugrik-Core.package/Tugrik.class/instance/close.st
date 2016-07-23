@@ -5,4 +5,5 @@ close
 			sess := session.
 			session := nil.
 			sess isSessionValid
-				ifTrue: [ sess logout ] ]
+				ifTrue: [ sess logout ] ].
+	todeClient := nil
