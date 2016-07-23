@@ -3,4 +3,7 @@ initialize
 	"self initialize"
 
 	Smalltalk addToStartUpList: self.
-	self resetSession
+	self
+		defaultGciSessionDescription: nil;
+		defaultGciSessionDescriptionFileReference: nil;
+		resetSession
