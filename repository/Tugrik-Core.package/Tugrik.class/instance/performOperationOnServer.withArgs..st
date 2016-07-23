@@ -9,5 +9,5 @@ performOperationOnServer: selector withArgs: args
 		nextPutAll: ' withArguments: (STON fromString: ';
 		nextPutAll: (STON toString: args) printString;
 		nextPutAll: ')'.
-	session executeStringFetchBytes: stream contents rawBuffer: RemotePerformStringBuffer.
+	self session executeStringFetchBytes: stream contents rawBuffer: RemotePerformStringBuffer.
 	^ STON fromString: RemotePerformStringBuffer

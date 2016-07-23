@@ -10,7 +10,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"sessionDescription",
-		"session",
 		"stream",
 		"requestID",
 		"tugrikDbServerClassName",

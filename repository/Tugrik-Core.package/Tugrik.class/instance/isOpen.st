@@ -1,3 +1,3 @@
 testing
 isOpen
-	^ session notNil and: [ session isSessionValid ]
+	^ todeClient notNil and: [ self session isSessionValid ]

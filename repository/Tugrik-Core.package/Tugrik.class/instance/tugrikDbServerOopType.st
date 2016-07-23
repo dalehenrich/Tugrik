@@ -1,4 +1,4 @@
 accessing
 tugrikDbServerOopType
 	^ tugrikDbServerOopType
-		ifNil: [ tugrikDbServerOopType := session executeString: self tugrikDbServerClassName ]
+		ifNil: [ tugrikDbServerOopType := self session executeString: self tugrikDbServerClassName ]
