@@ -14,7 +14,8 @@
 		"stream",
 		"requestID",
 		"tugrikDbServerClassName",
-		"tugrikDbServerOopType" ],
+		"tugrikDbServerOopType",
+		"todeClient" ],
 	"name" : "Tugrik",
 	"pools" : [
 		 ],
