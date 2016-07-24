@@ -4,93 +4,20 @@ TDScriptLeafNode{#name:'tugrik',#contents:'[ :topez :objIn :tokens :command :com
   command
     getOptsMixedLongShort:
       {#(\'help\' $h #\'none\').
-      #(\'clean\' nil #\'none\').
-      #(\'reset\' nil #\'none\').
-      #(\'client\' nil #\'none\').
-      #(\'prime\' nil #\'none\').
-      #(\'large\' nil #\'none\').
-      #(\'inspect\' nil #\'none\')}
+      #(\'db\' nil #\'required\').
+ #(\'dbNames\' nil #\'none\').
+      #(\'root\' nil #\'none\')}
     optionsAndArguments: [ :options :operands | 
       opts := options.
       args := operands ].
   opts
     at: \'help\'
     ifAbsent: [ 
-      | result gs |
-      opts
-        at: \'clean\'
-        ifPresent: [ :ignored | 
-          | gsTool |
-          UserGlobals removeKey: #\'TUGRIK_Client_Data\' ifAbsent: [  ].
-          TugrikDbServer resetRoot.
-          gs := topez toolInstanceFor: \'gs\'.
-          gs gsFlushCaches: true.
-          gs gsMfc ].
-      opts at: \'reset\' ifPresent: [ :ignored | TugrikDbServer resetRoot ].
-      opts at: \'inspect\' ifPresent: [ :ignored | result := TugrikDbServer root ].
-      opts
-        at: \'large\'
-        ifPresent: [ :ignored | 
-          | db collection elapsed |
-          db := TugrikDbServer databaseNamed: \'test\'.
-          collection := db collectionNamed: \'dummy\'.
-          System commit.
-          elapsed := System
-            millisecondsToRun: [ 
-              \"Add large number of collections\"
-              (1 to: 100000)
-                do: [ :n | 
-                  collection
-                    add:
-                      (TugrikObject new
-                        dynamicInstVarAt: #\'idx\' put: n;
-                        dynamicInstVarAt: #\'number\' put: n atRandom;
-                        yourself).
-                  n \\\\ 1000 = 0
-                    ifTrue: [ System commit ] ].
-              System commit ] ].
-      opts
-        at: \'prime\'
-        ifPresent: [ :ignored | 
-          | data |
-          data := Array new.
-          UserGlobals at: #\'TUGRIK_Client_Data\' put: data.
-          System commit.
-          (1 to: 100000)
-            do: [ :n | 
-              data
-                add:
-                  {100.
-                  #[116 101 115 116 46 100 117 109 109 121].
-                  (STON
-                    toString:
-                      {(Dictionary new
-                        at: #\'idx\' put: n;
-                        at: #\'number\' put: n atRandom;
-                        yourself)})}.
-              n \\\\ 1000 = 0
-                ifTrue: [ System commit ].
-              ].
-System commit .
-          result := data ].
-      opts
-        at: \'client\'
-        ifPresent: [ :ignored | 
-          | elapsed db collection |
-          db := TugrikUnsafeDbServer databaseNamed: \'test\'.
-          collection := db collectionNamed: \'dummy\'.
-          elapsed := System
-            millisecondsToRun: [ 
-              \"Add large number of collections\"
-              (UserGlobals at: #\'TUGRIK_Client_Data\' ifAbsent: [ #() ])
-                do: [ :argArray | 
-                  TugrikUnsafeDbServer
-                    insertOperation: (argArray at: 1)
-                    collectionBytes: (argArray at: 2)
-                    dataBytes: (argArray at: 3) ].
-              System commit ].
-          result := {elapsed.
-          collection} ].
+      | result root db |
+      root := TugrikDbServer root.
+      opts at: \'root\' ifPresent: [ :ignored | result := root ].
+      opts at: \'dbNames\' ifPresent: [ :ignored | result := root keys ].
+      opts at: \'db\' ifPresent: [ :dbName | result := db := root at: dbName ].
       result ]
     ifPresent: [ :ignored | 
       TDManPage
@@ -98,21 +25,15 @@ System commit .
           \'NAME
   tugrik - tugrik script utility template
 SYNOPSIS
-  tugrik [-h|--help]
+  tugrik [-h|--help] [--root] [--dbNames] [--db=<db-name>]
 DESCRIPTION
 EXAMPLES
   ./tugrik -h
 
-  ./tugrik --clean
-  ./tugrik --reset
-  ./tugrik --inspect
-  ./tugrik --large
+  ./tugrik --root; edit
 
-  ./tugrik --reset --large; edit
+  ./tugrik --dbNames; edit
 
-  ./tugrik --reset; pf start; ./tugrik --large; edit; pf view
-
-  ./tugrik --prime
-  ./tugrik --reset; pf start --sampling=real; ./tugrik --client; edit; pf view
+  ./tugrik --db=`voyage examples`; edit
 \'
-        topez: topez ] ]',#creationTime:DateAndTime['2016-06-10T16:59:25.68250703811646-07:00'],#modificationTime:DateAndTime['2016-06-15T12:13:37.66142892837524-07:00']}
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:14:18.87433195114136-07:00'],#modificationTime:DateAndTime['2016-07-24T06:21:17.28257608413696-07:00']}

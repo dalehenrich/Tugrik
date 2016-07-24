@@ -1,0 +1,118 @@
+TDScriptLeafNode{#name:'perf',#contents:'[ :topez :objIn :tokens :command :commandNode | 
+  | opts args |
+  \"for help: ./tugrik -h\"
+  command
+    getOptsMixedLongShort:
+      {#(\'help\' $h #\'none\').
+      #(\'clean\' nil #\'none\').
+      #(\'reset\' nil #\'none\').
+      #(\'client\' nil #\'none\').
+      #(\'prime\' nil #\'none\').
+      #(\'large\' nil #\'none\').
+      #(\'inspect\' nil #\'none\')}
+    optionsAndArguments: [ :options :operands | 
+      opts := options.
+      args := operands ].
+  opts
+    at: \'help\'
+    ifAbsent: [ 
+      | result gs |
+      opts
+        at: \'clean\'
+        ifPresent: [ :ignored | 
+          | gsTool |
+          UserGlobals removeKey: #\'TUGRIK_Client_Data\' ifAbsent: [  ].
+          TugrikDbServer resetRoot.
+          gs := topez toolInstanceFor: \'gs\'.
+          gs gsFlushCaches: true.
+          gs gsMfc ].
+      opts at: \'reset\' ifPresent: [ :ignored | TugrikDbServer resetRoot ].
+      opts at: \'inspect\' ifPresent: [ :ignored | result := TugrikDbServer root ].
+      opts
+        at: \'large\'
+        ifPresent: [ :ignored | 
+          | db collection elapsed |
+          db := TugrikDbServer databaseNamed: \'test\'.
+          collection := db collectionNamed: \'dummy\'.
+          System commit.
+          elapsed := System
+            millisecondsToRun: [ 
+              \"Add large number of collections\"
+              (1 to: 100000)
+                do: [ :n | 
+                  collection
+                    add:
+                      (TugrikObject new
+                        dynamicInstVarAt: #\'idx\' put: n;
+                        dynamicInstVarAt: #\'number\' put: n atRandom;
+                        yourself).
+                  n \\\\ 1000 = 0
+                    ifTrue: [ System commit ] ].
+              System commit ] ].
+      opts
+        at: \'prime\'
+        ifPresent: [ :ignored | 
+          | data |
+          data := Array new.
+          UserGlobals at: #\'TUGRIK_Client_Data\' put: data.
+          System commit.
+          (1 to: 100000)
+            do: [ :n | 
+              data
+                add:
+                  {100.
+                  #[116 101 115 116 46 100 117 109 109 121].
+                  (STON
+                    toString:
+                      {(Dictionary new
+                        at: #\'idx\' put: n;
+                        at: #\'number\' put: n atRandom;
+                        yourself)})}.
+              n \\\\ 1000 = 0
+                ifTrue: [ System commit ].
+              ].
+System commit .
+          result := data ].
+      opts
+        at: \'client\'
+        ifPresent: [ :ignored | 
+          | elapsed db collection |
+          db := TugrikUnsafeDbServer databaseNamed: \'test\'.
+          collection := db collectionNamed: \'dummy\'.
+          elapsed := System
+            millisecondsToRun: [ 
+              \"Add large number of collections\"
+              (UserGlobals at: #\'TUGRIK_Client_Data\' ifAbsent: [ #() ])
+                do: [ :argArray | 
+                  TugrikUnsafeDbServer
+                    insertOperation: (argArray at: 1)
+                    collectionBytes: (argArray at: 2)
+                    dataBytes: (argArray at: 3) ].
+              System commit ].
+          result := {elapsed.
+          collection} ].
+      result ]
+    ifPresent: [ :ignored | 
+      TDManPage
+        viewManPage:
+          \'NAME
+  tugrik - tugrik script utility template
+SYNOPSIS
+  tugrik [-h|--help]
+DESCRIPTION
+EXAMPLES
+  ./tugrik -h
+
+  ./tugrik --clean
+  ./tugrik --reset
+  ./tugrik --inspect
+  ./tugrik --large
+
+  ./tugrik --reset --large; edit
+
+  ./tugrik --reset; pf start; ./tugrik --large; edit; pf view
+
+  ./tugrik --prime
+  ./tugrik --reset; pf start --sampling=real; ./tugrik --client; edit; pf view
+\'
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:14:09.795139074325562-07:00'],#modificationTime:@2}
