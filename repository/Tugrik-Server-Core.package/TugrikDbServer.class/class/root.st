@@ -10,5 +10,5 @@ root
       TugrikDb allSubclasses
         do: [ :cls | 
           cls isSingletonDB
-            ifTrue: [ Root at: cls defaultName put: (cls named: cls defaultName) ] ] ].
+            ifTrue: [ Root at: cls defaultName put: (cls named: cls defaultName dbServer: self) ] ] ].
   ^ Root

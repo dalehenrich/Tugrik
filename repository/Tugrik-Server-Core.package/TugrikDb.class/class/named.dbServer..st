@@ -1,5 +1,6 @@
 instance creation
-named: collectionName
+named: collectionName dbServer: dbServer
   ^ self new
     name: collectionName;
+    dbServer: dbServer;
     yourself

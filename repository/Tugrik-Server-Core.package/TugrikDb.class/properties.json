@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"dbServer",
 		"name",
 		"collections" ],
 	"name" : "TugrikDb",

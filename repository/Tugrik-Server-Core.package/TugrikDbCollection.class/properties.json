@@ -9,6 +9,7 @@
 		"TypeToClassMap" ],
 	"commentStamp" : "",
 	"instvars" : [
+		"collectionDb",
 		"name",
 		"collection",
 		"oidIndex",
