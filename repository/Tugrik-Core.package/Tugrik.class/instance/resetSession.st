@@ -1,3 +1,3 @@
 accessing
 resetSession
-	^ session := nil
+	self close

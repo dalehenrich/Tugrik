@@ -1,3 +1,4 @@
 accessing
 session
-	^ session
+	todeClient ifNil: [ ^ nil ].
+	^ self todeClient session
