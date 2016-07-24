@@ -10,6 +10,7 @@ TDScriptLeafNode{#name:'admin',#contents:'[ :topez :objIn :tokens :command :comm
       #(\'collectionNames\' nil #\'none\').
       #(\'create\' nil #\'required\').
       #(\'drop\' nil #\'none\').
+      #(\'reset\' nil #\'none\').
       #(\'root\' nil #\'none\')}
     optionsAndArguments: [ :options :operands | 
       opts := options.
@@ -19,6 +20,7 @@ TDScriptLeafNode{#name:'admin',#contents:'[ :topez :objIn :tokens :command :comm
     ifAbsent: [ 
       | result root db collection |
       root := TugrikDbServer root.
+      opts at: \'reset\' ifPresent: [ :ignored | TugrikDbServer resetRoot ].
       opts at: \'root\' ifPresent: [ :ignored | result := root ].
       opts at: \'dbNames\' ifPresent: [ :ignored | result := root keys ].
       opts at: \'db\' ifPresent: [ :dbName | result := db := root at: dbName ].
@@ -50,21 +52,22 @@ SYNOPSIS
   admin [-h|--help] [--root] \\
          [--dbNames] [--db=<db-name>] \\
          [--collectionNames] [--collection=<collection-name>] \\
-         [--drop]
+         [--drop] [--create=<entity-name>] \\
+         [--reset]
 DESCRIPTION
 EXAMPLES
   ./admin -h
 
   ./admin --root; edit
-  ./admin --root --create=`an example`
+  ./admin --root --create=`my example`
 
   ./admin --dbNames; edit
-  ./admin --db=`an example`; edit
-  ./admin --db=`an example` --create=`my collection`
-  ./admin --db=`an example`; --drop
+  ./admin --db=`my example`; edit
+  ./admin --db=`my example` --create=`my collection`
+  ./admin --db=`my example`; --drop
 
-  ./admin --db=`an example` --collectionNames; edit
-  ./admin --db=`an example` --collection=`my collection`; edit
-  ./admin --db=`an example` --collection=`my collection` --drop
+  ./admin --db=`my example` --collectionNames; edit
+  ./admin --db=`my example` --collection=`TestPilot`; edit
+  ./admin --db=`my example` --collection=`TestPilot` --drop
 \'
-        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:48:34.30077600479126-07:00'],#modificationTime:DateAndTime['2016-07-24T06:57:42.42607498168945-07:00']}
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:48:34.30077600479126-07:00'],#modificationTime:DateAndTime['2016-07-24T07:58:36.41109299659729-07:00']}

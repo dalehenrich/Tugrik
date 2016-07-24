@@ -9,7 +9,7 @@ createCollectionNamed: collectionName
         yourself ].
   dbColl := self collections
     at: collectionName
-    put: (TugrikDbCollection named: collectionName).
+    put: (TugrikDbCollection named: collectionName collectionDb: self).
   dbColl createCollection.
   ^ Dictionary new
     at: 'ok' put: 1.0;
