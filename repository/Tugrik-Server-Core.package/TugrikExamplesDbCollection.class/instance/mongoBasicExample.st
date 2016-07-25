@@ -1,4 +1,4 @@
-private
+examples
 mongoBasicExample
   ^ '  "From https://gist.github.com/anonymous/4389646"
   "Connect MongoDB, databaes and create new collection"

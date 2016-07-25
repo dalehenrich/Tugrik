@@ -1,4 +1,4 @@
-private
+examples
 NeoCSVReaderExample
   ^ '  ''NeoCSVBenchmark.csv'' asFileReference
   readStreamDo: [ :stream |

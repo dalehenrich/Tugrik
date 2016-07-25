@@ -1,4 +1,4 @@
-private
+examples
 gemstoneBasicExample
   ^ '  "Based on https://gist.github.com/anonymous/4389646"
   "Connect Tugrik, databaes and create new collection by running GemStone server code directly"

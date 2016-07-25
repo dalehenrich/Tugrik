@@ -1,4 +1,4 @@
-private
+examples
 tugrikLargeExample
   ^ '  "Based on https://gist.github.com/anonymous/4389646"
   "Connect Tugrik, database and create new collection.
