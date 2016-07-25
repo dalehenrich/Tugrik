@@ -1,0 +1,3 @@
+private
+dbClass
+  ^ TugrikDb
