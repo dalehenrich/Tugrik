@@ -3,12 +3,12 @@ installGitFileTree
   ^ '  "Install GitFileTree and reload Tugrik -- Tugrik is a metadata-less repository"
 
 	Metacello new 
-		baseline: ''GitFileTree'';
+		baseline: ''FileTree'';
 		repository: ''filetree:///export/foos1/users/dhenrich/dev/_home/shared/repos/pharo5.0/filetree/repository'';
 		onWarningLog;
 		onConflictUseIncoming;
 		lock;
-		load: #(''default'' ''Git'').
+		load: #(''Git'').
 
 	Metacello new 
 		baseline: ''Tugrik'';
