@@ -1,5 +1,5 @@
 utility
-createTugrikObjectFrom: dict ifNew: newBlock
+createTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
   | obj hasOid theOid query |
   hasOid := false.
   dict
@@ -7,7 +7,7 @@ createTugrikObjectFrom: dict ifNew: newBlock
     ifPresent: [ :oid | 
       hasOid := true.
       theOid := oid.
-      obj := self objWithOid: oid ifAbsent: [  ] ].
+      obj := aTugrikDbCollection objWithOid: oid ifAbsent: [  ] ].
   obj
     ifNil: [ 
       obj := hasOid
