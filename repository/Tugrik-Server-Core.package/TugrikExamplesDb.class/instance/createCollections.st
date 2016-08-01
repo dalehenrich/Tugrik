@@ -4,5 +4,6 @@ createCollections
   super createCollections.
   dbColl := collections
     at: self collectionName
-    put: (self dbCollectionClass named: self collectionName collectionDb: self).
+    put:
+      (TugrikExamplesDbCollection named: self collectionName collectionDb: self).
   dbColl createCollection
