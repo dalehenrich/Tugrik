@@ -1,9 +1,8 @@
-accessing
-collections
+private
+createCollections
   | dbColl |
-  super collections.
+  super createCollections.
   dbColl := collections
     at: self collectionName
     put: (self dbCollectionClass named: self collectionName collectionDb: self).
-  dbColl createCollection.
-  ^ collections
+  dbColl createCollection

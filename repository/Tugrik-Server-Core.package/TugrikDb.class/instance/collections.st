@@ -1,4 +1,4 @@
 accessing
 collections
-  collections ifNil: [ collections := RcKeyValueDictionary new ].
+  collections ifNil: [ self createCollections ].
   ^ collections
