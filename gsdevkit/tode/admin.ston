@@ -72,7 +72,8 @@ EXAMPLES
 
   ./admin --reset
 
-  ./admin --db=`voyage examples` --collection=`Basic Examples`; edit
-  ./admin --db=`gemtalk example` --collection=`Association`; edit
+  abort; ./admin --db=`voyage examples` --collection=`Basic Examples`; edit
+  abort; ./admin --db=`gemtalk example` --collection=`Association`; edit
+  abort; ./admin --db=`gemtalk example`; edit
 \'
-        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:48:34.30077600479126-07:00'],#modificationTime:DateAndTime['2016-08-01T12:07:10.44239902496338-07:00']}
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:48:34.30077600479126-07:00'],#modificationTime:DateAndTime['2016-08-02T10:13:46.82645702362061-07:00']}
