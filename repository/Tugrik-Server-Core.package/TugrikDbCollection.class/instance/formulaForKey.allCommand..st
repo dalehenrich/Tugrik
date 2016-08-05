@@ -12,4 +12,9 @@ formulaForKey: key allCommand: allArray
   | selector |
   selector := key asSymbol.
   ^ TugrikBlockQueryPredicate
-    selectBlock: [ :each | (each dynamicInstVarAt: selector) includesAllOf: allArray ]
+    selectBlock: [ :each | 
+      | coll |
+      coll := each dynamicInstVarAt: selector.
+      coll isCollection
+        ifTrue: [ coll includesAllOf: allArray ]
+        ifFalse: [ false ] ]
