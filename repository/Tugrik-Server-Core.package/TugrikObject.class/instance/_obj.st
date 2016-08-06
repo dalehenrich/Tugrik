@@ -1,0 +1,3 @@
+accessing
+_obj
+  ^ self

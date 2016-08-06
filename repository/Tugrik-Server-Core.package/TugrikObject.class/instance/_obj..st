@@ -1,0 +1,2 @@
+accessing
+_obj: ignored

@@ -12,6 +12,7 @@ applyFieldFilter: fieldsDictionary do: filterBlock
             ifNil: [ 
               theCopy := self class basicNew
                 _id: self _id;
+                _obj: self _obj;
                 yourself ].
           theCopy dynamicInstVarAt: sel put: value ]
         ifFalse: [ 
