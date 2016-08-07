@@ -4,8 +4,8 @@ stonOkayDict
 
   ^ StonOkayDict
     ifNil: [ 
-      StonOkayDict := STON
-        toString:
+      StonOkayDict := self
+        serialize:
           (Dictionary new
             at: 'ok' put: 1.0;
             yourself) ]

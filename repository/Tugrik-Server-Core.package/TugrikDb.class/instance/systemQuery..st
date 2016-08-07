@@ -9,5 +9,5 @@ systemQuery: tokens
           Dictionary new
             at: 'name' put: self name , '.' , each;
             yourself ].
-      ^ STON toString: result ].
+      ^ self serialize: result ].
   self error: 'Unknown system query: ' , query printString

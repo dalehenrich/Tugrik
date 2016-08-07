@@ -14,4 +14,4 @@ queryOperation: id opCode: opCode collectionName: collectionName offset: mongoQu
           selector := key asSymbol.
           result := result
             sort: [ :a :b | (a dynamicInstVarAt: selector) <= (b dynamicInstVarAt: selector) ] ] ].
-  ^ STON toString: result
+  ^ self serialize: result

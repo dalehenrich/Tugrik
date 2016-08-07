@@ -4,10 +4,10 @@ deleteOperation: id collectionName: collectionName data: dataArray
   result := (self collections
     at: collectionName
     ifAbsent: [ 
-      ^ STON
-        toString:
+      ^ self
+        serialize:
           (Dictionary new
             at: 'ok' put: 1.0;
             yourself) ])
     deleteOperation: dataArray.
-  ^ STON toString: result
+  ^ self serialize: result

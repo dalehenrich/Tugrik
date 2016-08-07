@@ -4,4 +4,4 @@ updateOperation: id collectionName: collectionName data: dataArray flags: flags
   result := (self collectionNamed: collectionName)
     updateOperation: dataArray
     flags: flags.
-  ^ STON toString: result
+  ^ self serialize: result

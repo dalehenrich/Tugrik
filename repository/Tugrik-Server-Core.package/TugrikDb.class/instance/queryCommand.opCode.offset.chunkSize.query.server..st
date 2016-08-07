@@ -3,4 +3,4 @@ queryCommand: id opCode: opCode offset: mongoQueryOffset chunkSize: mongoQueryCh
   | result |
   result := {}.
   self processQueryCommand: queryDict result: result server: aDbServer.
-  ^ STON toString: result
+  ^ self serialize: result
