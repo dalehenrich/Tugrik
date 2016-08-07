@@ -1,9 +1,9 @@
-utility
-createTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
+object creation
+findOrCreateTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
   | obj hasOid theOid query |
   hasOid := false.
   dict
-    at: '_id'
+    at: self fieldRootId
     ifPresent: [ :oid | 
       hasOid := true.
       theOid := oid.
@@ -18,7 +18,7 @@ createTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
         ifFalse: [ TugrikObject new ].
       dict
         keysAndValuesDo: [ :key :value | 
-          (key ~= '_id')
+          (key ~= self fieldRootId)
             ifTrue: [ obj dynamicInstVarAt: key asSymbol put: value ];
             yourself ].
       newBlock value: obj ].

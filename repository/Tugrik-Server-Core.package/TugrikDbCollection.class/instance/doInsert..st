@@ -1,6 +1,6 @@
 queries
 doInsert: dict
-  self class
-    createTugrikObjectFrom: dict
+  self
+    findOrCreateTugrikObjectFrom: dict
     dbCollection: self
     ifNew: [ :obj | self add: obj ]

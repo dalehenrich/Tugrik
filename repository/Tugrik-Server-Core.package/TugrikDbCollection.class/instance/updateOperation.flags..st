@@ -7,7 +7,7 @@ updateOperation: anArray flags: flags
   oldObj := anArray at: 1.
   newObj := anArray at: 2.
   oldObj
-    at: '_id'
+    at: self fieldRootId
     ifPresent: [ :oid | 
       theObj := self
         objWithOid: oid
