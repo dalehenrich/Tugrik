@@ -1,3 +1,3 @@
 serialization
 serialize: anObject
-  ^ STON toString: anObject
+  ^ self serialize: anObject using: STON

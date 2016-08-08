@@ -1,4 +1,4 @@
-object creation
+materialization
 findOrCreateTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
   ^ self collectionDb
     findOrCreateTugrikObjectFrom: dict
