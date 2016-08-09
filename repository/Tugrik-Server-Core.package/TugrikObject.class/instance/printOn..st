@@ -3,5 +3,6 @@ printOn: aStream
   aStream
     nextPutAll: self class name;
     nextPutAll: '(';
-    nextPutAll: _id value asHexString;
-    nextPutAll: ')'
+    yourself.
+  _id ifNotNil: [ aStream nextPutAll: _id value asHexString ].
+  aStream nextPutAll: ')'
