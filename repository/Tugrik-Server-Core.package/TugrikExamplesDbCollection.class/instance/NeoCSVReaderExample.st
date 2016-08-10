@@ -7,9 +7,9 @@ NeoCSVReaderExample
   reader := NeoCSVReader on: (ZnBufferedReadStream on: stream).
   reader
     recordClass: NeoCSVTestObject;
-    addIntegerField: #' x: ';
-    addIntegerField: #' y: ';
-    addIntegerField: #' z: '.
+    addIntegerField: #''x:'';
+    addIntegerField: #''y:'';
+    addIntegerField: #''z:''.
   buffer := Array new: 1000.
   bufCnt := 0.
   [ reader atEnd ]
