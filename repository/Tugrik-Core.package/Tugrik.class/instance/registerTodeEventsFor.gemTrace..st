@@ -23,9 +23,12 @@ registerTodeEventsFor: client gemTrace: gemTrace
 						stackClientElement: clientElement;
 						client: aClient;
 						yourself.
-					windowNameMap at: clientElement editorWindowName put: debuggerSession.
+					windowNameMap
+						at: clientElement editorWindowName
+						put: debuggerSession.
 					result := TDMinimalDebugger openOn: debuggerSession.
-					result := aClient objectSerializer toString: debuggerSession debugger resumeResult.
+					result := aClient objectSerializer
+						toString: debuggerSession debugger resumeResult.
 					TDMinimalDebuggerContinueFromDebuggerNotification new
 						returnValue: result;
 						signal.
@@ -38,8 +41,11 @@ registerTodeEventsFor: client gemTrace: gemTrace
 										ifTrue: [ windowId := 21.
 											debuggerSession contextClientElement: clientElement ]
 										ifFalse: [ self error: 'Unknown client element' ] ].
-							windowNameMap at: clientElement editorWindowLocation put: debuggerSession ]
-						ifNotNil: [ :editorWindowName | debuggerSession contextClientElement: clientElement ] ].
+							windowNameMap
+								at: clientElement editorWindowLocation
+								put: debuggerSession ]
+						ifNotNil:
+							[ :editorWindowName | debuggerSession contextClientElement: clientElement ] ].
 			windowId ]
 			for: #editClientElement:;
 		registerService: [ :listElement :index :listSelections :aClient | 
@@ -52,8 +58,11 @@ registerTodeEventsFor: client gemTrace: gemTrace
 					false.
 					nil}	"return result to caller" ]
 			for: #itemSelectedForClientListElement:index:listSelections:;
-		registerService:
-				[ :methodSourceElement :aClient | aClient session send: #value to: methodSourceElement getBlockOopType withArgs: #()	"return result to caller" ]
+		registerService: [ :methodSourceElement :aClient | 
+			aClient session
+				send: #value
+				to: methodSourceElement getBlockOopType
+				withArgs: #()	"return result to caller" ]
 			for: #getSourceForClientSourceElement:;
 		registerService: [ :clientElement :aSymbolOrStringOrSpecial :selectionIndex :aClient | 
 			aClient session
@@ -75,7 +84,8 @@ registerTodeEventsFor: client gemTrace: gemTrace
 					nil.
 					nil}	"return result to caller" ]
 			for: #executeMenuActionForClientSourceElement:action:selectedText:;
-		registerService: [ :clientElement :aSymbolOrStringOrSpecial :selectionInterval :dirty :aClient | 
+		registerService:
+				[ :clientElement :aSymbolOrStringOrSpecial :selectionInterval :dirty :aClient | 
 			aClient session
 				send: #value:value:value:value:value:
 				to: clientElement menuActionBlockOopType
@@ -88,7 +98,9 @@ registerTodeEventsFor: client gemTrace: gemTrace
 			for: #executeMenuActionForClientSourceElement:action:selectionInterval:dirty:;
 		registerService: [ :level :processOop :aClient | 
 			[ aClient
-				handleDebugExceptionsDuring: [ aClient session stepOver: (GsGciOopType fromInteger: processOop) level: level ] ]
+				handleDebugExceptionsDuring: [ aClient session
+						stepOver: (GsGciOopType fromInteger: processOop)
+						level: level ] ]
 				on: GsGciClientForwarderSend
 				do: [ :ex | 
 					| result |
@@ -97,7 +109,8 @@ registerTodeEventsFor: client gemTrace: gemTrace
 			for: #dbStep:forProcessOop:;
 		registerService: [ :processOop :aClient | 
 			aClient
-				handleDebugExceptionsDuring: [ aClient session continueContext: (GsGciOopType fromInteger: processOop) ]
+				handleDebugExceptionsExceptErrorsDuring: [ aClient session
+						continueContext: (GsGciOopType fromInteger: processOop) ]
 			"This should be a serialized object that is the return value for the original call" ]
 			for: #dbContinue:;
 		registerService: [ :sourceElement :sourceString :aClient | 
