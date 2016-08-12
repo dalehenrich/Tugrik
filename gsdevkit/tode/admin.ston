@@ -20,7 +20,9 @@ TDScriptLeafNode{#name:'admin',#contents:'[ :topez :objIn :tokens :command :comm
     ifAbsent: [ 
       | result root db collection |
       root := TugrikDbServer root.
-      opts at: \'reset\' ifPresent: [ :ignored | TugrikDbServer resetRoot ].
+      opts
+        at: \'reset\'
+        ifPresent: [ :ignored | (TugrikDbServer withAllSubclasses) do: [:dbServerClass | dbServerClass resetRoot] ].
       opts at: \'root\' ifPresent: [ :ignored | result := root ].
       opts at: \'dbNames\' ifPresent: [ :ignored | result := root keys ].
       opts at: \'db\' ifPresent: [ :dbName | result := db := root at: dbName ].
@@ -70,10 +72,10 @@ EXAMPLES
   ./admin --db=`my example` --collection=`TestPilot`; edit
   ./admin --db=`my example` --collection=`TestPilot` --drop
 
-  ./admin --reset
+  ./admin --reset #reset root for all db servers in system
 
   abort; ./admin --db=`voyage examples` --collection=`Basic Examples`; edit
   abort; ./admin --db=`gemtalk example` --collection=`Association`; edit
   abort; ./admin --db=`gemtalk example`; edit
 \'
-        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:48:34.30077600479126-07:00'],#modificationTime:DateAndTime['2016-08-02T10:13:46.82645702362061-07:00']}
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:48:34.30077600479126-07:00'],#modificationTime:DateAndTime['2016-08-12T16:20:29.92933702468872-07:00']}

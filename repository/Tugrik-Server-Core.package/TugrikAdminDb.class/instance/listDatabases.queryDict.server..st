@@ -1,7 +1,7 @@
 command processing
-listDatabases: value queryDict: queryDict
+listDatabases: value queryDict: queryDict server: aDbServer
   | dbs |
-  dbs := TugrikDbServer root values
+  dbs := aDbServer root values
     collect: [ :db | 
       Dictionary new
         at: 'name' put: db name;

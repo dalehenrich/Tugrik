@@ -3,6 +3,6 @@ resetRoot
   "self resetRoot"
 
   self abort.
-  Root ifNotNil: [ Root valuesDo: [ :db | db resetCollections ] ].
-  Root := nil.
+  root ifNotNil: [ root valuesDo: [ :db | db resetCollections ] ].
+  root := nil.
   self commit
