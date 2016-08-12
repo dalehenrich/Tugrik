@@ -4,6 +4,11 @@ registerTodeEventsFor: client gemTrace: gemTrace
 	windowNameMap := Dictionary new.
 	client
 		registerService: [ :stonString :aClient | 
+			| interaction |
+			interaction := aClient objectSerializer fromString: stonString.
+			aClient objectSerializer toString: interaction interact ]
+			for: #interactWith:;
+		registerService: [ :stonString :aClient | 
 			| clientElement |
 			clientElement := aClient objectSerializer fromString: stonString.
 			clientElement topez: aClient.
@@ -19,7 +24,7 @@ registerTodeEventsFor: client gemTrace: gemTrace
 						client: aClient;
 						yourself.
 					windowNameMap at: clientElement editorWindowName put: debuggerSession.
-					result := TDMinimalDebugger  openOn: debuggerSession.
+					result := TDMinimalDebugger openOn: debuggerSession.
 					result := aClient objectSerializer toString: debuggerSession debugger resumeResult.
 					TDMinimalDebuggerContinueFromDebuggerNotification new
 						returnValue: result;
@@ -112,7 +117,7 @@ registerTodeEventsFor: client gemTrace: gemTrace
 			aClient objectSerializer fromString: stonString	"return result to caller" ]
 			for: #getListForClientListElement:;
 		registerService: [ :windowId :aClient | 
-			debuggerSession debugger refreshView .
+			debuggerSession debugger refreshView.
 			nil ]
 			for: #refreshViewFor:;
 		registerService: [ :windowId :aClient | 
