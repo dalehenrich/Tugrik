@@ -74,7 +74,7 @@ For more information see [SmalltalkCI and GsDevKit_home][7].
 [2]: https://github.com/GsDevKit/GsDevKit_home
 [3]: https://gemtalksystems.com/products/gs64/
 [4]: https://www.mongodb.org
-[5]: http://www.ccoins.ru/asia/mongolia_en.html
+[5]: http://ccoins.ru/pages/mongolia_en.html
 [6]: https://github.com/GsDevKit/GsDevKit_home#installation
 [7]: https://github.com/hpi-swa/smalltalkCI/blob/master/gemstone/README.md#smalltalkci-and-gsdevkit_home
 [8]: https://github.com/hpi-swa/smalltalkCI
