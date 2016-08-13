@@ -27,10 +27,6 @@ createClient tode
 ### Create Tugrik stone and client
 
 ```
-# Clone MongoTalk
-cd $GS_HOME/shared/repos
-git clone https://github.com/pharo-nosql/mongotalk.git
-
 # Create Tugrik stone
 createStone -u http://gsdevkit.github.io/GsDevKit_home/Tugrik.ston -i Tugrik -l Tugrik Tugrik 3.3.0
 
