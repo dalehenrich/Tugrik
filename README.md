@@ -1,5 +1,7 @@
 # Tugrik
 
+<img style="border: 2px solid #000000;" src="https://c1.staticflickr.com/9/8178/7979804061_1e2131de4a_m.jpg" /> [(CC BY-NC 2.0)](https://creativecommons.org/licenses/by-nc/2.0/) by [chimerasaurus](https://www.flickr.com/photos/jamesmalone/).
+
 ## Work in Progress
 
 Tugrik makes it possible to use the [MongoTalk][1] Smalltalk API to store objects in a [GemStone/S 64][3] database using [GsDevKit_home][2]. 
