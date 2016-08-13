@@ -11,7 +11,8 @@ TDScriptLeafNode{#name:'admin',#contents:'[ :topez :objIn :tokens :command :comm
       #(\'create\' nil #\'required\').
       #(\'drop\' nil #\'none\').
       #(\'reset\' nil #\'none\').
-      #(\'root\' nil #\'none\')}
+      #(\'root\' nil #\'none\').
+      #(\'roots\' nil #\'none\')}
     optionsAndArguments: [ :options :operands | 
       opts := options.
       args := operands ].
@@ -22,7 +23,14 @@ TDScriptLeafNode{#name:'admin',#contents:'[ :topez :objIn :tokens :command :comm
       root := TugrikDbServer root.
       opts
         at: \'reset\'
-        ifPresent: [ :ignored | (TugrikDbServer withAllSubclasses) do: [:dbServerClass | dbServerClass resetRoot] ].
+        ifPresent: [ :ignored | 
+          TugrikDbServer withAllSubclasses
+            do: [ :dbServerClass | dbServerClass resetRoot ] ].
+      opts
+        at: \'roots\'
+        ifPresent: [ :ignored | 
+          result := TugrikDbServer withAllSubclasses
+            collect: [ :dbServerClass | dbServerClass root ] ].
       opts at: \'root\' ifPresent: [ :ignored | result := root ].
       opts at: \'dbNames\' ifPresent: [ :ignored | result := root keys ].
       opts at: \'db\' ifPresent: [ :dbName | result := db := root at: dbName ].
@@ -60,6 +68,8 @@ DESCRIPTION
 EXAMPLES
   ./admin -h
 
+  ./admin --roots; edit
+
   ./admin --root; edit
   ./admin --root --create=`my example`
 
@@ -78,4 +88,4 @@ EXAMPLES
   abort; ./admin --db=`gemtalk example` --collection=`Association`; edit
   abort; ./admin --db=`gemtalk example`; edit
 \'
-        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:48:34.30077600479126-07:00'],#modificationTime:DateAndTime['2016-08-12T16:20:29.92933702468872-07:00']}
+        topez: topez ] ]',#creationTime:DateAndTime['2016-07-24T06:48:34.30077600479126-07:00'],#modificationTime:DateAndTime['2016-08-13T07:02:05.652684926986694-07:00']}
