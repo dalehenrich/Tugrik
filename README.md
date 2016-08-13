@@ -7,7 +7,7 @@
 Tugrik makes it possible to use the [MongoTalk][1] Smalltalk API to store objects in a [GemStone/S 64][3] database using [GsDevKit_home][2]. 
 The obvious advantage is that instead of storing your domain objects in an opaque db like [Mongo][4], your Smalltalk objects are stored in a Smalltalk db and operations can be performed in-place in the GemStone/S 64 db.
 
-## [100 mongo = 1 tugrik][5] (100 мунгу=Тугрик)
+## [100 mongo = 1 tugrik][5]
 
 ## Installation - based on soon to be released version of GsDevKit_home
 
