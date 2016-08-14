@@ -1,5 +1,7 @@
 # Tugrik
 
+<img style="border: 2px solid #000000;" src="https://c1.staticflickr.com/9/8178/7979804061_1e2131de4a_m.jpg" /> [(CC BY-NC 2.0)](https://creativecommons.org/licenses/by-nc/2.0/) by [chimerasaurus](https://www.flickr.com/photos/jamesmalone/).
+
 ## Work in Progress
 
 Tugrik makes it possible to use the [MongoTalk][1] Smalltalk API to store objects in a [GemStone/S 64][3] database using [GsDevKit_home][2]. 
@@ -27,10 +29,6 @@ createClient tode
 ### Create Tugrik stone and client
 
 ```
-# Clone MongoTalk
-cd $GS_HOME/shared/repos
-git clone https://github.com/pharo-nosql/mongotalk.git
-
 # Create Tugrik stone
 createStone -u http://gsdevkit.github.io/GsDevKit_home/Tugrik.ston -i Tugrik -l Tugrik Tugrik 3.3.0
 
@@ -76,7 +74,7 @@ For more information see [SmalltalkCI and GsDevKit_home][7].
 [2]: https://github.com/GsDevKit/GsDevKit_home
 [3]: https://gemtalksystems.com/products/gs64/
 [4]: https://www.mongodb.org
-[5]: http://www.ccoins.ru/asia/mongolia_en.html
+[5]: http://ccoins.ru/pages/mongolia_en.html
 [6]: https://github.com/GsDevKit/GsDevKit_home#installation
 [7]: https://github.com/hpi-swa/smalltalkCI/blob/master/gemstone/README.md#smalltalkci-and-gsdevkit_home
 [8]: https://github.com/hpi-swa/smalltalkCI
