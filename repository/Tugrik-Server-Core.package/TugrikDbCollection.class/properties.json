@@ -12,7 +12,6 @@
 		"collectionDb",
 		"name",
 		"collection",
-		"oidIndex",
 		"oidQuery" ],
 	"name" : "TugrikDbCollection",
 	"pools" : [
