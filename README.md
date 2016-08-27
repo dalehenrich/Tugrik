@@ -9,8 +9,6 @@ The obvious advantage is that instead of storing your domain objects in an opaqu
 
 ## [100 mongo = 1 tugrik][5]
 
-## Installation - based on soon to be released version of GsDevKit_home
-
 ### Install GsDevKit_home
 
 The following are based on the [GsDevKit_home installation instructions][6]:
